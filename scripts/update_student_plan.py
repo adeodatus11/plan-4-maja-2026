@@ -125,11 +125,48 @@ def add_homeroom_to_caption(table_html: str, plan_id: str, homeroom: str | None)
     )
 
 
+def add_cell_class(attributes: str, class_name: str) -> str:
+    class_match = re.search(r'class="([^"]*)"', attributes)
+    if class_match:
+        existing = class_match.group(1).split()
+        if class_name not in existing:
+            existing.append(class_name)
+        return (
+            attributes[: class_match.start(1)]
+            + " ".join(existing)
+            + attributes[class_match.end(1) :]
+        )
+    return f'{attributes} class="{class_name}"'
+
+
+def mark_lesson_time_cells(table_html: str) -> str:
+    def replace(match: re.Match[str]) -> str:
+        lesson_attrs = add_cell_class(match.group("lesson_attrs"), "lesson-no")
+        time_attrs = add_cell_class(match.group("time_attrs"), "lesson-time")
+        return (
+            f'{match.group("row_start")}<td{lesson_attrs}>{match.group("lesson_no")}</td>'
+            f'{match.group("between")}<td{time_attrs}>{match.group("lesson_time")}</td>'
+        )
+
+    return re.sub(
+        r'(?P<row_start><tr[^>]*>\s*)'
+        r'<td(?P<lesson_attrs>[^>]*)>(?P<lesson_no>\s*\d+\s*)</td>'
+        r'(?P<between>\s*)'
+        r'<td(?P<time_attrs>[^>]*)>'
+        r'(?P<lesson_time>\s*\d{1,2}:\d{2}\s*[–-]\s*\d{1,2}:\d{2}\s*)'
+        r'</td>',
+        replace,
+        table_html,
+        flags=re.S,
+    )
+
+
 def simplify_internal_links(table_html: str) -> str:
     return re.sub(r'<a href="#[^"]+">([^<]*)</a>', r"\1", table_html)
 
 
 def normalize_table(table_html: str) -> str:
+    table_html = mark_lesson_time_cells(table_html)
     table_html = table_html.replace(" – ", " - ")
     table_html = simplify_internal_links(table_html)
     return table_html
@@ -525,6 +562,35 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
 
             table.plan td {{
                 padding: .45rem .38rem;
+            }}
+
+            table.plan td.lesson-no,
+            table.plan td.lesson-time {{
+                position: sticky;
+                z-index: 3;
+                background: var(--panel);
+            }}
+
+            table.plan tr.d td.lesson-no,
+            table.plan tr.d td.lesson-time {{
+                background: var(--row-alt);
+            }}
+
+            table.plan td.lesson-no {{
+                left: 0;
+                width: 2.15rem;
+                min-width: 2.15rem;
+                max-width: 2.15rem;
+                text-align: right;
+            }}
+
+            table.plan td.lesson-time {{
+                left: 2.15rem;
+                width: 7.4rem;
+                min-width: 7.4rem;
+                max-width: 7.4rem;
+                white-space: nowrap;
+                box-shadow: 1px 0 0 var(--line-strong);
             }}
         }}
 
