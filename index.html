@@ -193,8 +193,24 @@
         table.plan caption {
             padding: 1rem .75rem;
             text-align: left;
+        }
+
+        .class-caption {
+            display: flex;
+            align-items: baseline;
+            gap: .8rem;
+            flex-wrap: wrap;
+        }
+
+        .class-symbol {
             font-size: 1.55rem;
             font-weight: 900;
+        }
+
+        .homeroom {
+            color: var(--muted);
+            font-size: .96rem;
+            font-weight: 800;
         }
 
         table.plan td {
@@ -336,8 +352,20 @@
             }
 
             table.plan caption {
-                font-size: 1.25rem;
                 padding: .85rem .65rem;
+            }
+
+            .class-caption {
+                display: grid;
+                gap: .2rem;
+            }
+
+            .class-symbol {
+                font-size: 1.35rem;
+            }
+
+            .homeroom {
+                font-size: .86rem;
             }
 
             table.plan td {
@@ -480,7 +508,7 @@
         </div>
         <div class="table-shell">
 <table class="plan" id="1B">
-    <caption>1B</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1B</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -608,7 +636,7 @@
     </tbody>
 </table>
 <table class="plan" id="1CA">
-    <caption>1CA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1CA</span><span class="homeroom">Wychowawca: Krystyna Stępień</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -800,7 +828,7 @@
     </tbody>
 </table>
 <table class="plan" id="1CB">
-    <caption>1CB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1CB</span><span class="homeroom">Wychowawca: Anna Mucha</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -1027,7 +1055,7 @@
     </tbody>
 </table>
 <table class="plan" id="1FA">
-    <caption>1FA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1FA</span><span class="homeroom">Wychowawca: Sylwia Mikołajczak</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -1219,7 +1247,7 @@
     </tbody>
 </table>
 <table class="plan" id="1FB">
-    <caption>1FB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1FB</span><span class="homeroom">Wychowawca: Anna Galert</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -1415,7 +1443,7 @@
     </tbody>
 </table>
 <table class="plan" id="1FC">
-    <caption>1FC</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1FC</span><span class="homeroom">Wychowawca: Lidia Nestoruk</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -1611,7 +1639,7 @@
     </tbody>
 </table>
 <table class="plan" id="1K">
-    <caption>1K</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1K</span><span class="homeroom">Wychowawca: Katarzyna Świerzewicz</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -1805,7 +1833,7 @@
     </tbody>
 </table>
 <table class="plan" id="1S">
-    <caption>1S</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1S</span><span class="homeroom">Wychowawca: Iwona Bujanowska</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -1999,7 +2027,7 @@
     </tbody>
 </table>
 <table class="plan" id="1TFA">
-    <caption>1TFA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1TFA</span><span class="homeroom">Wychowawca: Ewelina Krycia</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -2253,7 +2281,7 @@
     </tbody>
 </table>
 <table class="plan" id="1TFB">
-    <caption>1TFB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1TFB</span><span class="homeroom">Wychowawca: Anna Sobczak</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -2507,7 +2535,7 @@
     </tbody>
 </table>
 <table class="plan" id="1TFH">
-    <caption>1TFH</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1TFH</span><span class="homeroom">Wychowawca: Alicja Smereka</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -2784,7 +2812,7 @@
     </tbody>
 </table>
 <table class="plan" id="1TH">
-    <caption>1TH</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1TH</span><span class="homeroom">Wychowawca: Waldemar Kaczorowski</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -3028,7 +3056,7 @@
     </tbody>
 </table>
 <table class="plan" id="1WA">
-    <caption>1WA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1WA</span><span class="homeroom">Wychowawca: Paweł Młynarczyk</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -3230,7 +3258,7 @@
     </tbody>
 </table>
 <table class="plan" id="1WB">
-    <caption>1WB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">1WB</span><span class="homeroom">Wychowawca: Anna Filipek</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -3435,7 +3463,7 @@
     </tbody>
 </table>
 <table class="plan" id="2B">
-    <caption>2B</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2B</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -3556,7 +3584,7 @@
     </tbody>
 </table>
 <table class="plan" id="2CA">
-    <caption>2CA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2CA</span><span class="homeroom">Wychowawca: Agnieszka Hudziec</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -3744,7 +3772,7 @@
     </tbody>
 </table>
 <table class="plan" id="2CB">
-    <caption>2CB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2CB</span><span class="homeroom">Wychowawca: Mariola Granatowska</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -3910,7 +3938,7 @@
     </tbody>
 </table>
 <table class="plan" id="2FA">
-    <caption>2FA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2FA</span><span class="homeroom">Wychowawca: Krystyna Dalach</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -4076,7 +4104,7 @@
     </tbody>
 </table>
 <table class="plan" id="2FB">
-    <caption>2FB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2FB</span><span class="homeroom">Wychowawca: Marcin Kruk</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -4252,7 +4280,7 @@
     </tbody>
 </table>
 <table class="plan" id="2FC">
-    <caption>2FC</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2FC</span><span class="homeroom">Wychowawca: Iwona Leńczowska</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -4413,7 +4441,7 @@
     </tbody>
 </table>
 <table class="plan" id="2K">
-    <caption>2K</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2K</span><span class="homeroom">Wychowawca: Karolina Sałdyka</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -4597,7 +4625,7 @@
     </tbody>
 </table>
 <table class="plan" id="2S">
-    <caption>2S</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2S</span><span class="homeroom">Wychowawca: Marcin Cieśla</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -4780,7 +4808,7 @@
     </tbody>
 </table>
 <table class="plan" id="2TFA">
-    <caption>2TFA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2TFA</span><span class="homeroom">Wychowawca: Aleksandra Karczmarz</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -5007,7 +5035,7 @@
     </tbody>
 </table>
 <table class="plan" id="2TFB">
-    <caption>2TFB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2TFB</span><span class="homeroom">Wychowawca: Małgorzata Fiodorów</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -5241,7 +5269,7 @@
     </tbody>
 </table>
 <table class="plan" id="2TH">
-    <caption>2TH</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2TH</span><span class="homeroom">Wychowawca: Bożena Czukiewska</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -5448,7 +5476,7 @@
     </tbody>
 </table>
 <table class="plan" id="2WA">
-    <caption>2WA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">2WA</span><span class="homeroom">Wychowawca: Kamil Wójcik</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -5666,7 +5694,7 @@
     </tbody>
 </table>
 <table class="plan" id="3CA">
-    <caption>3CA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">3CA</span><span class="homeroom">Wychowawca: Małgorzata Biezmienow</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -5828,7 +5856,7 @@
     </tbody>
 </table>
 <table class="plan" id="3CB">
-    <caption>3CB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">3CB</span><span class="homeroom">Wychowawca: Julita Rejno</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -5975,7 +6003,7 @@
     </tbody>
 </table>
 <table class="plan" id="3FA">
-    <caption>3FA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">3FA</span><span class="homeroom">Wychowawca: Magdalena Zaleska</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -6124,7 +6152,7 @@
     </tbody>
 </table>
 <table class="plan" id="3FB">
-    <caption>3FB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">3FB</span><span class="homeroom">Wychowawca: Beata Krzemińska</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -6293,7 +6321,7 @@
     </tbody>
 </table>
 <table class="plan" id="3FC">
-    <caption>3FC</caption>
+    <caption><span class="class-caption"><span class="class-symbol">3FC</span><span class="homeroom">Wychowawca: Małgorzata Pietrycha</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -6442,7 +6470,7 @@
     </tbody>
 </table>
 <table class="plan" id="3K">
-    <caption>3KS (3K)</caption>
+    <caption><span class="class-caption"><span class="class-symbol">3K</span><span class="homeroom">Wychowawca: Barbara Małecka</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -6627,7 +6655,7 @@
     </tbody>
 </table>
 <table class="plan" id="3TFA">
-    <caption>3TFA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">3TFA</span><span class="homeroom">Wychowawca: Magdalena Taszycka</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -6827,7 +6855,7 @@
     </tbody>
 </table>
 <table class="plan" id="3TFB">
-    <caption>3TFB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">3TFB</span><span class="homeroom">Wychowawca: Magdalena Ulanowska</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -7117,7 +7145,7 @@
     </tbody>
 </table>
 <table class="plan" id="3WA">
-    <caption>3WA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">3WA</span><span class="homeroom">Wychowawca: Joanna Antoszewska</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -7293,7 +7321,7 @@
     </tbody>
 </table>
 <table class="plan" id="4TFA">
-    <caption>4TFA</caption>
+    <caption><span class="class-caption"><span class="class-symbol">4TFA</span><span class="homeroom">Wychowawca: Paweł Danielewski</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -7485,7 +7513,7 @@
     </tbody>
 </table>
 <table class="plan" id="4TFB">
-    <caption>4TFB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">4TFB</span><span class="homeroom">Wychowawca: Agnieszka Jastrzębska- Majtyka</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -7692,7 +7720,7 @@
     </tbody>
 </table>
 <table class="plan" id="4TH">
-    <caption>4TH</caption>
+    <caption><span class="class-caption"><span class="class-symbol">4TH</span><span class="homeroom">Wychowawca: Anna Kosin</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -7942,7 +7970,7 @@
     </tbody>
 </table>
 <table class="plan" id="5TFB">
-    <caption>5TFB</caption>
+    <caption><span class="class-caption"><span class="class-symbol">5TFB</span><span class="homeroom">Wychowawca: Anna Misiąg</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>
@@ -8131,7 +8159,7 @@
     </tbody>
 </table>
 <table class="plan" id="5TH">
-    <caption>5TH</caption>
+    <caption><span class="class-caption"><span class="class-symbol">5TH</span><span class="homeroom">Wychowawca: Agnieszka Skarupa</span></span></caption>
     <thead>
     <tr>
         <td class="n"></td>

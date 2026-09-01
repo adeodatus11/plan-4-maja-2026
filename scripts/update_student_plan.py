@@ -5,6 +5,7 @@ import argparse
 import html
 import re
 import shutil
+from urllib.parse import unquote
 from pathlib import Path
 
 
@@ -65,6 +66,25 @@ def extract_class_ids(text: str) -> list[str]:
     return ids
 
 
+def extract_teacher_names(text: str) -> dict[str, str]:
+    teacher_nav = between(
+        text,
+        '<div class="h">Nauczyciele</div>',
+        '<div class="h">Sale</div>',
+    )
+    teachers: dict[str, str] = {}
+    for teacher_id, teacher_name in re.findall(
+        r'<a class="l" href="#([^"]+)">(.*?)</a>',
+        teacher_nav,
+        flags=re.S,
+    ):
+        clean_name = re.sub(r"\s+", " ", html.unescape(re.sub(r"<.*?>", "", teacher_name))).strip()
+        decoded_id = unquote(teacher_id)
+        teachers[teacher_id] = clean_name
+        teachers[decoded_id] = clean_name
+    return teachers
+
+
 def extract_table(text: str, plan_id: str) -> str:
     match = re.search(
         rf'<table class="plan" id="{re.escape(plan_id)}">.*?</table>',
@@ -74,6 +94,35 @@ def extract_table(text: str, plan_id: str) -> str:
     if not match:
         raise SystemExit(f"Nie znaleziono tabeli oddziału: {plan_id}")
     return match.group(0)
+
+
+def extract_homeroom_teacher(table_html: str, teachers: dict[str, str]) -> str | None:
+    match = re.search(
+        r"Zajęcia z wychowawcą.*?</td>\s*<td[^>]*>\s*<a href=\"#([^\"]+)\">",
+        table_html,
+        flags=re.S,
+    )
+    if not match:
+        return None
+
+    teacher_id = match.group(1)
+    return teachers.get(teacher_id) or teachers.get(unquote(teacher_id))
+
+
+def add_homeroom_to_caption(table_html: str, plan_id: str, homeroom: str | None) -> str:
+    caption = f'<span class="class-symbol">{html.escape(plan_id)}</span>'
+    if homeroom:
+        caption += (
+            '<span class="homeroom">Wychowawca: '
+            f"{html.escape(homeroom)}</span>"
+        )
+    return re.sub(
+        r"<caption>.*?</caption>",
+        f'<caption><span class="class-caption">{caption}</span></caption>',
+        table_html,
+        count=1,
+        flags=re.S,
+    )
 
 
 def simplify_internal_links(table_html: str) -> str:
@@ -299,8 +348,24 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
         table.plan caption {{
             padding: 1rem .75rem;
             text-align: left;
+        }}
+
+        .class-caption {{
+            display: flex;
+            align-items: baseline;
+            gap: .8rem;
+            flex-wrap: wrap;
+        }}
+
+        .class-symbol {{
             font-size: 1.55rem;
             font-weight: 900;
+        }}
+
+        .homeroom {{
+            color: var(--muted);
+            font-size: .96rem;
+            font-weight: 800;
         }}
 
         table.plan td {{
@@ -442,8 +507,20 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
             }}
 
             table.plan caption {{
-                font-size: 1.25rem;
                 padding: .85rem .65rem;
+            }}
+
+            .class-caption {{
+                display: grid;
+                gap: .2rem;
+            }}
+
+            .class-symbol {{
+                font-size: 1.35rem;
+            }}
+
+            .homeroom {{
+                font-size: .86rem;
             }}
 
             table.plan td {{
@@ -564,7 +641,16 @@ def main() -> None:
 
     source_text = source.read_text(encoding="utf-8")
     class_ids = extract_class_ids(source_text)
-    tables = [normalize_table(extract_table(source_text, plan_id)) for plan_id in class_ids]
+    teachers = extract_teacher_names(source_text)
+    tables = []
+    missing_homerooms = []
+    for plan_id in class_ids:
+        table = extract_table(source_text, plan_id)
+        homeroom = extract_homeroom_teacher(table, teachers)
+        if not homeroom:
+            missing_homerooms.append(plan_id)
+        table = add_homeroom_to_caption(table, plan_id, homeroom)
+        tables.append(normalize_table(table))
 
     (ROOT / "index.html").write_text(
         render_page(source_text, class_ids, tables),
@@ -572,6 +658,8 @@ def main() -> None:
     )
     shutil.copy2(logo, ROOT / "orzel-szkola-mistrzow.png")
     print(f"Zapisano index.html: {len(class_ids)} oddziałów z {source.name}")
+    if missing_homerooms:
+        print("Brak rozpoznanego wychowawcy:", ", ".join(missing_homerooms))
 
 
 if __name__ == "__main__":
