@@ -292,12 +292,6 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
             line-height: 1.2;
         }}
 
-        .site-note {{
-            margin: .35rem 0 0;
-            color: var(--muted);
-            font-size: .92rem;
-        }}
-
         .nav-heading {{
             margin: 1.25rem 0 .75rem;
             color: var(--muted);
@@ -496,10 +490,6 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
                 font-size: 1rem;
             }}
 
-            .site-note {{
-                font-size: .82rem;
-            }}
-
             nav .nav-heading,
             nav .class-list {{
                 display: none;
@@ -625,7 +615,6 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
             <div class="brand-row">
                 <img src="orzel-szkola-mistrzow.png" alt="Szkoła Mistrzów">
                 <p class="site-title">Plan lekcji oddziałów</p>
-                <p class="site-note">Wersja dla uczniów, bez planów nauczycieli i dyżurów.</p>
             </div>
             {dobry_plan_logo}
         </div>
