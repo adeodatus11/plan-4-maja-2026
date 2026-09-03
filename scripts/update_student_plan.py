@@ -12,6 +12,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TEACHER_REPO = ROOT.parent / "zastepstwa-main"
 DEFAULT_LOGO = ROOT.parent / "zastepstwa-main" / "orzel-szkola-mistrzow.png"
+CLASS_ID_RENAMES = {
+    "2B": "3B",
+}
 
 
 def between(text: str, start: str, end: str) -> str:
@@ -64,6 +67,10 @@ def extract_class_ids(text: str) -> list[str]:
     if not ids:
         raise SystemExit("Nie znaleziono oddziałów w nawigacji.")
     return ids
+
+
+def display_class_id(plan_id: str) -> str:
+    return CLASS_ID_RENAMES.get(plan_id, plan_id)
 
 
 def extract_teacher_names(text: str) -> dict[str, str]:
@@ -696,34 +703,47 @@ def main() -> None:
         default=str(DEFAULT_LOGO),
         help="Ścieżka do logo Szkoły Mistrzów.",
     )
+    parser.add_argument(
+        "--output",
+        default=str(ROOT / "index.html"),
+        help="Ścieżka do pliku wynikowego HTML.",
+    )
     args = parser.parse_args()
 
     source = Path(args.source).expanduser().resolve() if args.source else newest_teacher_plan()
     logo = Path(args.logo).expanduser().resolve()
+    output = Path(args.output).expanduser().resolve()
     if not source.exists():
         raise SystemExit(f"Nie znaleziono źródłowego planu: {source}")
     if not logo.exists():
         raise SystemExit(f"Nie znaleziono logo: {logo}")
 
     source_text = source.read_text(encoding="utf-8")
-    class_ids = extract_class_ids(source_text)
+    source_class_ids = extract_class_ids(source_text)
+    class_ids = [display_class_id(plan_id) for plan_id in source_class_ids]
     teachers = extract_teacher_names(source_text)
     tables = []
     missing_homerooms = []
-    for plan_id in class_ids:
-        table = extract_table(source_text, plan_id)
+    for source_plan_id, plan_id in zip(source_class_ids, class_ids):
+        table = extract_table(source_text, source_plan_id)
+        if source_plan_id != plan_id:
+            table = table.replace(
+                f'<table class="plan" id="{html.escape(source_plan_id)}">',
+                f'<table class="plan" id="{html.escape(plan_id)}">',
+                1,
+            )
         homeroom = extract_homeroom_teacher(table, teachers)
         if not homeroom:
             missing_homerooms.append(plan_id)
         table = add_homeroom_to_caption(table, plan_id, homeroom)
         tables.append(normalize_table(table))
 
-    (ROOT / "index.html").write_text(
+    output.write_text(
         render_page(source_text, class_ids, tables),
         encoding="utf-8",
     )
     shutil.copy2(logo, ROOT / "orzel-szkola-mistrzow.png")
-    print(f"Zapisano index.html: {len(class_ids)} oddziałów z {source.name}")
+    print(f"Zapisano {output.name}: {len(class_ids)} oddziałów z {source.name}")
     if missing_homerooms:
         print("Brak rozpoznanego wychowawcy:", ", ".join(missing_homerooms))
 
