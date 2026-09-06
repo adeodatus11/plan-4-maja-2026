@@ -1,0 +1,195 @@
+{
+  "substitutions": [
+    {
+      "date": "2026-09-07",
+      "period": 1,
+      "className": "2CA",
+      "groupName": "",
+      "type": "message",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-09-07",
+      "period": 2,
+      "className": "2CA",
+      "groupName": "",
+      "type": "message",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-09-07",
+      "period": 3,
+      "className": "3CA",
+      "groupName": "",
+      "type": "message",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-09-07",
+      "period": 4,
+      "className": "2FA",
+      "groupName": "",
+      "type": "substitution",
+      "message": "Biezmienow Małgorzata",
+      "room": "4"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 4,
+      "className": "3CA",
+      "groupName": "",
+      "type": "message",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-09-07",
+      "period": 5,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "type": "substitution",
+      "message": "Granatowska Mariola",
+      "room": "41"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 5,
+      "className": "2FA",
+      "groupName": "",
+      "type": "substitution",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 5,
+      "className": "1CA",
+      "groupName": "",
+      "type": "substitution",
+      "message": "Kaczorowski Waldemar",
+      "room": "18"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 6,
+      "className": "1TFH",
+      "groupName": "gr2",
+      "type": "substitution",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 6,
+      "className": "1FB",
+      "groupName": "",
+      "type": "message",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-09-07",
+      "period": 6,
+      "className": "1CA",
+      "groupName": "",
+      "type": "substitution",
+      "message": "Galert Anna",
+      "room": "34"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 7,
+      "className": "1FB",
+      "groupName": "",
+      "type": "message",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-09-07",
+      "period": 8,
+      "className": "4TFB",
+      "groupName": "",
+      "type": "message",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-09-07",
+      "period": 8,
+      "className": "1TFB",
+      "groupName": "gr1",
+      "type": "substitution",
+      "message": "Zając Ewa",
+      "room": "bib"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 9,
+      "className": "4TFA",
+      "groupName": "",
+      "type": "substitution",
+      "message": "Filipiak Wiesław",
+      "room": "17"
+    }
+  ],
+  "transfers": [
+    {
+      "date": "2026-09-07",
+      "period": 1,
+      "className": "2FC",
+      "groupName": "",
+      "type": "room",
+      "fromRoom": "05",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 2,
+      "className": "2K",
+      "groupName": "gr1",
+      "type": "room",
+      "fromRoom": "05",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 3,
+      "className": "2FA",
+      "groupName": "",
+      "type": "room",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 4,
+      "className": "2CA",
+      "groupName": "",
+      "type": "room",
+      "fromRoom": "05",
+      "toRoom": "3"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 5,
+      "className": "2S",
+      "groupName": "",
+      "type": "room",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
+    {
+      "date": "2026-09-07",
+      "period": 6,
+      "className": "1TFH",
+      "groupName": "gr1",
+      "type": "room",
+      "fromRoom": "05",
+      "toRoom": "4"
+    }
+  ]
+}

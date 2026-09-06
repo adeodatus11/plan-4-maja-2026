@@ -247,6 +247,40 @@
             font-size: .82rem;
         }
 
+        .student-change {
+            display: grid;
+            gap: .12rem;
+            margin-top: .42rem;
+            padding: .42rem .5rem;
+            border-left: .22rem solid #14804a;
+            border-radius: .28rem;
+            background: #eaf7ef;
+            color: #174c31;
+            font-size: .78rem;
+            line-height: 1.25;
+        }
+
+        .student-change strong {
+            font-size: .69rem;
+            letter-spacing: .035em;
+            text-transform: uppercase;
+        }
+
+        .student-change span { font-weight: 750; }
+
+        .student-change.message {
+            border-left-color: #b45309;
+            background: #fff5df;
+            color: #713f12;
+        }
+
+        .student-change.room-change {
+            border-left-width: .18rem;
+            border-left-color: #617181;
+            background: #eef2f5;
+            color: #334155;
+        }
+
         footer {
             max-width: 96rem;
             margin: 1rem auto 0;
@@ -480,7 +514,7 @@
     <main>
         <div class="topbar">
             <h1 class="page-heading">Plan lekcji oddziałów</h1>
-            <div class="date-badge">Plan lekcji obowiązuje od: 07.09.2026</div>
+            <div class="date-badge">Plan lekcji obowiązuje od 07.09.2026 do 11.12.2026</div>
         </div>
         <div class="mobile-classes" aria-label="Wybór oddziału">
                 <a class="class-link" href="#1B">1B</a>
@@ -8399,7 +8433,7 @@
     </tbody>
 </table>
         </div>
-        <footer>Plan lekcji obowiązuje od: 07.09.2026. Strona zawiera wyłącznie plany oddziałów.</footer>
+        <footer>Plan lekcji obowiązuje od 07.09.2026 do 11.12.2026. Bieżące zastępstwa i zmiany sal są oznaczone bezpośrednio w planie.</footer>
     </main>
 </div>
 <script>
@@ -8437,5 +8471,6 @@
     nav();
 })();
 </script>
+<script src="student-changes.js" defer></script>
 </body>
 </html>

@@ -446,6 +446,40 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
             font-size: .82rem;
         }}
 
+        .student-change {{
+            display: grid;
+            gap: .12rem;
+            margin-top: .42rem;
+            padding: .42rem .5rem;
+            border-left: .22rem solid #14804a;
+            border-radius: .28rem;
+            background: #eaf7ef;
+            color: #174c31;
+            font-size: .78rem;
+            line-height: 1.25;
+        }}
+
+        .student-change strong {{
+            font-size: .69rem;
+            letter-spacing: .035em;
+            text-transform: uppercase;
+        }}
+
+        .student-change span {{ font-weight: 750; }}
+
+        .student-change.message {{
+            border-left-color: #b45309;
+            background: #fff5df;
+            color: #713f12;
+        }}
+
+        .student-change.room-change {{
+            border-left-width: .18rem;
+            border-left-color: #617181;
+            background: #eef2f5;
+            color: #334155;
+        }}
+
         footer {{
             max-width: 96rem;
             margin: 1rem auto 0;
@@ -634,7 +668,7 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
         <div class="table-shell">
 {chr(10).join(tables)}
         </div>
-        <footer>{html.escape(plan_date)}. Strona zawiera wyłącznie plany oddziałów.</footer>
+        <footer>{html.escape(plan_date)}. Bieżące zastępstwa i zmiany sal są oznaczone bezpośrednio w planie.</footer>
     </main>
 </div>
 <script>
@@ -672,6 +706,7 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
     nav();
 }})();
 </script>
+<script src="student-changes.js" defer></script>
 </body>
 </html>
 """
