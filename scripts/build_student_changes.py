@@ -78,6 +78,7 @@ def build_changes(substitutions_path: Path, transfers_path: Path) -> dict[str, o
             "className": class_name,
             "groupName": group_name,
             "type": "message" if is_message else "substitution",
+            "subject": clean(row.get("Przedmiot")) if not is_message else "",
             "message": raw_substitute,
             "room": "" if is_message else clean(row.get("Sala")),
         })

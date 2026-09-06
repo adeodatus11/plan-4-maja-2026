@@ -74,7 +74,8 @@
             const cell = matchingCell(table, change, false);
             const label = change.type === "substitution" ? "Zastępstwo" : "Zmiana";
             const room = change.room ? ` · sala ${change.room}` : "";
-            appendChange(cell, change.type, label, `${change.message}${room}`);
+            const subject = change.subject ? `${change.subject} · ` : "";
+            appendChange(cell, change.type, label, `${subject}${change.message}${room}`);
         });
 
         payload.transfers.forEach((change) => {
