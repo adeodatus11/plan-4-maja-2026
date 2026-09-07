@@ -106,7 +106,7 @@
         });
     }
 
-    fetch("student-changes.json", { cache: "no-store" })
+    fetch("student-changes.json?v=20260907-2", { cache: "no-store" })
         .then((response) => {
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             return response.json();
