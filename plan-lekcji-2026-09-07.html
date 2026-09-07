@@ -281,6 +281,29 @@
             color: #334155;
         }
 
+        .room-change-cell {
+            background: #fff5df !important;
+            color: #713f12;
+            font-weight: 800;
+        }
+
+        .room-change-old {
+            color: #8b6b45;
+            text-decoration: line-through;
+            text-decoration-thickness: .12em;
+        }
+
+        .room-change-new {
+            display: block;
+            margin-top: .18rem;
+            color: #9a3412;
+            font-size: 1.05em;
+        }
+
+        .room-change-new::before {
+            content: "→ ";
+        }
+
         footer {
             max-width: 96rem;
             margin: 1rem auto 0;

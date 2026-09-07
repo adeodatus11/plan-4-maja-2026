@@ -47,6 +47,11 @@
             if (lessonNumber === change.period && cell && !candidates.includes(cell)) candidates.push(cell);
         });
         const nonEmpty = candidates.filter((cell) => normalize(cell.textContent));
+        if (roomColumn && change.fromRoom) {
+            const sourceRoom = normalize(change.fromRoom);
+            const roomMatch = nonEmpty.find((cell) => normalize(cell.textContent) === sourceRoom);
+            if (roomMatch) return roomMatch;
+        }
         const group = normalize(change.groupName);
         if (group) {
             const groupMatch = nonEmpty.find((cell) => normalize(cell.textContent).includes(group));
@@ -67,6 +72,21 @@
         cell.appendChild(note);
     }
 
+    function applyRoomChange(cell, change) {
+        if (!cell) return;
+        const originalRoom = document.createElement("span");
+        originalRoom.className = "room-change-old";
+        while (cell.firstChild) originalRoom.appendChild(cell.firstChild);
+
+        const newRoom = document.createElement("span");
+        newRoom.className = "room-change-new";
+        newRoom.textContent = change.toRoom;
+
+        cell.classList.add("room-change-cell");
+        cell.append(originalRoom, newRoom);
+        cell.setAttribute("aria-label", `Zmiana sali: ${change.fromRoom} na ${change.toRoom}`);
+    }
+
     function applyChanges(payload) {
         payload.substitutions.forEach((change) => {
             const table = document.getElementById(change.className);
@@ -82,7 +102,7 @@
             const table = document.getElementById(change.className);
             if (!table) return;
             const cell = matchingCell(table, change, true);
-            appendChange(cell, "room-change", "Zmiana sali", `${change.fromRoom} → ${change.toRoom}`);
+            applyRoomChange(cell, change);
         });
     }
 
