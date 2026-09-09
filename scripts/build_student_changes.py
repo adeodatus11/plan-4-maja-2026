@@ -4,6 +4,8 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import unicodedata
+import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
 
@@ -66,7 +68,39 @@ def sheet_rows(path: Path, sheet_name: str) -> list[dict[str, object]]:
     return [dict(zip(headers, row)) for row in values if any(value not in (None, "") for value in row)]
 
 
-def build_changes(substitutions_path: Path, transfers_path: Path) -> dict[str, object]:
+def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path | None = None) -> dict[str, object]:
+    def person_key(value):
+        text = unicodedata.normalize("NFKD", clean(value)).casefold().replace("ł", "l")
+        text = "".join(c for c in text if not unicodedata.combining(c))
+        return " ".join(sorted(re.findall(r"[a-z0-9]+", text)))
+
+    plan = ET.parse(plan_xml or ROOT.parent / "zastepstwa-main" / "dyzury-2026-09-07-korekta.xml")
+    teacher_codes = {person_key(t.get("name")): t.get("short") for t in plan.findall("./teachers/teacher")}
+    def source_teacher(row):
+        code = teacher_codes.get(person_key(row.get("Nauczyciel/wakat")))
+        if not code:
+            print(f"Brak prowadzącego w planie, wpis wymaga weryfikacji: {row.get('Nauczyciel/wakat')}")
+        return code or ""
+
+    classes = {n.get("id"): n.get("name") for n in plan.findall("./classes/class")}
+    groups = {n.get("id"): n.get("name") for n in plan.findall("./groups/group")}
+    teachers = {n.get("id"): n.get("short") for n in plan.findall("./teachers/teacher")}
+    lessons = {n.get("id"): n for n in plan.findall("./lessons/lesson")}
+    def source_groups(row, date, period, class_name):
+        result = set()
+        code = teacher_codes.get(person_key(row.get("Nauczyciel/wakat")))
+        day = datetime.strptime(date, "%Y-%m-%d").weekday()
+        for card in plan.findall("./cards/card"):
+            lesson = lessons[card.get("lessonid")]
+            if int(card.get("period")) != period or card.get("days", "00000")[day:day+1] != "1":
+                continue
+            if class_name not in [classes.get(i) for i in lesson.get("classids", "").split(",")]:
+                continue
+            if not code or code not in [teachers.get(i) for i in lesson.get("teacherids", "").split(",")]:
+                continue
+            result.update(groups[i] for i in lesson.get("groupids", "").split(",") if i in groups)
+        return sorted(result)
+
     substitutions = []
     for row in sheet_rows(substitutions_path, "Oddziały"):
         class_name, group_name = split_branch(row.get("Oddział"))
@@ -77,6 +111,8 @@ def build_changes(substitutions_path: Path, transfers_path: Path) -> dict[str, o
             "period": period_number(row.get("Lekcja")),
             "className": class_name,
             "groupName": group_name,
+            "sourceTeacher": source_teacher(row),
+            "sourceGroups": source_groups(row, iso_date(row.get("Dzień")), period_number(row.get("Lekcja")), class_name),
             "type": "message" if is_message else "substitution",
             "subject": clean(row.get("Przedmiot")) if not is_message else "",
             "message": raw_substitute,
@@ -95,6 +131,8 @@ def build_changes(substitutions_path: Path, transfers_path: Path) -> dict[str, o
             "period": source["period"],
             "className": class_name,
             "groupName": group_name,
+            "sourceTeacher": source_teacher(row),
+            "sourceGroups": source_groups(row, source["date"], source["period"], class_name),
             "type": "room",
             "fromRoom": source["room"],
             "toRoom": target["room"],
@@ -118,9 +156,10 @@ def main() -> None:
     parser.add_argument("substitutions", type=Path)
     parser.add_argument("transfers", type=Path)
     parser.add_argument("--output", type=Path, default=ROOT / "student-changes.json")
+    parser.add_argument("--plan-xml", type=Path, help="XML aktualnego planu do identyfikacji nauczycieli i grup")
     args = parser.parse_args()
 
-    payload = build_changes(args.substitutions.resolve(), args.transfers.resolve())
+    payload = build_changes(args.substitutions.resolve(), args.transfers.resolve(), args.plan_xml)
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Zapisano {args.output}: {len(payload['substitutions'])} zastępstw, {len(payload['transfers'])} zmian sali")
 

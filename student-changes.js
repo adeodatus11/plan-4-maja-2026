@@ -36,28 +36,25 @@
     }
 
     function matchingCell(table, change, roomColumn) {
+        if (change.groupName && !(change.sourceGroups || []).some(group => normalize(group) === normalize(change.groupName) || normalize(group) === "cała klasa")) return null;
         const grid = buildGrid(table);
         const day = dayIndex(change.date);
         if (day < 1 || day > 5) return null;
-        const logicalColumn = 2 + (day - 1) * 3 + (roomColumn ? 2 : 0);
+        const logicalColumn = 2 + (day - 1) * 3;
         const candidates = [];
         grid.forEach((row) => {
-            const lessonNumber = Number(String(row[0]?.textContent || "").trim());
-            const cell = row[logicalColumn];
-            if (lessonNumber === change.period && cell && !candidates.includes(cell)) candidates.push(cell);
+            if (Number(String(row[0]?.textContent || "").trim()) !== change.period) return;
+            // Teacher identifies the parallel lesson even when the class table omits group labels.
+            if (!change.sourceTeacher || String(row[logicalColumn + 1]?.textContent || "").trim() !== change.sourceTeacher) return;
+            const subjectCell = row[logicalColumn];
+            const group = normalize(subjectCell?.querySelector(".g")?.textContent);
+            if (group && change.groupName && group !== normalize(change.groupName)) return;
+            const cell = row[logicalColumn + (roomColumn ? 2 : 0)];
+            if (roomColumn && change.fromRoom && normalize(cell?.textContent) !== normalize(change.fromRoom)) return;
+            if (cell && !candidates.includes(cell)) candidates.push(cell);
         });
-        const nonEmpty = candidates.filter((cell) => normalize(cell.textContent));
-        if (roomColumn && change.fromRoom) {
-            const sourceRoom = normalize(change.fromRoom);
-            const roomMatch = nonEmpty.find((cell) => normalize(cell.textContent) === sourceRoom);
-            if (roomMatch) return roomMatch;
-        }
-        const group = normalize(change.groupName);
-        if (group) {
-            const groupMatch = nonEmpty.find((cell) => normalize(cell.textContent).includes(group));
-            if (groupMatch) return groupMatch;
-        }
-        return nonEmpty[0] || candidates[0] || null;
+        // Ambiguous or missing lessons must never fall back to the first parallel group.
+        return candidates.length === 1 ? candidates[0] : null;
     }
 
     function appendChange(cell, className, label, detail) {
@@ -92,10 +89,14 @@
             const table = document.getElementById(change.className);
             if (!table) return;
             const cell = matchingCell(table, change, false);
+            if (!cell) {
+                appendChange(table.caption, "message", `Zmiana ${change.date}, lekcja ${change.period}${change.groupName ? " · " + change.groupName : ""}`, `${change.subject} · ${change.message}${change.room ? " · sala " + change.room : ""}`);
+                return;
+            }
             const label = change.type === "substitution" ? "Zastępstwo" : "Zmiana";
             const room = change.room ? ` · sala ${change.room}` : "";
             const subject = change.subject ? `${change.subject} · ` : "";
-            appendChange(cell, change.type, label, `${subject}${change.message}${room}`);
+            appendChange(cell, change.type, label, `${change.groupName ? change.groupName + " · " : ""}${subject}${change.message}${room}`);
         });
 
         payload.transfers.forEach((change) => {
@@ -106,7 +107,7 @@
         });
     }
 
-    fetch("student-changes.json?v=20260907-2", { cache: "no-store" })
+    fetch("student-changes.json?v=20260909-groups", { cache: "no-store" })
         .then((response) => {
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             return response.json();
