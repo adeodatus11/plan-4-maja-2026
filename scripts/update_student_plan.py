@@ -169,6 +169,7 @@ def mark_lesson_time_cells(table_html: str) -> str:
 
 
 def simplify_internal_links(table_html: str) -> str:
+    table_html = table_html.replace('<a href="#SE">SE</a>', '<span title="Eleonora Smirnow-Zechman" aria-label="Eleonora Smirnow-Zechman">SE</span>')
     return re.sub(r'<a href="#[^"]+">([^<]*)</a>', r"\1", table_html)
 
 
