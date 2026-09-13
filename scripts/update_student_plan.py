@@ -641,6 +641,18 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
                 page-break-after: always;
             }}
         }}
+        [hidden] {{ display: none !important; }}
+        .plan-date-controls {{ max-width: 96rem; margin: 0 auto 1rem; padding: 1rem; border:1px solid var(--line); border-radius:.5rem; background:white; }}
+        .date-actions {{ display:flex; gap:.5rem; align-items:center; flex-wrap:wrap; }}
+        .date-actions label {{ display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; font-weight:700; }}
+        .date-actions button, .date-actions input {{ font:inherit; min-height:44px; padding:.5rem .75rem; border:1px solid var(--line); border-radius:.35rem; background:white; color:var(--accent-dark); max-width:100%; }}
+        .date-actions button {{ cursor:pointer; }}
+        .date-actions button[aria-pressed="true"] {{ color:white; background:var(--accent); }}
+        .plan-date-controls h2 {{ margin:.8rem 0 .4rem; font-size:1.35rem; }}
+        #plan-data-status {{ margin:.3rem 0 .8rem; }}
+        table.plan {{ min-width: 0 !important; width:100%; }}
+        .transfer-old {{ text-decoration:line-through; }}
+        @media print {{ .date-actions {{ display:none; }} }}
     </style>
 </head>
 <body>
