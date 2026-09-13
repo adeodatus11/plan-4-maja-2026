@@ -124,8 +124,6 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
         source = descriptor(row.get("Przeniesiono z"))
         target = descriptor(row.get("Przeniesiono na"))
         class_name, group_name = split_branch(row.get("Oddział"))
-        if source["date"] != target["date"] or source["period"] != target["period"]:
-            raise ValueError("Nakładka uczniowska obsługuje tylko zmianę sali w tym samym terminie.")
         transfers.append({
             "date": source["date"],
             "period": source["period"],
@@ -133,7 +131,11 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
             "groupName": group_name,
             "sourceTeacher": source_teacher(row),
             "sourceGroups": source_groups(row, source["date"], source["period"], class_name),
-            "type": "room",
+            "type": "room" if source["date"] == target["date"] and source["period"] == target["period"] else "transfer",
+            "toDate": target["date"],
+            "toPeriod": target["period"],
+            "subject": clean(row.get("Przedmiot")),
+            "teacher": clean(row.get("Nauczyciel/wakat")),
             "fromRoom": source["room"],
             "toRoom": target["room"],
         })
@@ -148,6 +150,11 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
     )
     if any(term in serialized_keys for term in forbidden):
         raise ValueError("W danych uczniowskich wykryto niedozwolone pole.")
+    description = load_workbook(substitutions_path, read_only=True, data_only=True)
+    dates = re.findall(r"\d{2}\.\d{2}\.\d{4}", " ".join(str(v or "") for row in description["Opis parametrów"].values for v in row))
+    if len(dates) != 2:
+        raise ValueError("Nie można odczytać zakresu dat paczki")
+    payload["validFrom"], payload["validTo"] = map(iso_date, dates)
     return payload
 
 
