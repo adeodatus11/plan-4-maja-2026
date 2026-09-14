@@ -19,8 +19,13 @@ async function create(data=payload) {
  for(const date of dates){
   choose(date);
   const expected=payload.substitutions.filter(c=>c.date===date).length + payload.transfers.reduce((n,c)=>n+(c.type==='transfer' ? Number(c.date===date)+Number(c.toDate===date) : 0),0);
-  assert.equal(doc.querySelectorAll('.student-change').length,expected, date);
-  assert.equal(doc.querySelectorAll('.room-change-cell').length,payload.transfers.filter(c=>c.type==='room'&&c.date===date).length);
+  const roomFallbacks=doc.querySelectorAll('caption .student-change.room-change').length;
+  assert.equal(doc.querySelectorAll('.student-change').length,expected+roomFallbacks, date);
+  assert.equal(doc.querySelectorAll('.room-change-cell').length+roomFallbacks,payload.transfers.filter(c=>c.type==='room'&&c.date===date).length);
+  for (const c of payload.transfers.filter(c=>c.type==='room'&&c.date===date)) {
+   const table=doc.getElementById(c.className);
+   assert.ok([...table.querySelectorAll('.room-change-cell')].some(cell=>cell.getAttribute('aria-label')===`Zmiana sali: ${c.fromRoom} na ${c.toRoom}`) || [...table.querySelectorAll('caption .room-change')].some(cell=>cell.textContent.includes(`lekcja ${c.period}`)&&cell.textContent.includes(`sala ${c.fromRoom} → ${c.toRoom}`)), JSON.stringify(c));
+  }
   const day=new Date(date+'T12:00:00Z').getUTCDay();
   for(const t of doc.querySelectorAll('table.plan')) {
    assert.equal([...t.tHead.rows[0].cells].filter(c=>!c.hidden).length,3);
