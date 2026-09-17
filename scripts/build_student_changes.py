@@ -82,7 +82,8 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
             print(f"Brak prowadzącego w planie, wpis wymaga weryfikacji: {row.get('Nauczyciel/wakat')}")
         return code or ""
 
-    classes = {n.get("id"): n.get("name") for n in plan.findall("./classes/class")}
+    # Arkusz podaje oddział raz nazwą, raz skrótem (3K wobec 3KS w planie).
+    classes = {n.get("id"): {n.get("name"), n.get("short")} for n in plan.findall("./classes/class")}
     groups = {n.get("id"): n.get("name") for n in plan.findall("./groups/group")}
     teachers = {n.get("id"): n.get("short") for n in plan.findall("./teachers/teacher")}
     lessons = {n.get("id"): n for n in plan.findall("./lessons/lesson")}
@@ -94,7 +95,7 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
             lesson = lessons[card.get("lessonid")]
             if int(card.get("period")) != period or card.get("days", "00000")[day:day+1] != "1":
                 continue
-            if class_name not in [classes.get(i) for i in lesson.get("classids", "").split(",")]:
+            if not any(class_name in classes.get(i, ()) for i in lesson.get("classids", "").split(",")):
                 continue
             if not code or code not in [teachers.get(i) for i in lesson.get("teacherids", "").split(",")]:
                 continue

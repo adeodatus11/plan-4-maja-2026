@@ -1513,6 +1513,986 @@
       "subject": "Techniki fryzjerskie",
       "message": "Danielewski Paweł",
       "room": "4"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 2,
+      "className": "1TFA",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 3,
+      "className": "1FB",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 3,
+      "className": "1TFA",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 4,
+      "className": "3WA",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 5,
+      "className": "3FA",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 5,
+      "className": "1FB",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 6,
+      "className": "3CA",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 6,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 7,
+      "className": "3K",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 7,
+      "className": "1CA",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 3,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 3,
+      "className": "1TFA",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 4,
+      "className": "3CB",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 4,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 5,
+      "className": "3CA",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 5,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 6,
+      "className": "3FB",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 6,
+      "className": "3WA",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 7,
+      "className": "1CA",
+      "groupName": "",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "-",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 2,
+      "className": "1TFH",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 3,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 3,
+      "className": "2K",
+      "groupName": "gr2",
+      "sourceTeacher": "MG",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "05"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 4,
+      "className": "4TH",
+      "groupName": "gr2",
+      "sourceTeacher": "MG",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "05"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 5,
+      "className": "1CB",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "27"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 5,
+      "className": "4TH",
+      "groupName": "gr2",
+      "sourceTeacher": "MG",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "05"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 6,
+      "className": "1K",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "27"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 6,
+      "className": "3TFA",
+      "groupName": "",
+      "sourceTeacher": "MG",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "05"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 7,
+      "className": "1TH",
+      "groupName": "gr1",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "27"
+    },
+    {
+      "date": "2026-09-23",
+      "period": 7,
+      "className": "2CB",
+      "groupName": "",
+      "sourceTeacher": "MG",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "05"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 4,
+      "className": "1K",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 4,
+      "className": "4TH",
+      "groupName": "gr2",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Symulacyjna firma handlowa",
+      "message": "Zastępstwo",
+      "room": "37"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 4,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 5,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 5,
+      "className": "4TH",
+      "groupName": "gr2",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Symulacyjna firma handlowa",
+      "message": "Zastępstwo",
+      "room": "37"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 5,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 6,
+      "className": "4TFB",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 6,
+      "className": "1WB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 7,
+      "className": "1CB",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "43"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 7,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Pracownia sprzedaży",
+      "message": "Zastępstwo",
+      "room": "41"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 7,
+      "className": "1WB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 8,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Pracownia sprzedaży",
+      "message": "Zastępstwo",
+      "room": "41"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 9,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Pracownia sprzedaży",
+      "message": "Zastępstwo",
+      "room": "41"
+    },
+    {
+      "date": "2026-09-24",
+      "period": 10,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Zastępstwo",
+      "room": "41"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 2,
+      "className": "1FB",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 3,
+      "className": "1TFH",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 4,
+      "className": "4TFB",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 5,
+      "className": "4TFB",
+      "groupName": "",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 5,
+      "className": "3TFA",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Okienko dla uczniów",
+      "room": "18"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 6,
+      "className": "1TH",
+      "groupName": "gr1",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 6,
+      "className": "3TFA",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Okienko dla uczniów",
+      "room": "18"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 7,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Zastępstwo",
+      "room": "32"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 7,
+      "className": "3FB",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Okienko dla uczniów",
+      "room": "18"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 8,
+      "className": "3FB",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Okienko dla uczniów",
+      "room": "18"
+    },
+    {
+      "date": "2026-09-25",
+      "period": 9,
+      "className": "4TFA",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-09-30",
+      "period": 1,
+      "className": "1TFB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 2,
+      "className": "2WA",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 2,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 3,
+      "className": "1S",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 4,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 4,
+      "className": "1CB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 5,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 5,
+      "className": "1FC",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 6,
+      "className": "3TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 6,
+      "className": "1S",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 7,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 7,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 8,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 8,
+      "className": "1FA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 9,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 9,
+      "className": "2TFA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
     }
   ],
   "transfers": [
@@ -1994,6 +2974,23 @@
     },
     {
       "date": "2026-09-18",
+      "period": 11,
+      "className": "1B",
+      "groupName": "gr2",
+      "sourceTeacher": "Dn",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "transfer",
+      "toDate": "2026-09-17",
+      "toPeriod": 11,
+      "subject": "Język angielski",
+      "teacher": "Staliś Donata",
+      "fromRoom": "44",
+      "toRoom": "22"
+    },
+    {
+      "date": "2026-09-18",
       "period": 2,
       "className": "4TFA",
       "groupName": "",
@@ -2161,8 +3158,59 @@
       "teacher": "Galert Anna",
       "fromRoom": "05",
       "toRoom": "2"
+    },
+    {
+      "date": "2026-09-18",
+      "period": 10,
+      "className": "1B",
+      "groupName": "gr2",
+      "sourceTeacher": "Dn",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "transfer",
+      "toDate": "2026-09-22",
+      "toPeriod": 9,
+      "subject": "Język angielski",
+      "teacher": "Staliś Donata",
+      "fromRoom": "44",
+      "toRoom": "23"
+    },
+    {
+      "date": "2026-09-03",
+      "period": 7,
+      "className": "1FA",
+      "groupName": "",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-09-25",
+      "toPeriod": 4,
+      "subject": "Techniki fryzjerskie",
+      "teacher": "Jastrzębska-Majtyka Agnieszka",
+      "fromRoom": "3",
+      "toRoom": "3"
+    },
+    {
+      "date": "2026-09-18",
+      "period": 9,
+      "className": "1B",
+      "groupName": "gr2",
+      "sourceTeacher": "Dn",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "transfer",
+      "toDate": "2026-09-29",
+      "toPeriod": 9,
+      "subject": "Język angielski",
+      "teacher": "Staliś Donata",
+      "fromRoom": "44",
+      "toRoom": "23"
     }
   ],
   "validFrom": "2026-09-14",
-  "validTo": "2026-09-20"
+  "validTo": "2026-09-30"
 }

@@ -40,7 +40,11 @@ async function create(data=payload) {
  assert.ok(!doc.getElementById('1TFA').textContent.includes('Przeniesienie na lekcję 3'));
  assert.ok(dom.window.location.search.includes('2026-09-15'));
  choose('2026-09-19');assert.equal(doc.querySelector('.table-shell').hidden,true);
- choose('2026-09-21');assert.equal(doc.querySelectorAll('.student-change').length,0);assert.ok(doc.getElementById('plan-data-status').textContent.includes('Brak opublikowanej'));
+ // Pierwszy dzień roboczy po paczce — liczony z danych, żeby nie starzał się z każdą nową paczką.
+ const nextWeekday=iso=>{const d=new Date(iso+'T12:00:00Z');do{d.setUTCDate(d.getUTCDate()+1);}while([0,6].includes(d.getUTCDay()));return d.toISOString().slice(0,10);};
+ const afterPackage=nextWeekday(payload.validTo);
+ assert.ok(afterPackage<=doc.getElementById('plan-date').max,`Data kontrolna ${afterPackage} wypada poza okresem planu`);
+ choose(afterPackage);assert.equal(doc.querySelectorAll('.student-change').length,0,afterPackage);assert.ok(doc.getElementById('plan-data-status').textContent.includes('Brak opublikowanej'));
  choose('2027-01-01');assert.equal(doc.querySelector('.table-shell').hidden,true);
  console.log('PASS: all dates, all substitutions, transfer source/target, reset, navigation, weekend and publication bounds');
 })().catch(e=>{console.error(e);process.exit(1)});
