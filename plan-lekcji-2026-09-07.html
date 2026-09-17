@@ -241,10 +241,17 @@
         table.plan td.n { border: 0; background: var(--panel); }
         table.plan tr.d td { background: var(--row-alt); }
         table.plan div.g {
-            padding-top: .25rem;
-            padding-left: .75rem;
-            color: var(--muted);
-            font-size: .82rem;
+            display: inline-block;
+            margin-top: .3rem;
+            padding: .1rem .45rem;
+            border: 1px solid var(--accent);
+            border-radius: 999px;
+            background: var(--panel-soft);
+            color: var(--accent-dark);
+            font-size: .75rem;
+            font-weight: 800;
+            line-height: 1.4;
+            white-space: nowrap;
         }
 
         .student-change {
@@ -642,12 +649,14 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MG</td>
     <td class="t" rowspan="1">43</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">Dn</td>
     <td rowspan="1">44</td>
     </tr>
@@ -661,16 +670,19 @@
     <td class="t" rowspan="2">KR</td>
     <td class="t" rowspan="2">4</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MG</td>
     <td class="t" rowspan="1">32</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MG</td>
     <td class="t" rowspan="1">43</td>
     </tr>
     <tr class="d">
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">Dn</td>
     <td rowspan="1">44</td>
     </tr>
@@ -690,7 +702,8 @@
     <td class="l t" rowspan="1" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">Dn</td>
     <td rowspan="1">44</td>
     </tr>
@@ -847,10 +860,12 @@
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">8</td>
     <td class="t lesson-time" rowspan="2">14:05 - 14:50</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">32</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">05</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -860,17 +875,20 @@
     <td class="t" rowspan="2">28</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">ŁW</td>
     <td rowspan="1">43</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">PM</td>
     <td rowspan="1">38</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">9</td>
     <td class="t lesson-time" rowspan="2">14:55 - 15:40</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">SD</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2">Edukacja dla bezpieczeństwa</td>
@@ -878,22 +896,26 @@
     <td class="t" rowspan="2">40</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg7</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">ŁW</td>
     <td rowspan="1">32</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">10</td>
     <td class="t lesson-time" rowspan="2">15:45 - 16:30</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">SD</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2">Matematyka</td>
@@ -906,25 +928,29 @@
     <td class="t" rowspan="2">28</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg7</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">11</td>
     <td class="t lesson-time" rowspan="2">16:35 - 17:20</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">SD</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg7</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
@@ -953,13 +979,15 @@
     <td class="l t" rowspan="2">Matematyka</td>
     <td class="t" rowspan="2">EO</td>
     <td class="t" rowspan="2">17</td>
-    <td class="l t" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l t" rowspan="1">Techniki fryzjerskie
+    <div class="g">fryzjer</div></td>
     <td class="t" rowspan="1">So</td>
     <td class="t" rowspan="1">5</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Technika w produkcji cukierniczej</td>
+    <td class="l" rowspan="1">Technika w produkcji cukierniczej
+    <div class="g">cukiernik</div></td>
     <td rowspan="1">Re</td>
     <td rowspan="1">40</td>
     </tr>
@@ -971,13 +999,15 @@
     <td class="l t" rowspan="2">Historia</td>
     <td class="t" rowspan="2">MZ</td>
     <td class="t" rowspan="2">19</td>
-    <td class="l t" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l t" rowspan="1">Techniki fryzjerskie
+    <div class="g">fryzjer</div></td>
     <td class="t" rowspan="1">So</td>
     <td class="t" rowspan="1">5</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Technika w produkcji cukierniczej</td>
+    <td class="l" rowspan="1">Technika w produkcji cukierniczej
+    <div class="g">cukiernik</div></td>
     <td rowspan="1">Re</td>
     <td rowspan="1">40</td>
     </tr>
@@ -989,15 +1019,18 @@
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">EK</td>
     <td class="t" rowspan="2">33</td>
-    <td class="l t" rowspan="1">Podstawy fryzjerstwa</td>
+    <td class="l t" rowspan="1">Podstawy fryzjerstwa
+    <div class="g">fryzjer</div></td>
     <td class="t" rowspan="1">SM</td>
     <td class="t" rowspan="1">2</td>
-    <td class="l t" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l t" rowspan="1">Techniki fryzjerskie
+    <div class="g">fryzjer</div></td>
     <td class="t" rowspan="1">So</td>
     <td class="t" rowspan="1">prF3</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">rozwój kompetencji zawodowych - dekoracje w cukiernictwie</td>
+    <td class="l" rowspan="1">rozwój kompetencji zawodowych - dekoracje w cukiernictwie
+    <div class="g">cukiernik</div></td>
     <td rowspan="1">MK</td>
     <td rowspan="1">34</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
@@ -1010,15 +1043,18 @@
     <td class="l t" rowspan="2">Biznes i Zarządzanie</td>
     <td class="t" rowspan="2"><span title="Eleonora Smirnow-Zechman" aria-label="Eleonora Smirnow-Zechman">SE</span></td>
     <td class="t" rowspan="2">23</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
-    <td class="l t" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l t" rowspan="1">Techniki fryzjerskie
+    <div class="g">fryzjer</div></td>
     <td class="t" rowspan="1">So</td>
     <td class="t" rowspan="1">prF3</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">SD</td>
     <td rowspan="1">sg6</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
@@ -1028,10 +1064,12 @@
     <td class="t lesson-time" rowspan="2">11:25 - 12:10</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">33</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MP</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2">Zajęcia z wychowawcą</td>
@@ -1039,10 +1077,12 @@
     <td class="t" rowspan="2">34</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MB</td>
     <td rowspan="1">27</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">SD</td>
     <td rowspan="1">sg6</td>
     </tr>
@@ -1052,7 +1092,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MP</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2">Język polski</td>
@@ -1060,10 +1101,12 @@
     <td class="t" rowspan="2">33</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Technologie produkcji cukierniczej</td>
+    <td class="l" rowspan="1">Technologie produkcji cukierniczej
+    <div class="g">cukiernik</div></td>
     <td rowspan="1">MK</td>
     <td rowspan="1">26</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">SD</td>
     <td rowspan="1">sg6</td>
     </tr>
@@ -1073,21 +1116,26 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MP</td>
     <td class="t" rowspan="1">sg3</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">05</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Technologie produkcji cukierniczej</td>
+    <td class="l" rowspan="1">Technologie produkcji cukierniczej
+    <div class="g">cukiernik</div></td>
     <td rowspan="1">MK</td>
     <td rowspan="1">26</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MB</td>
     <td rowspan="1">43</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">PM</td>
     <td rowspan="1">37</td>
     </tr>
@@ -1105,7 +1153,8 @@
     <td class="t" rowspan="2">17</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Technologie produkcji cukierniczej</td>
+    <td class="l" rowspan="1">Technologie produkcji cukierniczej
+    <div class="g">cukiernik</div></td>
     <td rowspan="1">MK</td>
     <td rowspan="1">26</td>
     </tr>
@@ -1123,7 +1172,8 @@
     <td class="t" rowspan="2">22</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Technologie produkcji cukierniczej</td>
+    <td class="l" rowspan="1">Technologie produkcji cukierniczej
+    <div class="g">cukiernik</div></td>
     <td rowspan="1">MK</td>
     <td rowspan="1">26</td>
     </tr>
@@ -1145,7 +1195,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -1173,19 +1224,23 @@
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg7</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Dn</td>
     <td class="t" rowspan="1">43</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg5</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MY</td>
     <td rowspan="1">38</td>
     </tr>
@@ -1194,7 +1249,8 @@
     <td class="t lesson-time" rowspan="2">8:50 - 9:35</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2">Biznes i Zarządzanie</td>
@@ -1203,7 +1259,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg5</td>
     </tr>
@@ -1212,19 +1269,23 @@
     <td class="t lesson-time" rowspan="2">9:40 - 10:25</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg7</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg5</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">Gt</td>
     <td rowspan="1">05</td>
     </tr>
@@ -1261,7 +1322,8 @@
     <td class="t lesson-time" rowspan="2">12:25 - 13:10</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Dn</td>
     <td class="t" rowspan="1">43</td>
     <td class="l t" rowspan="2">Biologia</td>
@@ -1272,7 +1334,8 @@
     <td class="t" rowspan="2">23</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">Gt</td>
     <td rowspan="1">33</td>
     </tr>
@@ -1337,7 +1400,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -1380,19 +1444,22 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MB</td>
     <td rowspan="1">32</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">3</td>
     <td class="t lesson-time" rowspan="2">9:40 - 10:25</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">43</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -1403,7 +1470,8 @@
     <td class="t" rowspan="2">2</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MB</td>
     <td rowspan="1">32</td>
     </tr>
@@ -1461,12 +1529,14 @@
     <td class="t" rowspan="2">05</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg1</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KP</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -1479,12 +1549,14 @@
     <td class="t" rowspan="2">18</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg1</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KP</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -1497,12 +1569,14 @@
     <td class="t" rowspan="2">18</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg1</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KP</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -1515,12 +1589,14 @@
     <td class="t" rowspan="2">40</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">05</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MY</td>
     <td rowspan="1">38</td>
     </tr>
@@ -1533,7 +1609,8 @@
     <td class="t" rowspan="2">29</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -1575,7 +1652,8 @@
     <td class="l t" rowspan="2">Techniki fryzjerskie</td>
     <td class="t" rowspan="2">KR</td>
     <td class="t" rowspan="2">4</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">LN</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2">Zajęcia z wychowawcą</td>
@@ -1583,7 +1661,8 @@
     <td class="t" rowspan="2">17</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">ŁW</td>
     <td rowspan="1">27</td>
     </tr>
@@ -1595,7 +1674,8 @@
     <td class="l t" rowspan="2">Techniki fryzjerskie</td>
     <td class="t" rowspan="2">KR</td>
     <td class="t" rowspan="2">4</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">LN</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2">Edukacja dla bezpieczeństwa</td>
@@ -1603,7 +1683,8 @@
     <td class="t" rowspan="2">23</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg5</td>
     </tr>
@@ -1615,7 +1696,8 @@
     <td class="l t" rowspan="2">Techniki fryzjerskie</td>
     <td class="t" rowspan="2">KR</td>
     <td class="t" rowspan="2">4</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">LN</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2">Podstawy fryzjerstwa</td>
@@ -1623,7 +1705,8 @@
     <td class="t" rowspan="2">2</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg5</td>
     </tr>
@@ -1635,7 +1718,8 @@
     <td class="l t" rowspan="2">Biznes i Zarządzanie</td>
     <td class="t" rowspan="2"><span title="Eleonora Smirnow-Zechman" aria-label="Eleonora Smirnow-Zechman">SE</span></td>
     <td class="t" rowspan="2">23</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">05</td>
     <td class="l t" rowspan="2">Biznes i Zarządzanie</td>
@@ -1643,7 +1727,8 @@
     <td class="t" rowspan="2">22</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg5</td>
     </tr>
@@ -1686,12 +1771,14 @@
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">ŁW</td>
     <td rowspan="1">32</td>
     </tr>
@@ -1702,12 +1789,14 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">05</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">PM</td>
     <td rowspan="1">37</td>
     </tr>
@@ -1729,7 +1818,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -1795,7 +1885,8 @@
     <td class="l t" rowspan="2">technologia gastronomiczna z towaroznawstwem</td>
     <td class="t" rowspan="2">KK</td>
     <td class="t" rowspan="2">34</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">05</td>
     <td class="l t" rowspan="2">Edukacja dla bezpieczeństwa</td>
@@ -1803,7 +1894,8 @@
     <td class="t" rowspan="2">23</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MB</td>
     <td rowspan="1">43</td>
     </tr>
@@ -1827,10 +1919,12 @@
     <td class="t lesson-time" rowspan="2">12:25 - 13:10</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KP</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2">Zajęcia z wychowawcą</td>
@@ -1838,10 +1932,12 @@
     <td class="t" rowspan="2">29</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MB</td>
     <td rowspan="1">27</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg4</td>
     </tr>
@@ -1853,7 +1949,8 @@
     <td class="l t" rowspan="2">Biznes i Zarządzanie</td>
     <td class="t" rowspan="2"><span title="Eleonora Smirnow-Zechman" aria-label="Eleonora Smirnow-Zechman">SE</span></td>
     <td class="t" rowspan="2">23</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KP</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2">rozwój kompetencji zawodowych - zasady zdrowego żywienia</td>
@@ -1861,7 +1958,8 @@
     <td class="t" rowspan="2">40</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg4</td>
     </tr>
@@ -1871,18 +1969,22 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KP</td>
     <td class="t" rowspan="1">sg7</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">05</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg4</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">PM</td>
     <td rowspan="1">37</td>
     </tr>
@@ -1921,7 +2023,8 @@
     <td class="l t" rowspan="2">Matematyka</td>
     <td class="t" rowspan="2">EO</td>
     <td class="t" rowspan="2">29</td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -1995,18 +2098,22 @@
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">EK</td>
     <td class="t" rowspan="2">33</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg8</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg1</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">Gt</td>
     <td rowspan="1">05</td>
     </tr>
@@ -2018,7 +2125,8 @@
     <td class="l t" rowspan="2">rozwój kompetencji zawodowych - kompetencje zawodowe</td>
     <td class="t" rowspan="2">DS</td>
     <td class="t" rowspan="2">3</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2">Organizacja sprzedaży</td>
@@ -2026,7 +2134,8 @@
     <td class="t" rowspan="2">41</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg1</td>
     </tr>
@@ -2038,7 +2147,8 @@
     <td class="l t" rowspan="2">Biznes i Zarządzanie</td>
     <td class="t" rowspan="2"><span title="Eleonora Smirnow-Zechman" aria-label="Eleonora Smirnow-Zechman">SE</span></td>
     <td class="t" rowspan="2">23</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2">Organizacja sprzedaży</td>
@@ -2046,7 +2156,8 @@
     <td class="t" rowspan="2">41</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg1</td>
     </tr>
@@ -2058,7 +2169,8 @@
     <td class="l t" rowspan="2">Edukacja dla bezpieczeństwa</td>
     <td class="t" rowspan="2">KP</td>
     <td class="t" rowspan="2">3</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">ŁW</td>
     <td class="t" rowspan="1">27</td>
     <td class="l t" rowspan="2">Historia</td>
@@ -2066,7 +2178,8 @@
     <td class="t" rowspan="2">19</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">Gt</td>
     <td rowspan="1">05</td>
     </tr>
@@ -2099,12 +2212,14 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">ŁW</td>
     <td class="t" rowspan="1">32</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">PM</td>
     <td rowspan="1">37</td>
     </tr>
@@ -2115,7 +2230,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -2147,7 +2263,8 @@
     <td class="l t" rowspan="2">Biologia</td>
     <td class="t" rowspan="2">Sp</td>
     <td class="t" rowspan="2">31</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
     <td class="l t" rowspan="2">Techniki fryzjerskie</td>
@@ -2156,7 +2273,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">6</td>
     </tr>
@@ -2169,7 +2287,8 @@
     <td class="l t" rowspan="2">Chemia</td>
     <td class="t" rowspan="2">AH</td>
     <td class="t" rowspan="2">26</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
     <td class="l t" rowspan="2">Techniki fryzjerskie</td>
@@ -2178,7 +2297,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">6</td>
     </tr>
@@ -2191,7 +2311,8 @@
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">EK</td>
     <td class="t" rowspan="2">33</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
     <td class="l t" rowspan="2">Techniki fryzjerskie</td>
@@ -2200,7 +2321,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">6</td>
     </tr>
@@ -2213,7 +2335,8 @@
     <td class="l t" rowspan="2">Historia</td>
     <td class="t" rowspan="2">MZ</td>
     <td class="t" rowspan="2">19</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
     <td class="l t" rowspan="2">Podstawy fryzjerstwa</td>
@@ -2222,23 +2345,28 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">6</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">5</td>
     <td class="t lesson-time" rowspan="2">11:25 - 12:10</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MN</td>
     <td class="t" rowspan="1">38</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MB</td>
     <td class="t" rowspan="1">43</td>
     <td class="l t" rowspan="2">Zajęcia z wychowawcą</td>
@@ -2246,32 +2374,39 @@
     <td class="t" rowspan="2">33</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">Gt</td>
     <td rowspan="1">43</td>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">6</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MY</td>
     <td rowspan="1">38</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">6</td>
     <td class="t lesson-time" rowspan="2">12:25 - 13:10</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     <td class="l t" rowspan="2">Edukacja dla bezpieczeństwa</td>
     <td class="t" rowspan="2">KP</td>
     <td class="t" rowspan="2">40</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MN</td>
     <td class="t" rowspan="1">37</td>
     <td class="l t" rowspan="2">Biologia</td>
@@ -2279,13 +2414,16 @@
     <td class="t" rowspan="2">27</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">6</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">Gt</td>
     <td rowspan="1">05</td>
     </tr>
@@ -2293,25 +2431,31 @@
     <td class="l t r lesson-no" rowspan="2">7</td>
     <td class="t lesson-time" rowspan="2">13:15 - 14:00</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">LN</td>
     <td class="t" rowspan="1">sg2</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MB</td>
     <td class="t" rowspan="1">32</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg1</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">6</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MY</td>
     <td rowspan="1">38</td>
     </tr>
@@ -2319,7 +2463,8 @@
     <td class="l t r lesson-no" rowspan="2">8</td>
     <td class="t lesson-time" rowspan="2">14:05 - 14:50</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">LN</td>
     <td class="t" rowspan="1">sg2</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -2329,7 +2474,8 @@
     <td class="t" rowspan="2">31</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg1</td>
     </tr>
@@ -2337,7 +2483,8 @@
     <td class="l t r lesson-no" rowspan="2">9</td>
     <td class="t lesson-time" rowspan="2">14:55 - 15:40</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">LN</td>
     <td class="t" rowspan="1">sg2</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -2347,7 +2494,8 @@
     <td class="t" rowspan="2">23</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg1</td>
     </tr>
@@ -2369,7 +2517,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -2396,7 +2545,8 @@
     <td class="l t r lesson-no" rowspan="2">1</td>
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">6</td>
     <td class="l t" rowspan="2">Biznes i Zarządzanie</td>
@@ -2406,7 +2556,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">So</td>
     <td rowspan="1">prF2</td>
     </tr>
@@ -2414,10 +2565,12 @@
     <td class="l t r lesson-no" rowspan="2">2</td>
     <td class="t lesson-time" rowspan="2">8:50 - 9:35</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">6</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg2</td>
     <td class="l t" rowspan="2">Podstawy fryzjerstwa</td>
@@ -2426,10 +2579,12 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">So</td>
     <td rowspan="1">prF2</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg4</td>
     </tr>
@@ -2437,10 +2592,12 @@
     <td class="l t r lesson-no" rowspan="2">3</td>
     <td class="t lesson-time" rowspan="2">9:40 - 10:25</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">6</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg2</td>
     <td class="l t" rowspan="2">Matematyka</td>
@@ -2449,23 +2606,28 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">So</td>
     <td rowspan="1">prF2</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg4</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">4</td>
     <td class="t lesson-time" rowspan="2">10:35 - 11:20</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">43</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">6</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg2</td>
     <td class="l t" rowspan="2">Język polski</td>
@@ -2474,13 +2636,16 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">32</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">So</td>
     <td rowspan="1">prF2</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg4</td>
     </tr>
@@ -2490,27 +2655,33 @@
     <td class="l t" rowspan="2">Biologia</td>
     <td class="t" rowspan="2">MU</td>
     <td class="t" rowspan="2">28</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">6</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">Bp</td>
     <td class="t" rowspan="2">18</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">05</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">So</td>
     <td rowspan="1">prF2</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MY</td>
     <td rowspan="1">38</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">43</td>
     </tr>
@@ -2520,13 +2691,16 @@
     <td class="l t" rowspan="2">Fizyka</td>
     <td class="t" rowspan="2">WB</td>
     <td class="t" rowspan="2">2</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">6</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MN</td>
     <td class="t" rowspan="1">37</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     <td class="l t" rowspan="2">Geografia</td>
@@ -2534,13 +2708,16 @@
     <td class="t" rowspan="2">31</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">So</td>
     <td rowspan="1">prF2</td>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MY</td>
     <td rowspan="1">38</td>
     </tr>
@@ -2550,7 +2727,8 @@
     <td class="l t" rowspan="2">Historia</td>
     <td class="t" rowspan="2">WK</td>
     <td class="t" rowspan="2">18</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">6</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -2562,14 +2740,16 @@
     <td class="t" rowspan="2">2</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">So</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">8</td>
     <td class="t lesson-time" rowspan="2">14:05 - 14:50</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MN</td>
     <td class="t" rowspan="1">38</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -2582,7 +2762,8 @@
     <td class="t" rowspan="2">2</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">23</td>
     </tr>
@@ -2621,7 +2802,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -2649,19 +2831,23 @@
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AK</td>
     <td class="t" rowspan="1">32</td>
-    <td class="l t" rowspan="1">Towar jako przedmiot handlu</td>
+    <td class="l t" rowspan="1">Towar jako przedmiot handlu
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">AO</td>
     <td class="t" rowspan="1">42</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MN</td>
     <td rowspan="1">38</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">BK</td>
     <td rowspan="1">6</td>
     </tr>
@@ -2672,10 +2858,12 @@
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
-    <td class="l t" rowspan="1">Towar jako przedmiot handlu</td>
+    <td class="l t" rowspan="1">Towar jako przedmiot handlu
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">AO</td>
     <td class="t" rowspan="1">42</td>
     <td class="l t" rowspan="2">Zajęcia z wychowawcą</td>
@@ -2683,10 +2871,12 @@
     <td class="t" rowspan="2">31</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MB</td>
     <td rowspan="1">43</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">BK</td>
     <td rowspan="1">6</td>
     </tr>
@@ -2694,43 +2884,52 @@
     <td class="l t r lesson-no" rowspan="2">3</td>
     <td class="t lesson-time" rowspan="2">9:40 - 10:25</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2">Geografia</td>
     <td class="t" rowspan="2">AS</td>
     <td class="t" rowspan="2">31</td>
-    <td class="l t" rowspan="1">Organizacja sprzedaży</td>
+    <td class="l t" rowspan="1">Organizacja sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">41</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">BK</td>
     <td rowspan="1">6</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MB</td>
     <td rowspan="1">32</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">4</td>
     <td class="t lesson-time" rowspan="2">10:35 - 11:20</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
-    <td class="l t" rowspan="1">Organizacja sprzedaży</td>
+    <td class="l t" rowspan="1">Organizacja sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">41</td>
     <td class="l t" rowspan="2">Matematyka</td>
@@ -2738,13 +2937,16 @@
     <td class="t" rowspan="2">34</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg2</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">BK</td>
     <td rowspan="1">6</td>
     </tr>
@@ -2754,10 +2956,12 @@
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg3</td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">BC</td>
     <td class="t" rowspan="1">41</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
@@ -2766,24 +2970,29 @@
     <td class="t" rowspan="2">23</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg2</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">BK</td>
     <td rowspan="1">6</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">6</td>
     <td class="t lesson-time" rowspan="2">12:25 - 13:10</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AK</td>
     <td class="t" rowspan="1">05</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">BC</td>
     <td class="t" rowspan="1">41</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
@@ -2792,14 +3001,17 @@
     <td class="t" rowspan="2">28</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MN</td>
     <td rowspan="1">38</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg2</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">BK</td>
     <td rowspan="1">6</td>
     </tr>
@@ -2812,7 +3024,8 @@
     <td class="l t" rowspan="2">Matematyka</td>
     <td class="t" rowspan="2">Nm</td>
     <td class="t" rowspan="2">34</td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">BC</td>
     <td class="t" rowspan="1">41</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
@@ -2822,7 +3035,8 @@
     </tr>
     <tr>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">BK</td>
     <td rowspan="1">6</td>
     </tr>
@@ -2830,10 +3044,12 @@
     <td class="l t r lesson-no" rowspan="2">8</td>
     <td class="t lesson-time" rowspan="2">14:05 - 14:50</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Obsługa klientów</td>
+    <td class="l t" rowspan="1">Obsługa klientów
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">DS</td>
     <td class="t" rowspan="1">41</td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">BC</td>
     <td class="t" rowspan="1">41</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -2842,10 +3058,12 @@
     <td class="t" rowspan="2">22</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l" rowspan="1">Techniki fryzjerskie
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">3</td>
-    <td class="l" rowspan="1">Biologia</td>
+    <td class="l" rowspan="1">Biologia
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">MU</td>
     <td rowspan="1">42</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
@@ -2854,24 +3072,29 @@
     <td class="l t r lesson-no" rowspan="2">9</td>
     <td class="t lesson-time" rowspan="2">14:55 - 15:40</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Obsługa klientów</td>
+    <td class="l t" rowspan="1">Obsługa klientów
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">DS</td>
     <td class="t" rowspan="1">41</td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">BC</td>
     <td class="t" rowspan="1">41</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Geografia</td>
+    <td class="l t" rowspan="1">Geografia
+    <div class="g">tech.hand.</div></td>
     <td class="t" rowspan="1">AS</td>
     <td class="t" rowspan="1">31</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l" rowspan="1">Techniki fryzjerskie
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">3</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l" rowspan="1">Techniki fryzjerskie
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">DP</td>
     <td rowspan="1">5</td>
     </tr>
@@ -2887,7 +3110,8 @@
     <td class="t" rowspan="2">23</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Podstawy fryzjerstwa</td>
+    <td class="l" rowspan="1">Podstawy fryzjerstwa
+    <div class="g">tech.fryz.</div></td>
     <td rowspan="1">SM</td>
     <td rowspan="1">2</td>
     </tr>
@@ -2898,7 +3122,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -2925,10 +3150,12 @@
     <td class="l t r lesson-no" rowspan="2">1</td>
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">41</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="2">Język polski</td>
@@ -2937,10 +3164,12 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr2</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MP</td>
     <td rowspan="1">sg8</td>
     </tr>
@@ -2948,10 +3177,12 @@
     <td class="l t r lesson-no" rowspan="2">2</td>
     <td class="t lesson-time" rowspan="2">8:50 - 9:35</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">41</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="2">Zajęcia z wychowawcą</td>
@@ -2960,10 +3191,12 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr2</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MP</td>
     <td rowspan="1">sg8</td>
     </tr>
@@ -2971,25 +3204,31 @@
     <td class="l t r lesson-no" rowspan="2">3</td>
     <td class="t lesson-time" rowspan="2">9:40 - 10:25</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">41</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg1</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr2</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MP</td>
     <td rowspan="1">sg8</td>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
     </tr>
@@ -2997,10 +3236,12 @@
     <td class="l t r lesson-no" rowspan="2">4</td>
     <td class="t lesson-time" rowspan="2">10:35 - 11:20</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">41</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     <td class="l t" rowspan="2">Matematyka</td>
@@ -3009,10 +3250,12 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr2</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
     </tr>
@@ -3022,7 +3265,8 @@
     <td class="l t" rowspan="2">Biznes i Zarządzanie</td>
     <td class="t" rowspan="2"><span title="Eleonora Smirnow-Zechman" aria-label="Eleonora Smirnow-Zechman">SE</span></td>
     <td class="t" rowspan="2">23</td>
-    <td class="l t" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l t" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">41</td>
     <td class="l t" rowspan="2">Historia</td>
@@ -3036,7 +3280,8 @@
     <td class="t" rowspan="2">26</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">gr2</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
     </tr>
@@ -3055,12 +3300,14 @@
     <td class="l t" rowspan="2">Organizacja sprzedaży</td>
     <td class="t" rowspan="2">Sa</td>
     <td class="t" rowspan="2">41</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MB</td>
     <td class="t" rowspan="1">32</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MY</td>
     <td rowspan="1">38</td>
     </tr>
@@ -3073,10 +3320,12 @@
     <td class="l t" rowspan="2">Obsługa klientów</td>
     <td class="t" rowspan="2">DS</td>
     <td class="t" rowspan="2">41</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MB</td>
     <td class="t" rowspan="1">27</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     <td class="l t" rowspan="2">Geografia</td>
@@ -3084,10 +3333,12 @@
     <td class="t" rowspan="2">31</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MY</td>
     <td rowspan="1">38</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">32</td>
     </tr>
@@ -3102,12 +3353,14 @@
     <td class="l t" rowspan="2">Edukacja dla bezpieczeństwa</td>
     <td class="t" rowspan="2">PM</td>
     <td class="t" rowspan="2">40</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">43</td>
     </tr>
@@ -3144,7 +3397,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -3184,20 +3438,23 @@
     <td class="t" rowspan="2">29</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MF</td>
     <td class="t" rowspan="1">17</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">AM</td>
     <td rowspan="1">44</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">3</td>
     <td class="t lesson-time" rowspan="2">9:40 - 10:25</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KP</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -3208,14 +3465,16 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg3</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">4</td>
     <td class="t lesson-time" rowspan="2">10:35 - 11:20</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KP</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -3226,14 +3485,16 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg3</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">5</td>
     <td class="t lesson-time" rowspan="2">11:25 - 12:10</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KP</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -3241,15 +3502,18 @@
     <td class="l t" rowspan="2">Rozwój zainteresowań i kreatywności - obsługa klienta</td>
     <td class="t" rowspan="2">WK</td>
     <td class="t" rowspan="2">22</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg3</td>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">AM</td>
     <td rowspan="1">44</td>
     </tr>
@@ -3269,7 +3533,8 @@
     <tr>
     <td class="l t r lesson-no" rowspan="2">7</td>
     <td class="t lesson-time" rowspan="2">13:15 - 14:00</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MF</td>
     <td class="t" rowspan="1">17</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -3280,7 +3545,8 @@
     <td class="t" rowspan="2">17</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">PM</td>
     <td rowspan="1">38</td>
     </tr>
@@ -3328,7 +3594,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -3384,13 +3651,15 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MF</td>
     <td class="t" rowspan="1">17</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg8</td>
     </tr>
@@ -3400,13 +3669,15 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg8</td>
     </tr>
@@ -3416,13 +3687,15 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr2</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg8</td>
     </tr>
@@ -3432,13 +3705,15 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
     </tr>
@@ -3447,7 +3722,8 @@
     <td class="t lesson-time" rowspan="2">11:25 - 12:10</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MF</td>
     <td class="t" rowspan="1">17</td>
     <td class="l t" rowspan="2">Język polski</td>
@@ -3506,7 +3782,8 @@
     <td class="t lesson-time" rowspan="2">14:55 - 15:40</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
@@ -3515,10 +3792,12 @@
     <td class="t" rowspan="2">17</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">19</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">PM</td>
     <td rowspan="1">38</td>
     </tr>
@@ -3542,7 +3821,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">18</td>
     </tr>
@@ -3729,7 +4009,8 @@
     <td class="t" rowspan="2">KS</td>
     <td class="t" rowspan="2">prS</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="2">rozwój kompetencji zawodowych - dekoracje w cukiernictwie</td>
@@ -3803,7 +4084,8 @@
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">6</td>
     <td class="t lesson-time" rowspan="2">12:25 - 13:10</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KP</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -3821,7 +4103,8 @@
     <tr>
     <td class="l t r lesson-no" rowspan="2">7</td>
     <td class="t lesson-time" rowspan="2">13:15 - 14:00</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KP</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -3839,7 +4122,8 @@
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">8</td>
     <td class="t lesson-time" rowspan="2">14:05 - 14:50</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KP</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -3851,7 +4135,8 @@
     </tr>
     <tr class="d">
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg8</td>
     </tr>
@@ -3867,7 +4152,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg8</td>
     </tr>
@@ -3881,7 +4167,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg8</td>
     </tr>
@@ -3915,7 +4202,8 @@
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4081,7 +4369,8 @@
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="2">Matematyka</td>
@@ -4288,7 +4577,8 @@
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">MP</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4297,7 +4587,8 @@
     <td class="t" rowspan="2">4</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KP</td>
     <td rowspan="1">sg6</td>
     </tr>
@@ -4308,7 +4599,8 @@
     <td class="l t" rowspan="2">Język angielski</td>
     <td class="t" rowspan="2">AK</td>
     <td class="t" rowspan="2">32</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">MP</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4317,7 +4609,8 @@
     <td class="t" rowspan="2">3</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KP</td>
     <td rowspan="1">sg6</td>
     </tr>
@@ -4328,7 +4621,8 @@
     <td class="l t" rowspan="2">Historia</td>
     <td class="t" rowspan="2">MZ</td>
     <td class="t" rowspan="2">19</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">MP</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4337,7 +4631,8 @@
     <td class="t" rowspan="2">3</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KP</td>
     <td rowspan="1">sg6</td>
     </tr>
@@ -4597,7 +4892,8 @@
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">2</td>
     <td class="t lesson-time" rowspan="2">8:50 - 9:35</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AK</td>
     <td class="t" rowspan="1">05</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4610,7 +4906,8 @@
     <td class="t" rowspan="2">29</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">44</td>
     </tr>
@@ -4621,7 +4918,8 @@
     <td class="t" rowspan="2">Sp</td>
     <td class="t" rowspan="2">31</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AK</td>
     <td class="t" rowspan="1">32</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4630,7 +4928,8 @@
     <td class="t" rowspan="2">29</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">05</td>
     </tr>
@@ -4641,7 +4940,8 @@
     <td class="t" rowspan="2">Mr</td>
     <td class="t" rowspan="2">40</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4650,7 +4950,8 @@
     <td class="t" rowspan="2">29</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">AJ</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -4661,7 +4962,8 @@
     <td class="t" rowspan="2">Mr</td>
     <td class="t" rowspan="2">40</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4670,7 +4972,8 @@
     <td class="t" rowspan="2">29</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">AJ</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -4681,7 +4984,8 @@
     <td class="t" rowspan="2">AH</td>
     <td class="t" rowspan="2">26</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4690,7 +4994,8 @@
     <td class="t" rowspan="2">4</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">AJ</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -4772,7 +5077,8 @@
     <td class="t" rowspan="2">MC</td>
     <td class="t" rowspan="2">17</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4842,7 +5148,8 @@
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">6</td>
     <td class="t lesson-time" rowspan="2">12:25 - 13:10</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4855,14 +5162,16 @@
     <td class="t" rowspan="2">42</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KP</td>
     <td rowspan="1">sg7</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">7</td>
     <td class="t lesson-time" rowspan="2">13:15 - 14:00</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4875,14 +5184,16 @@
     <td class="t" rowspan="2">4</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KP</td>
     <td rowspan="1">sg7</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">8</td>
     <td class="t lesson-time" rowspan="2">14:05 - 14:50</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">MC</td>
     <td class="t" rowspan="1">sg3</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4895,7 +5206,8 @@
     <td class="t" rowspan="2">19</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KP</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -4953,7 +5265,8 @@
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -4991,7 +5304,8 @@
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">4</td>
     <td class="t lesson-time" rowspan="2">10:35 - 11:20</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">JA</td>
     <td class="t" rowspan="1">6</td>
     <td class="l t" rowspan="2">Wychowanie fizyczne</td>
@@ -5004,14 +5318,16 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">IL</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">5</td>
     <td class="t lesson-time" rowspan="2">11:25 - 12:10</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">JA</td>
     <td class="t" rowspan="1">6</td>
     <td class="l t" rowspan="2">Wychowanie fizyczne</td>
@@ -5028,14 +5344,16 @@
     <td class="t" rowspan="2">prF3</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">IL</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">6</td>
     <td class="t lesson-time" rowspan="2">12:25 - 13:10</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">JA</td>
     <td class="t" rowspan="1">6</td>
     <td class="l t" rowspan="2">Wychowanie fizyczne</td>
@@ -5052,14 +5370,16 @@
     <td class="t" rowspan="2">prF3</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">IL</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">7</td>
     <td class="t lesson-time" rowspan="2">13:15 - 14:00</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">JA</td>
     <td class="t" rowspan="1">6</td>
     <td class="l t" rowspan="2">Język polski</td>
@@ -5076,14 +5396,16 @@
     <td class="t" rowspan="2">23</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">IL</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">8</td>
     <td class="t lesson-time" rowspan="2">14:05 - 14:50</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">JA</td>
     <td class="t" rowspan="1">6</td>
     <td class="l t" rowspan="2">Język polski</td>
@@ -5100,14 +5422,16 @@
     <td class="t" rowspan="2">27</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">IL</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">9</td>
     <td class="t lesson-time" rowspan="2">14:55 - 15:40</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">JA</td>
     <td class="t" rowspan="1">6</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -5122,14 +5446,16 @@
     <td class="t" rowspan="2">34</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">IL</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">10</td>
     <td class="t lesson-time" rowspan="2">15:45 - 16:30</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">JA</td>
     <td class="t" rowspan="1">6</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -5142,7 +5468,8 @@
     <td class="t" rowspan="2">4</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">IL</td>
     <td rowspan="1">prF2</td>
     </tr>
@@ -5180,26 +5507,30 @@
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="2">Matematyka</td>
     <td class="t" rowspan="2">BI</td>
     <td class="t" rowspan="2">29</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">6</td>
     </tr>
     <tr>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">EM</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">2</td>
     <td class="t lesson-time" rowspan="2">8:50 - 9:35</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -5209,22 +5540,26 @@
     <td class="l t" rowspan="2">Informatyka</td>
     <td class="t" rowspan="2">MY</td>
     <td class="t" rowspan="2">38</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">6</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg1</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">EM</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">3</td>
     <td class="t lesson-time" rowspan="2">9:40 - 10:25</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2">Język angielski</td>
@@ -5236,22 +5571,26 @@
     <td class="l t" rowspan="2">Techniki fryzjerskie</td>
     <td class="t" rowspan="2">So</td>
     <td class="t" rowspan="2">5</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">6</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg1</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">EM</td>
     <td rowspan="1">prF2</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">4</td>
     <td class="t lesson-time" rowspan="2">10:35 - 11:20</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2">Język polski</td>
@@ -5263,15 +5602,18 @@
     <td class="l t" rowspan="2">Techniki fryzjerskie</td>
     <td class="t" rowspan="2">So</td>
     <td class="t" rowspan="2">5</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">6</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg1</td>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">EM</td>
     <td rowspan="1">prF2</td>
     </tr>
@@ -5290,12 +5632,14 @@
     <td class="l t" rowspan="2">Podstawy fryzjerstwa</td>
     <td class="t" rowspan="2">SM</td>
     <td class="t" rowspan="2">2</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">6</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">EM</td>
     <td rowspan="1">prF2</td>
     </tr>
@@ -5314,12 +5658,14 @@
     <td class="l t" rowspan="2">Podstawy fryzjerstwa</td>
     <td class="t" rowspan="2">SM</td>
     <td class="t" rowspan="2">2</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">6</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">EM</td>
     <td rowspan="1">prF2</td>
     </tr>
@@ -5338,12 +5684,14 @@
     <td class="l t" rowspan="2">Biologia</td>
     <td class="t" rowspan="2">Sp</td>
     <td class="t" rowspan="2">31</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">6</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">gr2</div></td>
     <td rowspan="1">EM</td>
     <td rowspan="1">prF2</td>
     </tr>
@@ -5414,7 +5762,8 @@
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -5428,7 +5777,8 @@
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">2</td>
     <td class="t lesson-time" rowspan="2">8:50 - 9:35</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -5441,14 +5791,16 @@
     <td class="t" rowspan="2">4</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MP</td>
     <td rowspan="1">sg8</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">3</td>
     <td class="t lesson-time" rowspan="2">9:40 - 10:25</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2">Edukacja zdrowotna</td>
@@ -5465,14 +5817,16 @@
     <td class="t" rowspan="2">18</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MP</td>
     <td rowspan="1">sg8</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">4</td>
     <td class="t lesson-time" rowspan="2">10:35 - 11:20</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2">Język angielski</td>
@@ -5489,7 +5843,8 @@
     <td class="t" rowspan="2">18</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MP</td>
     <td rowspan="1">sg8</td>
     </tr>
@@ -5623,7 +5978,8 @@
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -5636,7 +5992,8 @@
     <td class="l t r lesson-no" rowspan="2">2</td>
     <td class="t lesson-time" rowspan="2">8:50 - 9:35</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     <td class="l t" rowspan="2">Matematyka</td>
@@ -5648,7 +6005,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
     </tr>
@@ -5659,7 +6017,8 @@
     <td class="l t" rowspan="2">Rozwój zainteresowań i kreatywności - obsługa klienta</td>
     <td class="t" rowspan="2">WK</td>
     <td class="t" rowspan="2">18</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     <td class="l t" rowspan="2">Rozwój zainteresowań i kreatywności - obsługa klienta</td>
@@ -5668,7 +6027,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
     </tr>
@@ -5701,7 +6061,8 @@
     <td class="l t" rowspan="3" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch1</div></td>
     <td rowspan="1">KW</td>
     <td rowspan="1">sg5</td>
     </tr>
@@ -5720,14 +6081,16 @@
     <td class="l t" rowspan="3" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch1</div></td>
     <td rowspan="1">KW</td>
     <td rowspan="1">sg5</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
     </tr>
     <tr class="d">
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch2</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -5743,14 +6106,16 @@
     <td class="l t" rowspan="3" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch1</div></td>
     <td rowspan="1">KW</td>
     <td rowspan="1">sg5</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
     </tr>
     <tr>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch2</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -5760,7 +6125,8 @@
     <td class="l t" rowspan="3" colspan="3"><br></td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">RJ</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
@@ -5770,7 +6136,8 @@
     <td class="l" rowspan="1" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch2</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg2</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
@@ -5781,7 +6148,8 @@
     <td class="l t" rowspan="3" colspan="3"><br></td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">RJ</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
@@ -5798,7 +6166,8 @@
     <td class="l t" rowspan="3" colspan="3"><br></td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">RJ</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
@@ -5897,7 +6266,8 @@
     <td class="l t" rowspan="2">Język angielski</td>
     <td class="t" rowspan="2">MB</td>
     <td class="t" rowspan="2">32</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -5905,7 +6275,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg3</td>
     </tr>
@@ -5915,7 +6286,8 @@
     <td class="l t" rowspan="2">Edukacja zdrowotna</td>
     <td class="t" rowspan="2">MU</td>
     <td class="t" rowspan="2">28</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -5923,7 +6295,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg3</td>
     </tr>
@@ -5933,7 +6306,8 @@
     <td class="l t" rowspan="2">Historia</td>
     <td class="t" rowspan="2">WK</td>
     <td class="t" rowspan="2">18</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -5941,7 +6315,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">MC</td>
     <td rowspan="1">sg3</td>
     </tr>
@@ -6296,7 +6671,8 @@
     <td class="l t r lesson-no" rowspan="2">1</td>
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">5</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -6386,7 +6762,8 @@
     <td class="l t r lesson-no" rowspan="2">8</td>
     <td class="t lesson-time" rowspan="2">14:05 - 14:50</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">MP</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -6396,7 +6773,8 @@
     <td class="t" rowspan="2">18</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">SD</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -6404,7 +6782,8 @@
     <td class="l t r lesson-no" rowspan="2">9</td>
     <td class="t lesson-time" rowspan="2">14:55 - 15:40</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">MP</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -6414,7 +6793,8 @@
     <td class="t" rowspan="2">4</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">SD</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -6422,7 +6802,8 @@
     <td class="l t r lesson-no" rowspan="2">10</td>
     <td class="t lesson-time" rowspan="2">15:45 - 16:30</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">MP</td>
     <td class="t" rowspan="1">sg8</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -6432,7 +6813,8 @@
     <td class="t" rowspan="2">29</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">SD</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -6613,10 +6995,12 @@
     <tr>
     <td class="l t r lesson-no" rowspan="2">1</td>
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
-    <td class="l t" rowspan="1">Organizacja sprzedaży</td>
+    <td class="l t" rowspan="1">Organizacja sprzedaży
+    <div class="g">sprzedawca</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">41</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">RJ</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -6624,20 +7008,24 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">technologia gastronomiczna z towaroznawstwem</td>
+    <td class="l" rowspan="1">technologia gastronomiczna z towaroznawstwem
+    <div class="g">kucharz</div></td>
     <td rowspan="1">Mr</td>
     <td rowspan="1">34</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KW</td>
     <td rowspan="1">sg5</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">2</td>
     <td class="t lesson-time" rowspan="2">8:50 - 9:35</td>
-    <td class="l t" rowspan="1">Obsługa klienta</td>
+    <td class="l t" rowspan="1">Obsługa klienta
+    <div class="g">sprzedawca</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">41</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">RJ</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -6645,10 +7033,12 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">technologia gastronomiczna z towaroznawstwem</td>
+    <td class="l" rowspan="1">technologia gastronomiczna z towaroznawstwem
+    <div class="g">kucharz</div></td>
     <td rowspan="1">Mr</td>
     <td rowspan="1">34</td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KW</td>
     <td rowspan="1">sg5</td>
     </tr>
@@ -6658,7 +7048,8 @@
     <td class="l t" rowspan="2">Matematyka</td>
     <td class="t" rowspan="2">Nm</td>
     <td class="t" rowspan="2">34</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">RJ</td>
     <td class="t" rowspan="1">sg7</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -6666,14 +7057,16 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KW</td>
     <td rowspan="1">sg5</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">4</td>
     <td class="t lesson-time" rowspan="2">10:35 - 11:20</td>
-    <td class="l t" rowspan="1">Towaroznawstwo</td>
+    <td class="l t" rowspan="1">Towaroznawstwo
+    <div class="g">sprzedawca</div></td>
     <td class="t" rowspan="1">AO</td>
     <td class="t" rowspan="1">42</td>
     <td class="l t" rowspan="2">Chemia</td>
@@ -6684,7 +7077,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski zawodowy</td>
+    <td class="l" rowspan="1">Język angielski zawodowy
+    <div class="g">kucharz</div></td>
     <td rowspan="1">ŁW</td>
     <td rowspan="1">30</td>
     </tr>
@@ -6694,7 +7088,8 @@
     <td class="l t" rowspan="2">Edukacja zdrowotna</td>
     <td class="t" rowspan="2">ML</td>
     <td class="t" rowspan="2">27</td>
-    <td class="l t" rowspan="1">Język angielski zawodowy</td>
+    <td class="l t" rowspan="1">Język angielski zawodowy
+    <div class="g">sprzedawca</div></td>
     <td class="t" rowspan="1">ŁW</td>
     <td class="t" rowspan="1">29</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -6702,7 +7097,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">technika w produkcji gastronomicznej</td>
+    <td class="l" rowspan="1">technika w produkcji gastronomicznej
+    <div class="g">kucharz</div></td>
     <td rowspan="1">Mr</td>
     <td rowspan="1">30</td>
     </tr>
@@ -6722,7 +7118,8 @@
     <tr>
     <td class="l t r lesson-no" rowspan="2">7</td>
     <td class="t lesson-time" rowspan="2">13:15 - 14:00</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">ŁW</td>
     <td class="t" rowspan="1">43</td>
     <td class="l t" rowspan="2">Historia</td>
@@ -6733,7 +7130,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MB</td>
     <td rowspan="1">32</td>
     </tr>
@@ -6999,24 +7397,29 @@
     <td class="l t r lesson-no" rowspan="2">1</td>
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">5</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg5</td>
     </tr>
     <tr>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">AJ</td>
     <td rowspan="1">sg1</td>
     </tr>
@@ -7028,48 +7431,58 @@
     <td class="t" rowspan="2">ML</td>
     <td class="t" rowspan="2">28</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg5</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">AJ</td>
     <td rowspan="1">sg1</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">3</td>
     <td class="t lesson-time" rowspan="2">9:40 - 10:25</td>
-    <td class="l t" rowspan="1">Biologia</td>
+    <td class="l t" rowspan="1">Biologia
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">ML</td>
     <td class="t" rowspan="1">27</td>
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg5</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język angielski zawodowy</td>
+    <td class="l" rowspan="1">Język angielski zawodowy
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">ŁW</td>
     <td rowspan="1">30</td>
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">AJ</td>
     <td rowspan="1">sg1</td>
     </tr>
@@ -7079,11 +7492,13 @@
     <td class="l t" rowspan="2">Matematyka</td>
     <td class="t" rowspan="2">BI</td>
     <td class="t" rowspan="2">29</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
     <td class="l t" rowspan="2">Geografia</td>
@@ -7091,10 +7506,12 @@
     <td class="t" rowspan="2">31</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
@@ -7109,7 +7526,8 @@
     <td class="t" rowspan="2">WB</td>
     <td class="t" rowspan="2">23</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
     <td class="l t" rowspan="2">Edukacja obywatelska</td>
@@ -7117,10 +7535,12 @@
     <td class="t" rowspan="2">4</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Pracownia sprzedaży</td>
+    <td class="l" rowspan="1">Pracownia sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
-    <td class="l" rowspan="1">Organizacja i technika sprzedaży</td>
+    <td class="l" rowspan="1">Organizacja i technika sprzedaży
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">AO</td>
     <td rowspan="1">42</td>
     </tr>
@@ -7130,27 +7550,33 @@
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
-    <td class="l t" rowspan="1">Biologia</td>
+    <td class="l t" rowspan="1">Biologia
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">ML</td>
     <td class="t" rowspan="1">28</td>
     <td class="l t" rowspan="2">Matematyka</td>
     <td class="t" rowspan="2">BI</td>
     <td class="t" rowspan="2">29</td>
-    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich</td>
+    <td class="l t" rowspan="1">Zajęcia praktyczne - wykonywanie usług fryzjerskich
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">EM</td>
     <td class="t" rowspan="1">prF2</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">05</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">Sa</td>
     <td rowspan="1">37</td>
-    <td class="l" rowspan="1">Język angielski zawodowy</td>
+    <td class="l" rowspan="1">Język angielski zawodowy
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">ŁW</td>
     <td rowspan="1">27</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">43</td>
     </tr>
@@ -7160,10 +7586,12 @@
     <td class="l t" rowspan="2">Język polski</td>
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
-    <td class="l t" rowspan="1">Biologia</td>
+    <td class="l t" rowspan="1">Biologia
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">ML</td>
     <td class="t" rowspan="1">28</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     <td class="l t" rowspan="2">Historia</td>
@@ -7174,10 +7602,12 @@
     <td class="t" rowspan="2">27</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">Sa</td>
     <td rowspan="1">37</td>
-    <td class="l" rowspan="1">Informatyka</td>
+    <td class="l" rowspan="1">Informatyka
+    <div class="g">gr2</div></td>
     <td rowspan="1">MN</td>
     <td rowspan="1">37</td>
     </tr>
@@ -7187,50 +7617,61 @@
     <td class="l t" rowspan="2">Chemia</td>
     <td class="t" rowspan="2">AH</td>
     <td class="t" rowspan="2">26</td>
-    <td class="l t" rowspan="1">Podstawy fryzjerstwa</td>
+    <td class="l t" rowspan="1">Podstawy fryzjerstwa
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">SM</td>
     <td class="t" rowspan="1">2</td>
-    <td class="l t" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l t" rowspan="1">Techniki fryzjerskie
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">4</td>
-    <td class="l t" rowspan="1">Informatyka</td>
+    <td class="l t" rowspan="1">Informatyka
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MY</td>
     <td class="t" rowspan="1">38</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">Sa</td>
     <td rowspan="1">37</td>
-    <td class="l" rowspan="1">Geografia</td>
+    <td class="l" rowspan="1">Geografia
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">AS</td>
     <td rowspan="1">31</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">32</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">9</td>
     <td class="t lesson-time" rowspan="2">14:55 - 15:40</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Gt</td>
     <td class="t" rowspan="1">32</td>
     <td class="l t" rowspan="2">Zajęcia z wychowawcą</td>
     <td class="t" rowspan="2">UM</td>
     <td class="t" rowspan="2">22</td>
-    <td class="l t" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l t" rowspan="1">Techniki fryzjerskie
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">4</td>
-    <td class="l t" rowspan="1">Projektowanie fryzur</td>
+    <td class="l t" rowspan="1">Projektowanie fryzur
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">5</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">23</td>
-    <td class="l" rowspan="1">Geografia</td>
+    <td class="l" rowspan="1">Geografia
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">AS</td>
     <td rowspan="1">31</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
@@ -7238,7 +7679,8 @@
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">10</td>
     <td class="t lesson-time" rowspan="2">15:45 - 16:30</td>
-    <td class="l t" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l t" rowspan="1">Techniki fryzjerskie
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
@@ -7248,14 +7690,16 @@
     </tr>
     <tr class="d">
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Obsługa klientów</td>
+    <td class="l" rowspan="1">Obsługa klientów
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">DS</td>
     <td rowspan="1">41</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">11</td>
     <td class="t lesson-time" rowspan="2">16:35 - 17:20</td>
-    <td class="l t" rowspan="1">Techniki fryzjerskie</td>
+    <td class="l t" rowspan="1">Techniki fryzjerskie
+    <div class="g">tech.fryz.</div></td>
     <td class="t" rowspan="1">DP</td>
     <td class="t" rowspan="1">3</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
@@ -7265,7 +7709,8 @@
     </tr>
     <tr>
     <td class="l" rowspan="1" colspan="3"><br></td>
-    <td class="l" rowspan="1">Geografia</td>
+    <td class="l" rowspan="1">Geografia
+    <div class="g">tech.hand.</div></td>
     <td rowspan="1">AS</td>
     <td rowspan="1">31</td>
     </tr>
@@ -7289,7 +7734,8 @@
     <td class="l t r lesson-no" rowspan="3">1</td>
     <td class="t lesson-time" rowspan="3">8:00 - 8:45</td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch1</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
@@ -7297,12 +7743,14 @@
     <td class="l t" rowspan="3" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg7</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch2</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -7312,7 +7760,8 @@
     <td class="l t" rowspan="3">Fizyka</td>
     <td class="t" rowspan="3">WB</td>
     <td class="t" rowspan="3">4</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch1</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
@@ -7320,12 +7769,14 @@
     <td class="l t" rowspan="3" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg7</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch2</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -7335,7 +7786,8 @@
     <td class="l t" rowspan="3">Historia</td>
     <td class="t" rowspan="3">WK</td>
     <td class="t" rowspan="3">18</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch1</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="3" colspan="3"><br></td>
@@ -7343,12 +7795,14 @@
     <td class="l t" rowspan="3" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">RJ</td>
     <td rowspan="1">sg7</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch2</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -7368,7 +7822,8 @@
     <tr>
     <td class="l t r lesson-no" rowspan="2">5</td>
     <td class="t lesson-time" rowspan="2">11:25 - 12:10</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">AM</td>
     <td class="t" rowspan="1">44</td>
     <td class="l t" rowspan="2">Edukacja obywatelska</td>
@@ -7379,7 +7834,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">MF</td>
     <td rowspan="1">17</td>
     </tr>
@@ -7465,7 +7921,8 @@
     <td class="l t r lesson-no" rowspan="2">1</td>
     <td class="t lesson-time" rowspan="2">8:00 - 8:45</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">5</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -7659,7 +8116,8 @@
     <td class="l t" rowspan="2">Zajęcia praktyczne - projektowanie i wykonywanie fryzur</td>
     <td class="t" rowspan="2">JA</td>
     <td class="t" rowspan="2">3</td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">5</td>
     <td class="l t" rowspan="2">Język polski</td>
@@ -7733,7 +8191,8 @@
     <tr>
     <td class="l t r lesson-no" rowspan="2">5</td>
     <td class="t lesson-time" rowspan="2">11:25 - 12:10</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">DK</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="2">Zajęcia praktyczne - projektowanie i wykonywanie fryzur</td>
@@ -7750,14 +8209,16 @@
     <td class="t" rowspan="2">32</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KW</td>
     <td rowspan="1">sg4</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">6</td>
     <td class="t lesson-time" rowspan="2">12:25 - 13:10</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">DK</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="2">Projektowanie fryzur</td>
@@ -7774,14 +8235,16 @@
     <td class="t" rowspan="2">44</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KW</td>
     <td rowspan="1">sg4</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">7</td>
     <td class="t lesson-time" rowspan="2">13:15 - 14:00</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">DK</td>
     <td class="t" rowspan="1">sg1</td>
     <td class="l t" rowspan="2">Projektowanie fryzur</td>
@@ -7796,7 +8259,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">KW</td>
     <td rowspan="1">sg4</td>
     </tr>
@@ -7874,7 +8338,8 @@
     <td class="t" rowspan="2">41</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr2</div></td>
     <td rowspan="1">BC</td>
     <td rowspan="1">37</td>
     </tr>
@@ -7894,7 +8359,8 @@
     <td class="t" rowspan="2">41</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr2</div></td>
     <td rowspan="1">BC</td>
     <td rowspan="1">37</td>
     </tr>
@@ -7914,7 +8380,8 @@
     <td class="t" rowspan="2">41</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr2</div></td>
     <td rowspan="1">BC</td>
     <td rowspan="1">37</td>
     </tr>
@@ -7925,7 +8392,8 @@
     <td class="t" rowspan="2">MZ</td>
     <td class="t" rowspan="2">19</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Dn</td>
     <td class="t" rowspan="1">43</td>
     <td class="l t" rowspan="1" colspan="3"><br></td>
@@ -7934,26 +8402,31 @@
     <td class="t" rowspan="2">41</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">05</td>
-    <td class="l" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr2</div></td>
     <td rowspan="1">BC</td>
     <td rowspan="1">37</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">5</td>
     <td class="t lesson-time" rowspan="2">11:25 - 12:10</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2">rozwój kompetencji zawodowych - kompetencje zawodowe</td>
     <td class="t" rowspan="2">DS</td>
     <td class="t" rowspan="2">40</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Dn</td>
     <td class="t" rowspan="1">43</td>
-    <td class="l t" rowspan="1">Język angielski</td>
+    <td class="l t" rowspan="1">Język angielski
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Dn</td>
     <td class="t" rowspan="1">32</td>
     <td class="l t" rowspan="2">Fizyka</td>
@@ -7961,20 +8434,24 @@
     <td class="t" rowspan="2">17</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MP</td>
     <td rowspan="1">sg8</td>
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">05</td>
-    <td class="l" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr2</div></td>
     <td rowspan="1">BC</td>
     <td rowspan="1">37</td>
     </tr>
     <tr class="d">
     <td class="l t r lesson-no" rowspan="2">6</td>
     <td class="t lesson-time" rowspan="2">12:25 - 13:10</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2">Język angielski zawodowy</td>
@@ -7989,14 +8466,16 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MP</td>
     <td rowspan="1">sg8</td>
     </tr>
     <tr>
     <td class="l t r lesson-no" rowspan="2">7</td>
     <td class="t lesson-time" rowspan="2">13:15 - 14:00</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">KW</td>
     <td class="t" rowspan="1">sg4</td>
     <td class="l t" rowspan="2">Chemia</td>
@@ -8005,16 +8484,19 @@
     <td class="l t" rowspan="2">Przedsiębiorca w handlu</td>
     <td class="t" rowspan="2">Sa</td>
     <td class="t" rowspan="2">40</td>
-    <td class="l t" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l t" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">37</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">MP</td>
     <td rowspan="1">sg8</td>
-    <td class="l" rowspan="1">Język niemiecki</td>
+    <td class="l" rowspan="1">Język niemiecki
+    <div class="g">gr2</div></td>
     <td rowspan="1">AM</td>
     <td rowspan="1">44</td>
     </tr>
@@ -8024,19 +8506,22 @@
     <td class="l t" rowspan="2">Biologia</td>
     <td class="t" rowspan="2">MU</td>
     <td class="t" rowspan="2">28</td>
-    <td class="l t" rowspan="1">Język niemiecki</td>
+    <td class="l t" rowspan="1">Język niemiecki
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">MF</td>
     <td class="t" rowspan="1">17</td>
     <td class="l t" rowspan="2">Przedsiębiorca w handlu</td>
     <td class="t" rowspan="2">Sa</td>
     <td class="t" rowspan="2">40</td>
-    <td class="l t" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l t" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">37</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Język angielski</td>
+    <td class="l" rowspan="1">Język angielski
+    <div class="g">gr2</div></td>
     <td rowspan="1">MG</td>
     <td rowspan="1">32</td>
     <td class="l" rowspan="1" colspan="3"><br></td>
@@ -8053,7 +8538,8 @@
     <td class="l t" rowspan="2">Przedsiębiorca w handlu</td>
     <td class="t" rowspan="2">Sa</td>
     <td class="t" rowspan="2">40</td>
-    <td class="l t" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l t" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">37</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -8071,7 +8557,8 @@
     <td class="t" rowspan="2">AS</td>
     <td class="t" rowspan="2">31</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l t" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">37</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -8085,7 +8572,8 @@
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Symulacyjna firma handlowa</td>
+    <td class="l t" rowspan="1">Symulacyjna firma handlowa
+    <div class="g">gr1</div></td>
     <td class="t" rowspan="1">Sa</td>
     <td class="t" rowspan="1">37</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
@@ -8115,7 +8603,8 @@
     <td class="l t" rowspan="2">Zajęcia praktyczne - projektowanie i wykonywanie fryzur</td>
     <td class="t" rowspan="2">BK</td>
     <td class="t" rowspan="2">5</td>
-    <td class="l t" rowspan="1">Religia</td>
+    <td class="l t" rowspan="1">Religia
+    <div class="g">relu</div></td>
     <td class="t" rowspan="1">PS</td>
     <td class="t" rowspan="1">5</td>
     <td class="l t" rowspan="2">Projektowanie fryzur</td>
@@ -8182,12 +8671,14 @@
     <td class="l t" rowspan="2">Zajęcia z wychowawcą</td>
     <td class="t" rowspan="2">AM</td>
     <td class="t" rowspan="2">44</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg1</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -8206,12 +8697,14 @@
     <td class="l t" rowspan="2">Historia</td>
     <td class="t" rowspan="2">MZ</td>
     <td class="t" rowspan="2">19</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg1</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -8228,12 +8721,14 @@
     <td class="l t" rowspan="2">Historia</td>
     <td class="t" rowspan="2">MZ</td>
     <td class="t" rowspan="2">19</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td class="t" rowspan="1">AJ</td>
     <td class="t" rowspan="1">sg1</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td rowspan="1">LN</td>
     <td rowspan="1">sg7</td>
     </tr>
@@ -8360,12 +8855,14 @@
     <td class="l t" rowspan="2">Historia</td>
     <td class="t" rowspan="2">MZ</td>
     <td class="t" rowspan="2">19</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">LN</td>
     <td class="t" rowspan="1">sg7</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -8384,12 +8881,14 @@
     <td class="l t" rowspan="2">Język niemiecki</td>
     <td class="t" rowspan="2">MF</td>
     <td class="t" rowspan="2">17</td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">LN</td>
     <td class="t" rowspan="1">sg7</td>
     </tr>
     <tr>
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg2</td>
     </tr>
@@ -8404,12 +8903,14 @@
     <td class="t" rowspan="2">22</td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
     <td class="l t" rowspan="2" colspan="3"><br></td>
-    <td class="l t" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l t" rowspan="1">Wychowanie fizyczne
+    <div class="g">ch</div></td>
     <td class="t" rowspan="1">LN</td>
     <td class="t" rowspan="1">sg7</td>
     </tr>
     <tr class="d">
-    <td class="l" rowspan="1">Wychowanie fizyczne</td>
+    <td class="l" rowspan="1">Wychowanie fizyczne
+    <div class="g">dz</div></td>
     <td rowspan="1">DK</td>
     <td rowspan="1">sg2</td>
     </tr>

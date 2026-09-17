@@ -139,6 +139,31 @@ XML dostarcza dwie rzeczy, których nie ma w XLSX: skrót nauczyciela
 `student-changes.js` nie znajdzie komórki i wrzuci notkę przy nagłówku tabeli
 zamiast w kratkę planu.
 
+### Etykiety grup w planie bazowym
+
+Eksport planu **nie podaje nazw grup w widoku oddziału** — lekcje dzielone są
+tylko rozbite na dwa wiersze, bez informacji, który to `gr1`, a który `gr2`.
+Nazwy grup są w XML-u, więc dokłada je osobny krok:
+
+```sh
+python3 scripts/annotate_plan_groups.py plan-lekcji-2026-09-07.html \
+  --plan-xml ../zastepstwa/dyzury-2026-09-07-korekta.xml
+python3 scripts/annotate_plan_groups.py --plan-xml ... --check   # sam raport
+```
+
+Skrypt jest idempotentny i rusza wyłącznie wnętrze komórek przedmiotu. Etykieta
+to `<div class="g">` — ta sama klasa, której używa widok nauczyciela w eksporcie
+i której szuka `student-changes.js` przy rozstrzyganiu grup równoległych.
+
+**Uruchom go po każdym odtworzeniu planu** przez `update_student_plan.py` —
+inaczej etykiety znikną razem z przebudowanym plikiem.
+
+Kontrola niezależna od XML-a: widok nauczyciela w
+`../zastepstwa/plan-lekcji-2026-09-07.html` podaje grupy wprost (`<div class="g">
+<a>1TFA</a> (gr1)</div>`). Dla każdej komórki `(oddział, dzień, lekcja,
+nauczyciel)` etykieta z planu uczniowskiego musi się zgadzać z tym, co mówi tam
+widok nauczyciela — i musi być pusta tam, gdzie lekcja obejmuje cały oddział.
+
 Test:
 
 ```sh
@@ -246,6 +271,9 @@ wynikiem workflow i powiedz wprost, że wizualnej kontroli na żywo nie wykonał
   planie…`, a zmiany lądują jako notka przy nagłówku tabeli zamiast w komórce.
   To oddziały wieczorowe spoza tego XML-a. Naprawi się dopiero XML-em, który je
   obejmuje — nie próbuj tego obchodzić w danych.
+- Te same 6 kratek nie dostaje etykiety grupy z `annotate_plan_groups.py`
+  (`bez dopasowania: 6`). W XML-u prowadzi je `AT`, a w planie `KY` — ale to
+  lekcje całego oddziału, więc etykieta i tak by nie powstała.
 - **1TH|DZ, 16.09, lekcje 1–2, `sg6 → 18`** też trafiają do notki przy nagłówku:
   eksport podaje salę źródłową `sg6`, a plan bazowy ma dla nauczyciela `MP`
   salę `sg8`, więc dopasowanie po sali odrzuca komórkę. Rozbieżność jest w

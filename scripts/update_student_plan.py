@@ -441,10 +441,17 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
         table.plan td.n {{ border: 0; background: var(--panel); }}
         table.plan tr.d td {{ background: var(--row-alt); }}
         table.plan div.g {{
-            padding-top: .25rem;
-            padding-left: .75rem;
-            color: var(--muted);
-            font-size: .82rem;
+            display: inline-block;
+            margin-top: .3rem;
+            padding: .1rem .45rem;
+            border: 1px solid var(--accent);
+            border-radius: 999px;
+            background: var(--panel-soft);
+            color: var(--accent-dark);
+            font-size: .75rem;
+            font-weight: 800;
+            line-height: 1.4;
+            white-space: nowrap;
         }}
 
         .student-change {{
@@ -783,6 +790,8 @@ def main() -> None:
     print(f"Zapisano {output.name}: {len(class_ids)} oddziałów z {source.name}")
     if missing_homerooms:
         print("Brak rozpoznanego wychowawcy:", ", ".join(missing_homerooms))
+    # Eksport nie podaje nazw grup w widoku oddziału — trzeba je dołożyć z XML-a planu.
+    print(f"Teraz uruchom: scripts/annotate_plan_groups.py {output.name} --plan-xml <XML planu>")
 
 
 if __name__ == "__main__":
