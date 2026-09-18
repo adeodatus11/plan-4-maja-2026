@@ -1110,6 +1110,20 @@
     },
     {
       "date": "2026-09-18",
+      "period": 1,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-09-18",
       "period": 2,
       "className": "1FB",
       "groupName": "gr2",
@@ -1161,7 +1175,7 @@
       ],
       "type": "substitution",
       "subject": "Technologia gastronomiczna z towaroznawstwem",
-      "message": "Okienko dla uczniów",
+      "message": "Zastępstwo",
       "room": "29"
     },
     {
@@ -1217,7 +1231,7 @@
       ],
       "type": "substitution",
       "subject": "Technologia gastronomiczna z towaroznawstwem",
-      "message": "Okienko dla uczniów",
+      "message": "Zastępstwo",
       "room": "29"
     },
     {
@@ -1301,7 +1315,7 @@
       ],
       "type": "substitution",
       "subject": "Technologia gastronomiczna z towaroznawstwem",
-      "message": "Okienko dla uczniów",
+      "message": "Zastępstwo",
       "room": "29"
     },
     {
@@ -1385,7 +1399,7 @@
       ],
       "type": "substitution",
       "subject": "Technologia gastronomiczna z towaroznawstwem",
-      "message": "Okienko dla uczniów",
+      "message": "Zastępstwo",
       "room": "29"
     },
     {
@@ -1446,6 +1460,20 @@
     },
     {
       "date": "2026-09-18",
+      "period": 6,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Technologia gastronomiczna z towaroznawstwem",
+      "message": "Mocarski Arkadiusz",
+      "room": "40"
+    },
+    {
+      "date": "2026-09-18",
       "period": 7,
       "className": "1TFA",
       "groupName": "gr1",
@@ -1499,6 +1527,20 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-09-18",
+      "period": 7,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Rozwój kompetencji zawodowych - Zasady zdrowego żywienia",
+      "message": "Mocarski Arkadiusz",
+      "room": "40"
     },
     {
       "date": "2026-09-18",
