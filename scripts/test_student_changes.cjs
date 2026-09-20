@@ -5,7 +5,7 @@ const payload=JSON.parse(fs.readFileSync(path.join(root,'student-changes.json'))
 const html=fs.readFileSync(path.join(root,'plan-lekcji-2026-09-07.html'),'utf8');
 const source=fs.readFileSync(path.join(root,'student-changes.js'),'utf8');
 async function create(data=payload) {
- const dom=new JSDOM(html,{runScripts:'outside-only',url:'https://plan.szkolamistrzow.info/plan-lekcji-2026-09-07.html?date=2026-09-14#1TFA'});
+ const dom=new JSDOM(html,{runScripts:'outside-only',url:'https://plan.szkolamistrzow.info/plan-lekcji-2026-09-07.html?date=2026-09-21#1TFA'});
  dom.window.fetch=async()=>({ok:true,json:async()=>data});
  dom.window.eval(source);
  await new Promise(resolve=>setImmediate(resolve));
@@ -33,13 +33,13 @@ async function create(data=payload) {
   }
   const before=doc.querySelector('.table-shell').innerHTML;choose(date);assert.equal(doc.querySelector('.table-shell').innerHTML,before,'No duplicate changes');
  }
- choose('2026-09-14');
+ choose('2026-09-21');
  assert.ok(doc.getElementById('1TFA').textContent.includes('Przeniesienie na lekcję 3'));
  doc.getElementById('plan-next').click();
- assert.equal(doc.getElementById('plan-date').value,'2026-09-15');
+ assert.equal(doc.getElementById('plan-date').value,'2026-09-22');
  assert.ok(!doc.getElementById('1TFA').textContent.includes('Przeniesienie na lekcję 3'));
- assert.ok(dom.window.location.search.includes('2026-09-15'));
- choose('2026-09-19');assert.equal(doc.querySelector('.table-shell').hidden,true);
+ assert.ok(dom.window.location.search.includes('2026-09-22'));
+ choose('2026-09-26');assert.equal(doc.querySelector('.table-shell').hidden,true);
  // Pierwszy dzień roboczy po paczce — liczony z danych, żeby nie starzał się z każdą nową paczką.
  const nextWeekday=iso=>{const d=new Date(iso+'T12:00:00Z');do{d.setUTCDate(d.getUTCDate()+1);}while([0,6].includes(d.getUTCDay()));return d.toISOString().slice(0,10);};
  const afterPackage=nextWeekday(payload.validTo);
