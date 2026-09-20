@@ -1343,6 +1343,48 @@
       "subject": "Biznes i zarządzanie",
       "message": "Zastępstwo",
       "room": "23"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 8,
+      "className": "1B",
+      "groupName": "",
+      "sourceTeacher": "KE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-09-21",
+      "period": 9,
+      "className": "1B",
+      "groupName": "",
+      "sourceTeacher": "KE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-09-21",
+      "period": 10,
+      "className": "1B",
+      "groupName": "",
+      "sourceTeacher": "KE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
     }
   ],
   "transfers": [
