@@ -36,6 +36,15 @@ def split_branch(value: object) -> tuple[str, str]:
     return parts[0], parts[1] if len(parts) > 1 else ""
 
 
+# Nauczanie indywidualne dotyczy jednego ucznia z imienia i nazwiska, więc nie
+# trafia na żadną ze stron. Eksport oznacza je przedrostkiem IN/IND.
+INDIVIDUAL_PATTERN = re.compile(r"^\s*IND?\b", re.IGNORECASE)
+
+
+def is_individual(*values: object) -> bool:
+    return any(INDIVIDUAL_PATTERN.match(clean(value)) for value in values)
+
+
 def period_number(value: object) -> int:
     match = re.match(r"\s*(\d+)", clean(value))
     if not match:
@@ -105,6 +114,8 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
     substitutions = []
     for row in sheet_rows(substitutions_path, "Oddziały"):
         class_name, group_name = split_branch(row.get("Oddział"))
+        if is_individual(class_name, group_name):
+            continue
         raw_substitute = clean(row.get("Zastępca"))
         is_message = raw_substitute.casefold().startswith("uczniowie ") or "złączenie grup" in raw_substitute.casefold()
         substitutions.append({
@@ -125,6 +136,8 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
         source = descriptor(row.get("Przeniesiono z"))
         target = descriptor(row.get("Przeniesiono na"))
         class_name, group_name = split_branch(row.get("Oddział"))
+        if is_individual(class_name, group_name):
+            continue
         transfers.append({
             "date": source["date"],
             "period": source["period"],

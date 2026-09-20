@@ -73,6 +73,26 @@ EOF
 Zachowaj znaczenie wpisów: `-`, `Zastępstwo` bez nazwiska, `Uczniowie zwolnieni
 do domu`, `Okienko dla uczniów`, `Bez konsekwencji…`. To nie są puste pola.
 
+### Nauczanie indywidualne (`IND`) — nie publikujemy
+
+Wpisy oznaczone `IN`/`IND` dotyczą jednego ucznia z imienia i nazwiska i **nie
+trafiają na żadną ze stron**. Eksport oznacza je dwojako:
+
+- w kolumnie `Oddział`: `4TFB|IND*KM`,
+- w nazwie dziennika zajęć innych: `IN - Nazwisko Imię [klasa]`.
+
+Filtr siedzi w kodzie i działa sam — nie wycinaj wierszy ręcznie z arkuszy:
+
+| Miejsce | Co robi |
+|---|---|
+| `zastepstwa/scripts/privacy_xlsx.py` | zamienia nazwę dziennika IND na sam znacznik `IND` (dane ucznia znikają, kategoria zostaje) |
+| `zastepstwa/scripts/build/data.mjs` | pomija zajęcia inne z `IND` oraz zastępstwa/przeniesienia z oddziałem lub grupą `IND` |
+| `plan-4-maja-2026/scripts/build_student_changes.py` | pomija te same wpisy w planie uczniowskim |
+
+Dopasowanie jest dosłowne (`^IND?\b`), więc `INFORMATYKA` czy `Indywidualny tok`
+się nie łapią. Różnica między liczbą wierszy w arkuszu a liczbą z `npm run data`
+o tyle właśnie wynika — podaj ją w raporcie zamiast traktować jako błąd odczytu.
+
 ## 2. Prywatność — zanim cokolwiek trafi do Gita
 
 Pracuj na kopiach poza repozytoriami. W kolumnie `Dziennik zajęć innych`
@@ -115,7 +135,9 @@ npm run test:performance
 `npm run data` wypisuje `{lessons, duties, substitutions, transfers,
 dutyChanges}`. Liczby muszą się zgadzać z liczbą wierszy w arkuszach (bez
 nagłówka). Zajęcia inne sprawdź w `public/data/changes.*.json` w polu
-`otherActivities` — mają być obecne i **bez** nazw dzienników.
+`otherActivities` — mają być **bez** nazw dzienników, a wpisy nauczania
+indywidualnego (`IND`) mają tam nie występować w ogóle. Gdy cała paczka to `IND`,
+puste `otherActivities` jest poprawnym wynikiem.
 
 Commituj wyłącznie dwa pliki XLSX. `public/data/`, `dist/`, `node_modules/`,
 `reports/` są w `.gitignore` i tam mają zostać.
