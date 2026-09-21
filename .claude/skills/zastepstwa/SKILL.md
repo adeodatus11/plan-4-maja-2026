@@ -64,12 +64,26 @@ z celem poza oknem sprawdza znacznik `Przeniesienie na lekcję N` w kratce,
 brak notki przy nagłówku i treść komunikatu. Sprawdzone — psuje się, gdy
 zachowanie zniknie.
 
-## 3. Przeniesienie zawsze na obu końcach
+## 3. Przeniesienie zawsze na obu końcach, z datami po obu stronach
 
 Każde przeniesienie typu `transfer` ma być oznaczone **i w lekcji źródłowej,
-i w docelowej**. Źródło dostaje opis z pełną datą docelową (dzień tygodnia,
-data, numer lekcji, sala), cel — skąd lekcja przyszła. Przełączenie dnia nie
-może zostawiać znaczników z poprzedniego ani ich dublować.
+i w docelowej**. Przełączenie dnia nie może zostawiać znaczników z poprzedniego
+ani ich dublować.
+
+Oba opisy muszą podawać **drugi koniec wraz z datą**, gdy przeniesienie
+przechodzi między dniami — sam numer lekcji nie mówi, o który dzień chodzi:
+
+| Koniec | Treść |
+|---|---|
+| źródłowy | `Przeniesiono z lekcji 8` · `Na wtorek, 29 września 2026, lekcja 9 · Edukacja obywatelska · sala 19` |
+| docelowy | `Przeniesienie na lekcję 9` · `Edukacja obywatelska · Kopij Marcin · sala 19 (z wtorku, 22 września 2026, lekcja 8)` |
+
+Przeniesienie w obrębie jednego dnia zostaje przy krótkiej formie
+`(z lekcji N)` — powtarzanie tej samej daty to szum.
+
+Dzień tygodnia po stronie docelowej idzie w **dopełniaczu** (`z wtorku`,
+`ze środy`, `z piątku`) — `formatDateFrom` w `student-changes.js` ma mapę
+odmian. `z wtorek` to błąd gramatyczny, nie literówka do zignorowania.
 
 Wyjątek wynikający z danych, nie błąd: gdy data źródłowa wypada przed
 `2026-09-07` (początek planu bazowego), tabela dnia jest ukryta i znacznika nie

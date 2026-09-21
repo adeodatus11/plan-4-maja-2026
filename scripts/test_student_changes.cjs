@@ -63,6 +63,28 @@ async function create(data=payload) {
   assert.ok(st.includes('Przeniesienia na')&&st.includes('brak danych o zastępstwach'),
    `Komunikat poza paczką musi mówić o braku danych o zastępstwach: ${st}`);
  }
+ // Cel przeniesienia między dniami musi mówić, z którego dnia lekcja przyszła.
+ const maxDate=doc.getElementById('plan-date').max, minDate=doc.getElementById('plan-date').min;
+ const dayName=iso=>new Intl.DateTimeFormat('pl-PL',{weekday:'long',timeZone:'UTC'}).format(new Date(iso+'T12:00:00Z'));
+ const genitive={'poniedziałek':'poniedziałku','wtorek':'wtorku','środa':'środy','czwartek':'czwartku','piątek':'piątku','sobota':'soboty','niedziela':'niedzieli'};
+ for(const t of payload.transfers.filter(c=>c.type==='transfer'&&c.date!==c.toDate)){
+  if(t.toDate<minDate||t.toDate>maxDate||[0,6].includes(new Date(t.toDate+'T12:00:00Z').getUTCDay())) continue;
+  choose(t.toDate);
+  const table=doc.getElementById(t.className); if(!table) continue;
+  const target=[...table.querySelectorAll('.student-change')].find(e=>e.textContent.includes(`Przeniesienie na lekcję ${t.toPeriod}`));
+  assert.ok(target,`Brak znacznika docelowego ${t.className} ${t.toDate}`);
+  const txt=target.textContent;
+  assert.ok(txt.includes(genitive[dayName(t.date)]),`Cel ${t.className} ${t.toDate} nie podaje dnia źródłowego: ${txt}`);
+  assert.ok(txt.includes(`lekcja ${t.period}`),`Cel ${t.className} ${t.toDate} nie podaje lekcji źródłowej: ${txt}`);
+ }
+ // Przeniesienie w obrębie jednego dnia zostaje przy krótkiej formie.
+ for(const t of payload.transfers.filter(c=>c.type==='transfer'&&c.date===c.toDate)){
+  if([0,6].includes(new Date(t.toDate+'T12:00:00Z').getUTCDay())) continue;
+  choose(t.toDate);
+  const table=doc.getElementById(t.className); if(!table) continue;
+  const target=[...table.querySelectorAll('.student-change')].find(e=>e.textContent.includes(`Przeniesienie na lekcję ${t.toPeriod}`));
+  if(target) assert.ok(target.textContent.includes(`z lekcji ${t.period}`),`Cel ${t.className} ${t.toDate} powinien mieć krótką formę: ${target.textContent}`);
+ }
  choose('2027-01-01');assert.equal(doc.querySelector('.table-shell').hidden,true);
  console.log('PASS: all dates, all substitutions, transfer source/target, reset, navigation, weekend and publication bounds');
 })().catch(e=>{console.error(e);process.exit(1)});

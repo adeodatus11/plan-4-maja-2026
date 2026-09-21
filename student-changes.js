@@ -120,7 +120,11 @@
             if (change.toDate === selectedDate) {
                 const grid = buildGrid(table);
                 const target = grid.find(row => Number(row[0]?.textContent.trim()) === change.toPeriod)?.[2 + (dayIndex(change.toDate)-1)*3];
-                appendChange(target || table.caption, "room-change", `Przeniesienie na lekcję ${change.toPeriod}`, `${change.subject} · ${change.teacher} · sala ${change.toRoom} (z lekcji ${change.period})`);
+                // Przy przeniesieniu między dniami sam numer lekcji nie mówi, skąd ona jest.
+                const origin = change.date === change.toDate
+                    ? `z lekcji ${change.period}`
+                    : `z ${formatDateFrom(change.date)}, lekcja ${change.period}`;
+                appendChange(target || table.caption, "room-change", `Przeniesienie na lekcję ${change.toPeriod}`, `${change.subject} · ${change.teacher} · sala ${change.toRoom} (${origin})`);
             }
         });
     }
@@ -128,6 +132,9 @@
     const tables = Array.from(document.querySelectorAll("table.plan"));
     const originals = new Map(tables.map(table => [table, table.innerHTML]));
     const formatDate = date => new Intl.DateTimeFormat("pl-PL", {weekday:"long", day:"numeric", month:"long", year:"numeric", timeZone:"UTC"}).format(new Date(date+"T12:00:00Z"));
+    // "z wtorku, 22 września 2026" — dopełniacz, bo "z wtorek" byłoby błędem.
+    const weekdayFrom = {"poniedziałek":"poniedziałku","wtorek":"wtorku","środa":"środy","czwartek":"czwartku","piątek":"piątku","sobota":"soboty","niedziela":"niedzieli"};
+    const formatDateFrom = date => { const [weekday, ...rest] = formatDate(date).split(", "); return [weekdayFrom[weekday] || weekday, ...rest].join(", "); };
     const isoToday = () => new Intl.DateTimeFormat("en-CA", {timeZone:"Europe/Warsaw", year:"numeric", month:"2-digit", day:"2-digit"}).format(new Date());
     const addDays = (date, n) => { const d = new Date(date+"T12:00:00Z"); d.setUTCDate(d.getUTCDate()+n); return d.toISOString().slice(0,10); };
     const validDate = value => /^\d{4}-\d{2}-\d{2}$/.test(value || "") && !Number.isNaN(new Date(value+"T12:00:00Z").getTime()) && new Date(value+"T12:00:00Z").toISOString().slice(0,10) === value;
