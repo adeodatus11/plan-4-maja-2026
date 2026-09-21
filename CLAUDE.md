@@ -9,6 +9,9 @@ Typowe zlecenie: użytkownik wrzuca dwa eksporty z dziennika —
 aktualizację obu serwisów. Numery w nazwach plików (`_11`, `_8`) to kolejne
 eksporty, nie kolejne tygodnie.
 
+Reguły trwałe (pomijanie `IND`, przeniesienia poza okresem paczki, wymagane
+kontrole) są w skillu [`.claude/skills/zastepstwa`](.claude/skills/zastepstwa/SKILL.md).
+
 Pełny runbook: [AKTUALIZACJA_ZASTEPSTW.md](AKTUALIZACJA_ZASTEPSTW.md). Przeczytaj
 go **przed** pierwszym poleceniem, razem z nadrzędną instrukcją z repozytorium
 nauczyciela (`zastepstwa`, gałąź `przebudowa`,

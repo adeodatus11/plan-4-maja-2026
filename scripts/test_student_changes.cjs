@@ -42,9 +42,27 @@ async function create(data=payload) {
  choose('2026-09-26');assert.equal(doc.querySelector('.table-shell').hidden,true);
  // Pierwszy dzień roboczy po paczce — liczony z danych, żeby nie starzał się z każdą nową paczką.
  const nextWeekday=iso=>{const d=new Date(iso+'T12:00:00Z');do{d.setUTCDate(d.getUTCDate()+1);}while([0,6].includes(d.getUTCDay()));return d.toISOString().slice(0,10);};
- const afterPackage=nextWeekday(payload.validTo);
+ const touches=iso=>payload.transfers.some(c=>c.date===iso||c.toDate===iso);
+ // Pierwszy dzień roboczy po paczce, którego nie dotyka żadne przeniesienie.
+ let afterPackage=nextWeekday(payload.validTo);
+ while(touches(afterPackage)) afterPackage=nextWeekday(afterPackage);
  assert.ok(afterPackage<=doc.getElementById('plan-date').max,`Data kontrolna ${afterPackage} wypada poza okresem planu`);
  choose(afterPackage);assert.equal(doc.querySelectorAll('.student-change').length,0,afterPackage);assert.ok(doc.getElementById('plan-data-status').textContent.includes('Brak opublikowanej'));
+ // Przeniesienie celujące poza okres paczki musi być widoczne w nowym miejscu.
+ for(const t of payload.transfers.filter(c=>c.type==='transfer'&&(c.toDate<payload.validFrom||c.toDate>payload.validTo))){
+  if(t.toDate>doc.getElementById('plan-date').max||[0,6].includes(new Date(t.toDate+'T12:00:00Z').getUTCDay())) continue;
+  choose(t.toDate);
+  const table=doc.getElementById(t.className);
+  assert.ok(table,`Brak tabeli ${t.className}`);
+  const marks=[...table.querySelectorAll('.student-change')];
+  assert.ok(marks.some(e=>e.textContent.includes(`Przeniesienie na lekcję ${t.toPeriod}`)),
+   `Brak znacznika docelowego ${t.className} ${t.toDate} lekcja ${t.toPeriod}`);
+  assert.equal(table.querySelectorAll('caption .student-change').length,0,
+   `Znacznik docelowy ${t.className} ${t.toDate} trafił przy nagłówku`);
+  const st=doc.getElementById('plan-data-status').textContent;
+  assert.ok(st.includes('Przeniesienia na')&&st.includes('brak danych o zastępstwach'),
+   `Komunikat poza paczką musi mówić o braku danych o zastępstwach: ${st}`);
+ }
  choose('2027-01-01');assert.equal(doc.querySelector('.table-shell').hidden,true);
  console.log('PASS: all dates, all substitutions, transfer source/target, reset, navigation, weekend and publication bounds');
 })().catch(e=>{console.error(e);process.exit(1)});

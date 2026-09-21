@@ -172,7 +172,15 @@
         }
         tables.forEach(t => {t.innerHTML=originals.get(t);});
         if (!payload) status.textContent = "Nie udało się pobrać zastępstw. Widoczny jest plan bazowy.";
-        else if (date < payload.validFrom || date > payload.validTo) status.textContent = "Brak opublikowanej paczki zastępstw na tę datę. Widoczny plan bazowy.";
+        else if (date < payload.validFrom || date > payload.validTo) {
+            // Przeniesienie może celować poza okres paczki. Lekcja musi być widoczna
+            // w nowym miejscu, ale o zastępstwach na ten dzień nadal nic nie wiemy.
+            const reaching = payload.transfers.filter(c => c.date === date || c.toDate === date);
+            if (reaching.length) {
+                applyChanges({substitutions: [], transfers: reaching});
+                status.textContent = `Przeniesienia na ${formatDate(date)}. Poza okresem paczki (${payload.validFrom.split("-").reverse().join(".")}–${payload.validTo.split("-").reverse().join(".")}) — brak danych o zastępstwach na tę datę.`;
+            } else status.textContent = "Brak opublikowanej paczki zastępstw na tę datę. Widoczny plan bazowy.";
+        }
         else {
             applyChanges({substitutions:payload.substitutions.filter(c=>c.date===date), transfers:payload.transfers.filter(c=>c.date===date || c.toDate===date)});
             status.textContent = `Plan z uwzględnieniem zastępstw i przeniesień na ${formatDate(date)}. Paczka: ${payload.validFrom.split("-").reverse().join(".")}–${payload.validTo.split("-").reverse().join(".")}.`;
