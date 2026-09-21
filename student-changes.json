@@ -1664,6 +1664,57 @@
       "teacher": "Jastrzębska-Majtyka Agnieszka",
       "fromRoom": "3",
       "toRoom": "3"
+    },
+    {
+      "date": "2026-09-21",
+      "period": 8,
+      "className": "4TFA",
+      "groupName": "",
+      "sourceTeacher": "BK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-09-29",
+      "toPeriod": 1,
+      "subject": "Projektowanie fryzur",
+      "teacher": "Krzemińska Beata",
+      "fromRoom": "5",
+      "toRoom": "3"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 8,
+      "className": "3K",
+      "groupName": "",
+      "sourceTeacher": "Kj",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-09-29",
+      "toPeriod": 9,
+      "subject": "Edukacja obywatelska",
+      "teacher": "Kopij Marcin",
+      "fromRoom": "19",
+      "toRoom": "19"
+    },
+    {
+      "date": "2026-09-18",
+      "period": 9,
+      "className": "1B",
+      "groupName": "gr2",
+      "sourceTeacher": "Dn",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "transfer",
+      "toDate": "2026-09-29",
+      "toPeriod": 9,
+      "subject": "Język angielski",
+      "teacher": "Staliś Donata",
+      "fromRoom": "44",
+      "toRoom": "23"
     }
   ],
   "validFrom": "2026-09-21",
