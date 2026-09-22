@@ -15,6 +15,13 @@ async function create(data=payload) {
  const dom=await create(), doc=dom.window.document;
  const choose=date=>{ const input=doc.getElementById('plan-date');input.value=date;input.dispatchEvent(new dom.window.Event('change')); };
  for(const c of [...payload.substitutions,...payload.transfers]) assert.ok(doc.getElementById(c.className),`Missing class ${c.className}`);
+ // Nazwa grupy z arkusza musi pasować do planu, inaczej wpis ląduje przy nagłówku.
+ // Puste sourceGroups znaczy, że planu nie dało się rozwiązać — to osobny przypadek.
+ for(const c of [...payload.substitutions,...payload.transfers]){
+  if(!c.groupName||!c.sourceGroups.length) continue;
+  assert.ok(c.sourceGroups.some(g=>[c.groupName.toLowerCase(),'cała klasa'].includes(g.toLowerCase())),
+   `Grupa nie pokryta planem: ${c.date} ${c.className}|${c.groupName} wobec ${JSON.stringify(c.sourceGroups)}`);
+ }
  const dates=[...new Set(payload.substitutions.map(c=>c.date))];
  for(const date of dates){
   choose(date);

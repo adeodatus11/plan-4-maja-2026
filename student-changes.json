@@ -450,6 +450,20 @@
     },
     {
       "date": "2026-09-22",
+      "period": 3,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-09-22",
       "period": 4,
       "className": "3WA",
       "groupName": "",
@@ -492,6 +506,20 @@
     },
     {
       "date": "2026-09-22",
+      "period": 4,
+      "className": "3FB",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
+    },
+    {
+      "date": "2026-09-22",
       "period": 5,
       "className": "3CA",
       "groupName": "",
@@ -517,6 +545,20 @@
       "subject": "Chemia",
       "message": "Kończyńska Małgorzata",
       "room": "33"
+    },
+    {
+      "date": "2026-09-22",
+      "period": 5,
+      "className": "1FB",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
     },
     {
       "date": "2026-09-22",
@@ -562,6 +604,20 @@
     },
     {
       "date": "2026-09-22",
+      "period": 6,
+      "className": "1FB",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-09-22",
       "period": 7,
       "className": "3CA",
       "groupName": "DZ",
@@ -590,6 +646,20 @@
     },
     {
       "date": "2026-09-22",
+      "period": 7,
+      "className": "3FA",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Chemia",
+      "message": "Kończyńska Małgorzata",
+      "room": "33"
+    },
+    {
+      "date": "2026-09-22",
       "period": 8,
       "className": "3CA",
       "groupName": "DZ",
@@ -610,6 +680,20 @@
       "sourceTeacher": "SD",
       "sourceGroups": [
         "ch"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-09-22",
+      "period": 8,
+      "className": "1TFH",
+      "groupName": "tech.fryz.",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "tech.fryz."
       ],
       "type": "message",
       "subject": "",
@@ -1441,6 +1525,356 @@
       "subject": "Wychowanie fizyczne",
       "message": "Zastępstwo",
       "room": "sg1"
+    },
+    {
+      "date": "2026-09-28",
+      "period": 1,
+      "className": "3K",
+      "groupName": "kucharz",
+      "sourceTeacher": "Mr",
+      "sourceGroups": [
+        "kucharz"
+      ],
+      "type": "substitution",
+      "subject": "Technologia gastronomiczna z towaroznawstwem",
+      "message": "Zastępstwo",
+      "room": "34"
+    },
+    {
+      "date": "2026-09-28",
+      "period": 2,
+      "className": "3K",
+      "groupName": "kucharz",
+      "sourceTeacher": "Mr",
+      "sourceGroups": [
+        "kucharz"
+      ],
+      "type": "substitution",
+      "subject": "Technologia gastronomiczna z towaroznawstwem",
+      "message": "Zastępstwo",
+      "room": "34"
+    },
+    {
+      "date": "2026-09-28",
+      "period": 4,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "Mr",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Rozwój kompetencji zawodowych - Zasady zdrowego żywienia",
+      "message": "Zastępstwo",
+      "room": "40"
+    },
+    {
+      "date": "2026-09-28",
+      "period": 5,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "Mr",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Rozwój kompetencji zawodowych - Zasady zdrowego żywienia",
+      "message": "Zastępstwo",
+      "room": "40"
+    },
+    {
+      "date": "2026-09-29",
+      "period": 5,
+      "className": "3K",
+      "groupName": "kucharz",
+      "sourceTeacher": "Mr",
+      "sourceGroups": [
+        "kucharz"
+      ],
+      "type": "substitution",
+      "subject": "Technika w produkcji gastronomicznej",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 1,
+      "className": "1TFB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 2,
+      "className": "2WA",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 2,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biologia",
+      "message": "Zastępstwo",
+      "room": "26"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 2,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 3,
+      "className": "1S",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 3,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Edukacja zdrowotna",
+      "message": "Zastępstwo",
+      "room": "26"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 4,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 4,
+      "className": "1CB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 5,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 5,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Chemia",
+      "message": "Zastępstwo",
+      "room": "26"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 5,
+      "className": "1FC",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 6,
+      "className": "3TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 6,
+      "className": "1S",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 7,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 7,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biologia",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 7,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 8,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 8,
+      "className": "1FA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 9,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Zastępstwo",
+      "room": "29"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 9,
+      "className": "2TFA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biznes i zarządzanie",
+      "message": "Zastępstwo",
+      "room": "23"
     }
   ],
   "transfers": [
@@ -1718,5 +2152,5 @@
     }
   ],
   "validFrom": "2026-09-21",
-  "validTo": "2026-09-27"
+  "validTo": "2026-09-30"
 }

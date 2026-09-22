@@ -111,6 +111,24 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
             result.update(groups[i] for i in lesson.get("groupids", "").split(",") if i in groups)
         return sorted(result)
 
+    def align_group(group_name, groups_at_slot, row, date, period, class_name):
+        """Nazwa grupy z arkusza bywa inna niż w planie (t.usfryz wobec tech.fryz.).
+
+        Oddział, dzień, lekcja i nauczyciel wskazały już konkretną lekcję planu.
+        Jeśli prowadzi ona dokładnie jedną grupę, bierzemy jej nazwę z planu —
+        bez tego student-changes.js nie znajdzie komórki i wpis wyląduje przy
+        nagłówku tabeli zamiast w kratce.
+        """
+        if not group_name or not groups_at_slot:
+            return group_name
+        if any(g.casefold() in (group_name.casefold(), "cała klasa") for g in groups_at_slot):
+            return group_name
+        if len(groups_at_slot) == 1:
+            print(f"Grupa nazwana inaczej niż w planie: {class_name}|{group_name} -> {groups_at_slot[0]} ({date}, lekcja {period})")
+            return groups_at_slot[0]
+        print(f"Grupa spoza planu, wpis wymaga weryfikacji: {class_name}|{group_name} ({date}, lekcja {period}), plan podaje {groups_at_slot}")
+        return group_name
+
     substitutions = []
     for row in sheet_rows(substitutions_path, "Oddziały"):
         class_name, group_name = split_branch(row.get("Oddział"))
@@ -118,13 +136,15 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
             continue
         raw_substitute = clean(row.get("Zastępca"))
         is_message = raw_substitute.casefold().startswith("uczniowie ") or "złączenie grup" in raw_substitute.casefold()
+        date, period = iso_date(row.get("Dzień")), period_number(row.get("Lekcja"))
+        slot_groups = source_groups(row, date, period, class_name)
         substitutions.append({
-            "date": iso_date(row.get("Dzień")),
-            "period": period_number(row.get("Lekcja")),
+            "date": date,
+            "period": period,
             "className": class_name,
-            "groupName": group_name,
+            "groupName": align_group(group_name, slot_groups, row, date, period, class_name),
             "sourceTeacher": source_teacher(row),
-            "sourceGroups": source_groups(row, iso_date(row.get("Dzień")), period_number(row.get("Lekcja")), class_name),
+            "sourceGroups": slot_groups,
             "type": "message" if is_message else "substitution",
             "subject": clean(row.get("Przedmiot")) if not is_message else "",
             "message": raw_substitute,
@@ -138,13 +158,14 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
         class_name, group_name = split_branch(row.get("Oddział"))
         if is_individual(class_name, group_name):
             continue
+        slot_groups = source_groups(row, source["date"], source["period"], class_name)
         transfers.append({
             "date": source["date"],
             "period": source["period"],
             "className": class_name,
-            "groupName": group_name,
+            "groupName": align_group(group_name, slot_groups, row, source["date"], source["period"], class_name),
             "sourceTeacher": source_teacher(row),
-            "sourceGroups": source_groups(row, source["date"], source["period"], class_name),
+            "sourceGroups": slot_groups,
             "type": "room" if source["date"] == target["date"] and source["period"] == target["period"] else "transfer",
             "toDate": target["date"],
             "toPeriod": target["period"],
