@@ -112,7 +112,24 @@ EOF
 Obie listy i wpisy IND mają być **puste**. Każdy wpis „grupa nie pokryta"
 ląduje przy nagłówku tabeli zamiast w kratce.
 
-## 5. Ręczne korekty giną przy następnym eksporcie
+## 5. Nazwiska i grupy z eksportu dopasowujemy do planu, nie odwrotnie
+
+Eksport i plan bazowy (XML) nazywają te same rzeczy inaczej. Oba generatory to
+wyrównują — **nie poprawiaj tego w arkuszach**:
+
+| Rozjazd | Przykład | Gdzie obsłużony |
+|---|---|---|
+| tytuł przy nazwisku | plan `ks. Paweł Stypa`, eksport `Stypa Paweł` | `normalizePersonKey` w `schedule-changes.js` i `person_key` w `build_student_changes.py` pomijają `ks`, `dr`, `mgr`, `inż`, `prof`, `hab` |
+| nazwa grupy | plan `tech.fryz.`, eksport `t.usfryz` | `align_group` w `build_student_changes.py` — tylko gdy oddział, dzień, lekcja i nauczyciel wskazują **dokładnie jedną** grupę |
+| skrót oddziału | plan `3KS`, eksport `3K` | dopasowanie po nazwie i skrócie klasy |
+
+Objaw niewyrównanego nazwiska na stronie nauczyciela: w `plan.*.json` pojawia
+się osoba `extra-…` o tym samym nazwisku co nauczyciel z planu, a nieobecności
+trafiają do niej zamiast do prawdziwego planu. Test „Titles do not split one
+teacher into two" tego pilnuje. Osoby `extra-` bez odpowiednika w planie
+(np. bibliotekarki występujące tylko jako zastępczynie) są w porządku.
+
+## 6. Ręczne korekty giną przy następnym eksporcie
 
 Gdy użytkownik zgłasza zmianę, której nie ma w dzienniku (np. odwołanie lekcji),
 dopisuje się ją jako wiersz w arkuszu `Oddziały` w konwencji eksportu — jeden
@@ -123,7 +140,7 @@ później`, `Uczniowie zwolnieni do domu`, `Zastępstwo`, `-`).
 nie trafi do dziennika. Przy następnej paczce sprawdź, czy eksport ją już
 zawiera; jeśli nie, a nadal jest aktualna — dopisz ponownie.
 
-## 6. Raport końcowy
+## 7. Raport końcowy
 
 Podaj: okres paczki, liczby (zastępstwa / przeniesienia / dyżury / zajęcia inne),
 ile wpisów pominięto jako `IND`, status publikacji obu stron (dopiero

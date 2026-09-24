@@ -78,10 +78,12 @@ def sheet_rows(path: Path, sheet_name: str) -> list[dict[str, object]]:
 
 
 def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path | None = None) -> dict[str, object]:
+    # Tytuły nie są częścią nazwiska: plan pisze "ks. Paweł Stypa", eksport "Stypa Paweł".
+    person_titles = {"ks", "ksiadz", "dr", "mgr", "inz", "prof", "hab"}
     def person_key(value):
         text = unicodedata.normalize("NFKD", clean(value)).casefold().replace("ł", "l")
         text = "".join(c for c in text if not unicodedata.combining(c))
-        return " ".join(sorted(re.findall(r"[a-z0-9]+", text)))
+        return " ".join(sorted(t for t in re.findall(r"[a-z0-9]+", text) if t not in person_titles))
 
     plan = ET.parse(plan_xml or ROOT.parent / "zastepstwa-main" / "dyzury-2026-09-07-korekta.xml")
     teacher_codes = {person_key(t.get("name")): t.get("short") for t in plan.findall("./teachers/teacher")}
