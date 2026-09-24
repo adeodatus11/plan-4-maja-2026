@@ -3711,10 +3711,10 @@
       "sourceGroups": [
         "kucharz"
       ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
+      "type": "substitution",
+      "subject": "Technologia gastronomiczna z towaroznawstwem",
+      "message": "Skarupa Agnieszka · złączenie grup",
+      "room": "41"
     },
     {
       "date": "2026-09-28",

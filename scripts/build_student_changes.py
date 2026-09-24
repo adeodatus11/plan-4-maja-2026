@@ -131,6 +131,14 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
         print(f"Grupa spoza planu, wpis wymaga weryfikacji: {class_name}|{group_name} ({date}, lekcja {period}), plan podaje {groups_at_slot}")
         return group_name
 
+    def with_merge_note(message, row):
+        """Uwagi nie trafiają do planu uczniowskiego — bywają tam nazwiska.
+        Jedyny wyjątek to stała fraza "złączenie grup": mówi uczniom, że idą
+        do innej grupy, i nie niesie żadnych danych osobowych."""
+        if "złączenie grup" in clean(row.get("Uwagi")).casefold() and "złączenie grup" not in message.casefold():
+            return f"{message} · złączenie grup"
+        return message
+
     substitutions = []
     for row in sheet_rows(substitutions_path, "Oddziały"):
         class_name, group_name = split_branch(row.get("Oddział"))
@@ -149,7 +157,7 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
             "sourceGroups": slot_groups,
             "type": "message" if is_message else "substitution",
             "subject": clean(row.get("Przedmiot")) if not is_message else "",
-            "message": raw_substitute,
+            "message": with_merge_note(raw_substitute, row),
             "room": "" if is_message else clean(row.get("Sala")),
         })
 

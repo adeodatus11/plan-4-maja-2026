@@ -136,6 +136,14 @@ dopisuje się ją jako wiersz w arkuszu `Oddziały` w konwencji eksportu — jed
 wiersz na lekcję, komunikat z istniejącego słownika (`Uczniowie przychodzą
 później`, `Uczniowie zwolnieni do domu`, `Zastępstwo`, `-`).
 
+Złączenie grup zapisuj tak: `Zastępca` = nauczyciel prowadzący połączoną
+grupę (np. `Skarupa Agnieszka` — wtedy zastępstwo trafia do jego planu na
+stronie nauczyciela), `Sala` = jego sala, `Uwagi` = `złączenie grup`. Uwagi
+nie idą do planu uczniowskiego, bo bywają w nich nazwiska — jedynym wyjątkiem
+jest właśnie stała fraza `złączenie grup` (`with_merge_note` w
+`build_student_changes.py`). Nie wpisuj jej do kolumny `Zastępca`: strona
+nauczyciela potraktowałaby ją jak osobę.
+
 **Powiedz przy tym wprost, że kolejny eksport ją nadpisze**, jeśli do tego czasu
 nie trafi do dziennika. Przy następnej paczce sprawdź, czy eksport ją już
 zawiera; jeśli nie, a nadal jest aktualna — dopisz ponownie.
