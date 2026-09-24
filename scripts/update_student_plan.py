@@ -4,14 +4,12 @@ from __future__ import annotations
 import argparse
 import html
 import re
-import shutil
 from urllib.parse import unquote
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 TEACHER_REPO = ROOT.parent / "zastepstwa-main"
-DEFAULT_LOGO = ROOT.parent / "zastepstwa-main" / "orzel-szkola-mistrzow.png"
 CLASS_ID_RENAMES = {
     "2B": "3B",
 }
@@ -204,6 +202,9 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan lekcji oddziałów - Szkoła Mistrzów</title>
+    <link rel="icon" href="logo/ikona-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="logo/ikona-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="logo/ikona-180.png">
     <style>
         :root {{
             color-scheme: light;
@@ -251,21 +252,26 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
             border-right: 1px solid var(--line);
         }}
 
-        .brand {{
-            display: grid;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+        .site-header {{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: .75rem 1.5rem;
+            padding: .85rem 1.25rem;
+            background: var(--panel);
+            border-bottom: 1px solid var(--line);
         }}
 
-        .brand-row {{
-            display: grid;
-            gap: .85rem;
-            justify-items: start;
-        }}
-
-        .brand img {{
+        .site-logo {{
             display: block;
-            max-width: 14rem;
+            min-width: 0;
+        }}
+
+        .site-logo img {{
+            display: block;
+            width: 483px;
+            max-width: 100%;
             height: auto;
         }}
 
@@ -287,12 +293,6 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
             font-weight: 900;
         }}
 
-        .site-title {{
-            margin: .25rem 0 0;
-            font-size: 1.15rem;
-            line-height: 1.2;
-        }}
-
         .nav-heading {{
             margin: 1.25rem 0 .75rem;
             color: var(--muted);
@@ -300,6 +300,10 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
             font-weight: 800;
             letter-spacing: .04em;
             text-transform: uppercase;
+        }}
+
+        nav .nav-heading:first-child {{
+            margin-top: 0;
         }}
 
         .class-list {{
@@ -501,40 +505,15 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
             }}
 
             nav {{
-                position: static;
-                height: auto;
-                overflow: visible;
-                padding: .8rem .9rem 0;
-                border-right: 0;
-                border-bottom: 1px solid var(--line);
+                display: none;
             }}
 
-            .brand {{
-                grid-template-columns: 1fr auto;
-                align-items: center;
-                gap: .75rem;
-                margin-bottom: .8rem;
-            }}
-
-            .brand-row {{
-                gap: .45rem;
-            }}
-
-            .brand img {{
-                max-width: min(11rem, 48vw);
+            .site-header {{
+                padding: .6rem .9rem;
             }}
 
             .dobry-plan {{
                 width: min(9rem, 38vw);
-            }}
-
-            .site-title {{
-                font-size: 1rem;
-            }}
-
-            nav .nav-heading,
-            nav .class-list {{
-                display: none;
             }}
 
             main {{
@@ -633,6 +612,20 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
             }}
         }}
 
+        @media (max-width: 640px) {{
+            .site-header {{
+                gap: .75rem;
+            }}
+
+            .site-logo img {{
+                width: min(242px, 62vw);
+            }}
+
+            .dobry-plan {{
+                width: min(6rem, 24vw);
+            }}
+        }}
+
         @media print {{
             body {{ background: #fff; }}
             .layout {{ display: block; }}
@@ -663,15 +656,17 @@ def render_page(source_text: str, class_ids: list[str], tables: list[str]) -> st
     </style>
 </head>
 <body>
+<header class="site-header">
+    <div class="site-logo">
+        <picture>
+            <source media="(max-width: 640px)" srcset="logo/logo-telefon.png" width="242" height="44">
+            <img src="logo/logo-komputer.png" alt="Zespół Szkół Zawodowych nr 5 – Szkoła Mistrzów – Plan lekcji" width="483" height="64">
+        </picture>
+    </div>
+    {dobry_plan_logo}
+</header>
 <div class="layout">
     <nav aria-label="Wybór oddziału">
-        <div class="brand">
-            <div class="brand-row">
-                <img src="orzel-szkola-mistrzow.png" alt="Szkoła Mistrzów">
-                <p class="site-title">Plan lekcji oddziałów</p>
-            </div>
-            {dobry_plan_logo}
-        </div>
         <div class="nav-heading">Oddziały</div>
         <div class="class-list">
 {nav_links(class_ids)}
@@ -743,11 +738,6 @@ def main() -> None:
         help="Ścieżka do pełnego pliku HTML planu lekcji. Bez argumentu skrypt bierze najnowszy plan z repo nauczycielskiego.",
     )
     parser.add_argument(
-        "--logo",
-        default=str(DEFAULT_LOGO),
-        help="Ścieżka do logo Szkoły Mistrzów.",
-    )
-    parser.add_argument(
         "--output",
         default=str(ROOT / "index.html"),
         help="Ścieżka do pliku wynikowego HTML.",
@@ -755,12 +745,9 @@ def main() -> None:
     args = parser.parse_args()
 
     source = Path(args.source).expanduser().resolve() if args.source else newest_teacher_plan()
-    logo = Path(args.logo).expanduser().resolve()
     output = Path(args.output).expanduser().resolve()
     if not source.exists():
         raise SystemExit(f"Nie znaleziono źródłowego planu: {source}")
-    if not logo.exists():
-        raise SystemExit(f"Nie znaleziono logo: {logo}")
 
     source_text = source.read_text(encoding="utf-8")
     source_class_ids = extract_class_ids(source_text)
@@ -786,7 +773,6 @@ def main() -> None:
         render_page(source_text, class_ids, tables),
         encoding="utf-8",
     )
-    shutil.copy2(logo, ROOT / "orzel-szkola-mistrzow.png")
     print(f"Zapisano {output.name}: {len(class_ids)} oddziałów z {source.name}")
     if missing_homerooms:
         print("Brak rozpoznanego wychowawcy:", ", ".join(missing_homerooms))

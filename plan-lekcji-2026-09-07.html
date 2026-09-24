@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan lekcji oddziałów - Szkoła Mistrzów</title>
+    <link rel="icon" href="logo/ikona-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="logo/ikona-16.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="logo/ikona-180.png">
     <style>
         :root {
             color-scheme: light;
@@ -51,21 +54,26 @@
             border-right: 1px solid var(--line);
         }
 
-        .brand {
-            display: grid;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+        .site-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: .75rem 1.5rem;
+            padding: .85rem 1.25rem;
+            background: var(--panel);
+            border-bottom: 1px solid var(--line);
         }
 
-        .brand-row {
-            display: grid;
-            gap: .85rem;
-            justify-items: start;
-        }
-
-        .brand img {
+        .site-logo {
             display: block;
-            max-width: 14rem;
+            min-width: 0;
+        }
+
+        .site-logo img {
+            display: block;
+            width: 483px;
+            max-width: 100%;
             height: auto;
         }
 
@@ -87,12 +95,6 @@
             font-weight: 900;
         }
 
-        .site-title {
-            margin: .25rem 0 0;
-            font-size: 1.15rem;
-            line-height: 1.2;
-        }
-
         .nav-heading {
             margin: 1.25rem 0 .75rem;
             color: var(--muted);
@@ -100,6 +102,10 @@
             font-weight: 800;
             letter-spacing: .04em;
             text-transform: uppercase;
+        }
+
+        nav .nav-heading:first-child {
+            margin-top: 0;
         }
 
         .class-list {
@@ -324,40 +330,15 @@
             }
 
             nav {
-                position: static;
-                height: auto;
-                overflow: visible;
-                padding: .8rem .9rem 0;
-                border-right: 0;
-                border-bottom: 1px solid var(--line);
+                display: none;
             }
 
-            .brand {
-                grid-template-columns: 1fr auto;
-                align-items: center;
-                gap: .75rem;
-                margin-bottom: .8rem;
-            }
-
-            .brand-row {
-                gap: .45rem;
-            }
-
-            .brand img {
-                max-width: min(11rem, 48vw);
+            .site-header {
+                padding: .6rem .9rem;
             }
 
             .dobry-plan {
                 width: min(9rem, 38vw);
-            }
-
-            .site-title {
-                font-size: 1rem;
-            }
-
-            nav .nav-heading,
-            nav .class-list {
-                display: none;
             }
 
             main {
@@ -456,6 +437,20 @@
             }
         }
 
+        @media (max-width: 640px) {
+            .site-header {
+                gap: .75rem;
+            }
+
+            .site-logo img {
+                width: min(242px, 62vw);
+            }
+
+            .dobry-plan {
+                width: min(6rem, 24vw);
+            }
+        }
+
         @media print {
             body { background: #fff; }
             .layout { display: block; }
@@ -487,14 +482,14 @@
     </style>
 </head>
 <body>
-<div class="layout">
-    <nav aria-label="Wybór oddziału">
-        <div class="brand">
-            <div class="brand-row">
-                <img src="orzel-szkola-mistrzow.png" alt="Szkoła Mistrzów">
-                <p class="site-title">Plan lekcji oddziałów</p>
-            </div>
-            <a class="dobry-plan" href="https://dobryplan.edu.pl" target="_blank" rel="noopener" aria-label="Dobry Plan"><svg class="dobry-plan-svg" aria-hidden="true" viewBox="0 0 23.655 4.068" xmlns="http://www.w3.org/2000/svg">
+<header class="site-header">
+    <div class="site-logo">
+        <picture>
+            <source media="(max-width: 640px)" srcset="logo/logo-telefon.png" width="242" height="44">
+            <img src="logo/logo-komputer.png" alt="Zespół Szkół Zawodowych nr 5 – Szkoła Mistrzów – Plan lekcji" width="483" height="64">
+        </picture>
+    </div>
+    <a class="dobry-plan" href="https://dobryplan.edu.pl" target="_blank" rel="noopener" aria-label="Dobry Plan"><svg class="dobry-plan-svg" aria-hidden="true" viewBox="0 0 23.655 4.068" xmlns="http://www.w3.org/2000/svg">
         
         <g transform="translate(-58.647 -123.81)" fill="black" stroke-width=".35278">
             <path d="m61.072 127.03h-0.74414v-0.24253c-0.12678 0.10473-0.24805 0.1819-0.35829 0.23151-0.11024 0.0551-0.24254 0.0772-0.38585 0.0772-0.28663 0-0.50712-0.11025-0.678-0.33073-0.17639-0.21498-0.25907-0.50712-0.25907-0.87644 0-0.19843 0.02756-0.36931 0.08819-0.52365 0.05512-0.14883 0.1378-0.28112 0.23151-0.39136 0.09371-0.10473 0.20946-0.1819 0.34727-0.24254 0.12678-0.0551 0.26458-0.0827 0.39688-0.0827 0.1378 0 0.25356 0.0165 0.34175 0.0441 0.08819 0.0276 0.1819 0.0661 0.27561 0.11024v-0.98667h0.74414zm-0.74414-0.63941v-1.141c-0.04961-0.0165-0.10473-0.0331-0.16536-0.0441-0.06063-0.011-0.11024-0.0165-0.15985-0.0165-0.19844 0-0.34175 0.0606-0.44097 0.18741-0.09922 0.11576-0.14332 0.28664-0.14332 0.50712 0 0.226 0.03859 0.39137 0.11576 0.49058 0.07717 0.10473 0.20395 0.15434 0.38034 0.15434 0.06615 0 0.1378-0.011 0.21497-0.0386 0.07166-0.022 0.1378-0.0551 0.19844-0.0992z"/>
@@ -509,7 +504,9 @@
             <path d="m82.302 127.03h-0.7717v-0.81029h0.7717z"/>
         </g>
     </svg></a>
-        </div>
+</header>
+<div class="layout">
+    <nav aria-label="Wybór oddziału">
         <div class="nav-heading">Oddziały</div>
         <div class="class-list">
                 <a class="class-link" href="#1B">1B</a>
