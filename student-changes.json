@@ -3626,9 +3626,7 @@
       "className": "1WB",
       "groupName": "relu",
       "sourceTeacher": "PS",
-      "sourceGroups": [
-        "relu"
-      ],
+      "sourceGroups": [],
       "type": "message",
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
