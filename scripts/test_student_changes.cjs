@@ -5,7 +5,7 @@ const payload=JSON.parse(fs.readFileSync(path.join(root,'student-changes.json'))
 const html=fs.readFileSync(path.join(root,'plan-lekcji-2026-09-07.html'),'utf8');
 const source=fs.readFileSync(path.join(root,'student-changes.js'),'utf8');
 async function create(data=payload) {
- const dom=new JSDOM(html,{runScripts:'outside-only',url:'https://plan.szkolamistrzow.info/plan-lekcji-2026-09-07.html?date=2026-09-21#1TFA'});
+ const dom=new JSDOM(html,{runScripts:'outside-only',url:`https://plan.szkolamistrzow.info/plan-lekcji-2026-09-07.html?date=${payload.validFrom}`});
  dom.window.fetch=async()=>({ok:true,json:async()=>data});
  dom.window.eval(source);
  await new Promise(resolve=>setImmediate(resolve));
@@ -40,13 +40,23 @@ async function create(data=payload) {
   }
   const before=doc.querySelector('.table-shell').innerHTML;choose(date);assert.equal(doc.querySelector('.table-shell').innerHTML,before,'No duplicate changes');
  }
- choose('2026-09-21');
- assert.ok(doc.getElementById('1TFA').textContent.includes('Przeniesienie na lekcję 3'));
+ // Znacznik przeniesienia na jego dzień i sprzątanie po przejściu dalej —
+ // przeniesienie dobierane z bieżącej paczki, żeby test nie starzał się z datami.
+ const isWeekday=iso=>![0,6].includes(new Date(iso+'T12:00:00Z').getUTCDay());
+ const addDay=iso=>{const d=new Date(iso+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+1);return d.toISOString().slice(0,10);};
+ const probe=payload.transfers.find(c=>c.type==='transfer'&&c.toDate>=payload.validFrom&&c.toDate<=payload.validTo&&isWeekday(c.toDate)&&doc.getElementById(c.className));
+ assert.ok(probe,'Paczka nie ma przeniesienia w oknie — brak danych do sprawdzenia nawigacji');
+ const mark=`Przeniesienie na lekcję ${probe.toPeriod}`, next=addDay(probe.toDate);
+ const sameMarkNextDay=payload.transfers.some(c=>c.className===probe.className&&c.type==='transfer'&&c.toDate===next&&c.toPeriod===probe.toPeriod);
+ choose(probe.toDate);
+ assert.ok(doc.getElementById(probe.className).textContent.includes(mark),`Brak znacznika ${mark} w ${probe.className} ${probe.toDate}`);
  doc.getElementById('plan-next').click();
- assert.equal(doc.getElementById('plan-date').value,'2026-09-22');
- assert.ok(!doc.getElementById('1TFA').textContent.includes('Przeniesienie na lekcję 3'));
- assert.ok(dom.window.location.search.includes('2026-09-22'));
- choose('2026-09-26');assert.equal(doc.querySelector('.table-shell').hidden,true);
+ assert.equal(doc.getElementById('plan-date').value,next);
+ if(!sameMarkNextDay) assert.ok(!doc.getElementById(probe.className).textContent.includes(mark),`Znacznik z ${probe.toDate} został po przejściu na ${next}`);
+ assert.ok(dom.window.location.search.includes(next));
+ // Sobota w oknie paczki: brak tabeli, niezależnie od danych.
+ let saturday=payload.validFrom; while(new Date(saturday+'T12:00:00Z').getUTCDay()!==6) saturday=addDay(saturday);
+ choose(saturday);assert.equal(doc.querySelector('.table-shell').hidden,true,saturday);
  // Pierwszy dzień roboczy po paczce — liczony z danych, żeby nie starzał się z każdą nową paczką.
  const nextWeekday=iso=>{const d=new Date(iso+'T12:00:00Z');do{d.setUTCDate(d.getUTCDate()+1);}while([0,6].includes(d.getUTCDay()));return d.toISOString().slice(0,10);};
  const touches=iso=>payload.transfers.some(c=>c.date===iso||c.toDate===iso);
