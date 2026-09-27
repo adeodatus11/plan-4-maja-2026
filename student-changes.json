@@ -39,7 +39,7 @@
       ],
       "type": "substitution",
       "subject": "Wychowanie fizyczne",
-      "message": "Rejno Julita",
+      "message": "Nestoruk Lidia",
       "room": "sg1"
     },
     {
@@ -66,9 +66,9 @@
         "kucharz"
       ],
       "type": "substitution",
-      "subject": "Technologia gastronomiczna z towaroznawstwem",
-      "message": "Skarupa Agnieszka · złączenie grup",
-      "room": "41"
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Skarupa Agnieszka",
+      "room": "40"
     },
     {
       "date": "2026-09-28",
@@ -81,7 +81,7 @@
       ],
       "type": "substitution",
       "subject": "Wychowanie fizyczne",
-      "message": "Rejno Julita",
+      "message": "Nestoruk Lidia",
       "room": "sg1"
     },
     {
@@ -123,7 +123,7 @@
       ],
       "type": "substitution",
       "subject": "Wychowanie fizyczne",
-      "message": "Rejno Julita",
+      "message": "Nestoruk Lidia",
       "room": "sg1"
     },
     {
@@ -179,7 +179,7 @@
       ],
       "type": "substitution",
       "subject": "Wychowanie fizyczne",
-      "message": "Rejno Julita",
+      "message": "Nestoruk Lidia",
       "room": "sg1"
     },
     {
@@ -235,7 +235,7 @@
       ],
       "type": "substitution",
       "subject": "Wychowanie fizyczne",
-      "message": "Rejno Julita",
+      "message": "Nestoruk Lidia",
       "room": "sg1"
     },
     {
@@ -263,7 +263,7 @@
       ],
       "type": "substitution",
       "subject": "Wychowanie fizyczne",
-      "message": "Rejno Julita",
+      "message": "Nestoruk Lidia",
       "room": "sg1"
     },
     {
@@ -1500,6 +1500,108 @@
     }
   ],
   "transfers": [
+    {
+      "date": "2026-09-28",
+      "period": 1,
+      "className": "2FC",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-09-28",
+      "toPeriod": 1,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-09-28",
+      "period": 2,
+      "className": "2K",
+      "groupName": "gr1",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "room",
+      "toDate": "2026-09-28",
+      "toPeriod": 2,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-09-28",
+      "period": 3,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-09-28",
+      "toPeriod": 3,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
+    {
+      "date": "2026-09-28",
+      "period": 4,
+      "className": "2CA",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-09-28",
+      "toPeriod": 4,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
+    {
+      "date": "2026-09-28",
+      "period": 5,
+      "className": "2S",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-09-28",
+      "toPeriod": 5,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
+    {
+      "date": "2026-09-28",
+      "period": 6,
+      "className": "1TFH",
+      "groupName": "gr1",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "room",
+      "toDate": "2026-09-28",
+      "toPeriod": 6,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
     {
       "date": "2026-09-21",
       "period": 8,
