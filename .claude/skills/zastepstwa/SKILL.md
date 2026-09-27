@@ -155,3 +155,26 @@ ile wpisów pominięto jako `IND`, status publikacji obu stron (dopiero
 `deploy: success` znaczy, że strona się zmieniła), wynik testów i konkretne
 problemy. Napisz wprost, czego nie sprawdziłeś — publicznych adresów nie da się
 pobrać z sandboxu (403 na proxy), więc kontroli na żywo nie wykonujesz.
+
+## 8. Automat: strona aktualizacji i zadanie `plan-uczniowski`
+
+Zwykle użytkownik aktualizuje sam przez
+https://nauczyciel.szkolamistrzow.info/aktualizuj.html — strona czyści pliki
+w przeglądarce, pokazuje kontrole (sala i płatność przy złączeniu grup, zajęcia
+biblioteczne, różnice wobec opublikowanej paczki) i wysyła oczyszczone XLSX na
+`zastepstwa/przebudowa`. Po wdrożeniu serwisu nauczyciela zadanie
+`plan-uczniowski` w `site.yml` przebudowuje `student-changes.json` tutaj
+(`zastepstwa/scripts/plan_uczniowski.sh`: generator, kontrole z sekcji 4 i
+`scripts/test_student_changes.cjs`) i wypycha go na `main` sekretem
+`PLAN_REPO_TOKEN`.
+
+Skutki dla pracy ręcznej:
+
+- **Źródłem prawdy są oczyszczone XLSX w `zastepstwa`.** Każdy push na
+  `przebudowa` nadpisze `student-changes.json`, więc ręczną poprawkę wpisuj do
+  arkusza (sekcja 6), nie do JSON.
+- Zmiana generatora, `student-changes.js` albo testu w tym repozytorium działa
+  od razu przy następnym uruchomieniu zadania — skrypt bierze je z `main`.
+- Gdy zadanie `plan-uczniowski` jest czerwone, plan uczniowski pokazuje
+  poprzednią paczkę. Najczęstsze przyczyny: brak sekretu, wpis z sekcji 4
+  („bez skrótu”, „grupa nie pokryta”, „IND w publikacji”) albo nieudany test.

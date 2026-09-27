@@ -10,6 +10,13 @@ nauczyciela: `zastepstwa`, gałąź **`przebudowa`**, plik
 konkrety środowiskowe i kolejność kroków. Przy rozbieżności wygrywa tamta
 instrukcja.
 
+> **Najpierw sprawdź, czy to w ogóle trzeba robić ręcznie.** Zwykłą aktualizację
+> użytkownik wykonuje sam na https://nauczyciel.szkolamistrzow.info/aktualizuj.html,
+> a `student-changes.json` przebudowuje zadanie `plan-uczniowski` w
+> `zastepstwa/.github/workflows/site.yml` przy każdym pushu na `przebudowa`.
+> Ręczna edycja tego JSON zostanie nadpisana — poprawki wpisuj do oczyszczonych
+> XLSX w `zastepstwa`. Szczegóły: skill, sekcja 8.
+
 ## 0. Najpierw: właściwe gałęzie
 
 To jest pułapka, która kosztuje najwięcej czasu. **Instrukcje i aktualne dane
