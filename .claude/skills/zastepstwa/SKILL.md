@@ -1,6 +1,6 @@
 ---
 name: zastepstwa
-description: Aktualizacja zastępstw i przeniesień z eksportów dziennika (InformacjeOZastepstwach.xlsx, InformacjeOPrzeniesieniach.xlsx) na obu serwisach — plan uczniowski plan.szkolamistrzow.info i serwis nauczyciela nauczyciel.szkolamistrzow.info. Użyj, gdy użytkownik wrzuca te pliki XLSX, prosi o aktualizację zastępstw, przeniesień, dyżurów albo o publikację którejkolwiek z tych stron.
+description: Aktualizacja zastępstw i przeniesień z eksportów dziennika (InformacjeOZastepstwach.xlsx, InformacjeOPrzeniesieniach.xlsx, opcjonalnie ZbiorczeZestawienieZmian.xlsx) na obu serwisach — plan uczniowski plan.szkolamistrzow.info i serwis nauczyciela nauczyciel.szkolamistrzow.info. Użyj, gdy użytkownik wrzuca te pliki XLSX, prosi o aktualizację zastępstw, przeniesień, dyżurów albo o publikację którejkolwiek z tych stron.
 ---
 
 # Aktualizacja zastępstw — reguły trwałe
@@ -178,3 +178,31 @@ Skutki dla pracy ręcznej:
 - Gdy zadanie `plan-uczniowski` jest czerwone, plan uczniowski pokazuje
   poprzednią paczkę. Najczęstsze przyczyny: brak sekretu, wpis z sekcji 4
   („bez skrótu”, „grupa nie pokryta”, „IND w publikacji”) albo nieudany test.
+
+## 9. Zbiorcze zestawienie zmian — tylko do kontroli, powody kasujemy
+
+`ZbiorczeZestawienieZmian.xlsx` to trzeci, **opcjonalny** eksport (tak samo
+opcjonalny jest plik przeniesień; wymagany jest tylko plik zastępstw). Zawiera
+powody nieobecności nauczycieli — w tym zwolnienia lekarskie — oraz nazwy
+dzienników uczniów (`IN - …`). **Powody nieobecności muszą być wyczyszczone
+i skasowane**: nie trafiają do Git, na strony, do raportu ani do komunikatów.
+
+Co z niego bierzemy:
+
+| Arkusz | Kolumny | Po co |
+|---|---|---|
+| `Dane nieobecności oddziałów` | `Data` (liczba seryjna Excela), `Numer lekcji`, `Oddział/dziennik/grupa z podziałem`, `Nazwa zajęć` | które lekcje są odwołane, bo oddział jest nieobecny (np. wycieczka) |
+| `Dane zastępstwa` | `Data`, `Numer lekcji`, oddział z podziałem, `Zastępstwo`, `Skutek nieobecności` | złączenia grup zapisane w dzienniku (`Skutek` = `Złączenie grup`) |
+
+Całą resztę (m.in. `Powód nieobecności`, arkusz `Dane nieobecności`, raporty)
+odrzuca `reduceOverview` w `zastepstwa/src/lib/update/checks.mjs` od razu po
+odczycie. Pracując ręcznie, rób tak samo: czytaj tylko te kolumny, nie
+wypisuj powodów w odpowiedziach, a plik usuń z sesji po użyciu.
+
+Reguła: zastępca, którego oddział jest w tym czasie nieobecny, nie łączy grup
+— jest wolny. Jeśli takie zastępstwo jest `Dodatkowo płatne`, zostaje **uwaga
+„Oddział nieobecny” do sprawdzenia** (decyzja użytkownika z 27.09.2026: na razie
+alert, później zbadamy, czy płatność jest właściwa). Dopasowanie lekcji z planu:
+ten sam dzień i lekcja, oddział po nazwie lub skrócie, a przedmiot równy
+`Nazwa zajęć` albo nieobecny cały oddział — nazwy grup w eksporcie
+(`t.usfryz`) i planie (`tech.fryz.`) się różnią.
