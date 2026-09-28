@@ -1193,6 +1193,20 @@
     {
       "date": "2026-09-30",
       "period": 6,
+      "className": "2FC",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 6,
       "className": "1TFB",
       "groupName": "gr2",
       "sourceTeacher": "MF",
@@ -1417,6 +1431,20 @@
     {
       "date": "2026-09-30",
       "period": 8,
+      "className": "2CB",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 8,
       "className": "2CA",
       "groupName": "",
       "sourceTeacher": "Nm",
@@ -1459,6 +1487,20 @@
     {
       "date": "2026-09-30",
       "period": 9,
+      "className": "2CA",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 9,
       "className": "1WB",
       "groupName": "gr2",
       "sourceTeacher": "MF",
@@ -1483,6 +1525,62 @@
       "subject": "Biznes i zarządzanie",
       "message": "Zastępstwo",
       "room": "23"
+    },
+    {
+      "date": "2026-10-01",
+      "period": 1,
+      "className": "1TH",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-10-01",
+      "period": 2,
+      "className": "2CB",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-10-01",
+      "period": 3,
+      "className": "3FC",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-10-01",
+      "period": 4,
+      "className": "1WA",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
     },
     {
       "date": "2026-10-01",
@@ -1511,6 +1609,20 @@
       "subject": "Język polski",
       "message": "Zastępstwo",
       "room": "18"
+    },
+    {
+      "date": "2026-10-01",
+      "period": 5,
+      "className": "1WB",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
     },
     {
       "date": "2026-10-01",
@@ -1571,6 +1683,20 @@
     {
       "date": "2026-10-01",
       "period": 7,
+      "className": "2CA",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-10-01",
+      "period": 7,
       "className": "2TFA",
       "groupName": "",
       "sourceTeacher": "Nm",
@@ -1595,6 +1721,20 @@
       "subject": "Język polski",
       "message": "Zastępstwo",
       "room": "18"
+    },
+    {
+      "date": "2026-10-01",
+      "period": 8,
+      "className": "3CB",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
     },
     {
       "date": "2026-10-01",
@@ -1711,6 +1851,20 @@
     {
       "date": "2026-10-02",
       "period": 5,
+      "className": "2FC",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-10-02",
+      "period": 5,
       "className": "3TFA",
       "groupName": "",
       "sourceTeacher": "Bp",
@@ -1721,6 +1875,20 @@
       "subject": "Język polski",
       "message": "Zastępstwo",
       "room": "18"
+    },
+    {
+      "date": "2026-10-02",
+      "period": 6,
+      "className": "1WA",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
     },
     {
       "date": "2026-10-02",
@@ -1753,6 +1921,20 @@
     {
       "date": "2026-10-02",
       "period": 7,
+      "className": "1WB",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-10-02",
+      "period": 7,
       "className": "1FC",
       "groupName": "",
       "sourceTeacher": "Nm",
@@ -1777,6 +1959,20 @@
       "subject": "Język polski",
       "message": "Zastępstwo",
       "room": "18"
+    },
+    {
+      "date": "2026-10-02",
+      "period": 8,
+      "className": "1WB",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Zastępstwo",
+      "room": "30"
     },
     {
       "date": "2026-10-02",
@@ -1809,6 +2005,20 @@
     {
       "date": "2026-10-02",
       "period": 9,
+      "className": "1TH",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
+    },
+    {
+      "date": "2026-10-02",
+      "period": 9,
       "className": "2TFA",
       "groupName": "",
       "sourceTeacher": "Nm",
@@ -1833,6 +2043,20 @@
       "subject": "Język polski",
       "message": "Zastępstwo",
       "room": "18"
+    },
+    {
+      "date": "2026-10-02",
+      "period": 10,
+      "className": "1TH",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Zastępstwo",
+      "room": "30"
     },
     {
       "date": "2026-10-02",
