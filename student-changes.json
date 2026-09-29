@@ -843,6 +843,20 @@
     {
       "date": "2026-09-30",
       "period": 1,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Sobczak Anna",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 1,
       "className": "3TFB",
       "groupName": "tech.hand.",
       "sourceTeacher": "AO",
@@ -909,6 +923,20 @@
       "subject": "Wychowanie fizyczne",
       "message": "Dalach Krystyna",
       "room": "sg2"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 2,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Sobczak Anna",
+      "room": "prf2"
     },
     {
       "date": "2026-09-30",
@@ -1007,6 +1035,20 @@
       "subject": "Język angielski",
       "message": "Wojciechowski Łukasz",
       "room": "40"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 3,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Sobczak Anna",
+      "room": "prf2"
     },
     {
       "date": "2026-09-30",
@@ -1137,6 +1179,20 @@
     {
       "date": "2026-09-30",
       "period": 4,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Sobczak Anna",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 4,
       "className": "3TFB",
       "groupName": "tech.hand.",
       "sourceTeacher": "AO",
@@ -1259,6 +1315,20 @@
       "subject": "Zajęcia z wychowawcą",
       "message": "Socha Dariusz",
       "room": "3"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 5,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Sobczak Anna",
+      "room": "prf2"
     },
     {
       "date": "2026-09-30",
@@ -1403,6 +1473,20 @@
     {
       "date": "2026-09-30",
       "period": 6,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Sobczak Anna",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 6,
       "className": "2S",
       "groupName": "",
       "sourceTeacher": "AO",
@@ -1511,6 +1595,20 @@
       "subject": "Język angielski",
       "message": "Wojciechowski Łukasz",
       "room": "2"
+    },
+    {
+      "date": "2026-09-30",
+      "period": 7,
+      "className": "1TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Sobczak Anna",
+      "room": "prf2"
     },
     {
       "date": "2026-09-30",
