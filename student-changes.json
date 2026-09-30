@@ -1524,7 +1524,7 @@
       "type": "substitution",
       "subject": "Historia",
       "message": "Kopij Marcin",
-      "room": "4"
+      "room": "05"
     },
     {
       "date": "2026-09-30",
@@ -1857,10 +1857,10 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "30"
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
     },
     {
       "date": "2026-10-01",
@@ -1871,10 +1871,10 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "30"
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
     },
     {
       "date": "2026-10-01",
@@ -1886,9 +1886,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "30"
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Pietrycha Małgorzata",
+      "room": "3"
     },
     {
       "date": "2026-10-01",
@@ -1900,9 +1900,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "30"
+      "subject": "Rozwój zainteresowań i kreatywności - obsługa klienta",
+      "message": "Kaczorowski Waldemar",
+      "room": "22"
     },
     {
       "date": "2026-10-01",
@@ -1914,9 +1914,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Zastępstwo",
-      "room": "34"
+      "subject": "Towar jako przedmiot handlu",
+      "message": "Kosin Anna",
+      "room": "42"
     },
     {
       "date": "2026-10-01",
@@ -1928,9 +1928,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "18"
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Pietrycha Małgorzata",
+      "room": "3"
     },
     {
       "date": "2026-10-01",
@@ -1942,8 +1942,8 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Wójcik Kamil",
       "room": "30"
     },
     {
@@ -1956,8 +1956,8 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Zastępstwo",
+      "subject": "Technika w produkcji cukierniczej",
+      "message": "Kończyńska Małgorzata",
       "room": "34"
     },
     {
@@ -1970,9 +1970,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "18"
+      "subject": "Chemia",
+      "message": "Hudziec Agnieszka",
+      "room": "26"
     },
     {
       "date": "2026-10-01",
@@ -1984,9 +1984,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Zastępstwo",
-      "room": "34"
+      "subject": "Fizyka",
+      "message": "Biczysko Wojciech",
+      "room": "22"
     },
     {
       "date": "2026-10-01",
@@ -2012,9 +2012,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "30"
+      "subject": "Technika w produkcji cukierniczej",
+      "message": "Kończyńska Małgorzata",
+      "room": "34"
     },
     {
       "date": "2026-10-01",
@@ -2026,9 +2026,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Zastępstwo",
-      "room": "34"
+      "subject": "Techniki fryzjerskie",
+      "message": "Sobczak Anna",
+      "room": "prF3"
     },
     {
       "date": "2026-10-01",
@@ -2039,10 +2039,10 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "18"
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     },
     {
       "date": "2026-10-01",
@@ -2054,9 +2054,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "30"
+      "subject": "Doradztwo zawodowe",
+      "message": "Krzemińska Beata",
+      "room": "5"
     },
     {
       "date": "2026-10-01",
@@ -2067,10 +2067,10 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "18"
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     },
     {
       "date": "2026-10-01",
@@ -2082,8 +2082,8 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
+      "subject": "Doradztwo zawodowe",
+      "message": "Krzemińska Beata",
       "room": "18"
     },
     {
@@ -2096,9 +2096,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Zastępstwo",
-      "room": "18"
+      "subject": "Doradztwo zawodowe",
+      "message": "Krzemińska Beata",
+      "room": "5"
     },
     {
       "date": "2026-10-02",
@@ -2187,6 +2187,20 @@
     {
       "date": "2026-10-02",
       "period": 4,
+      "className": "5TH",
+      "groupName": "DZ",
+      "sourceTeacher": "DK",
+      "sourceGroups": [
+        "dz"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Zastępstwo",
+      "room": "sg2"
+    },
+    {
+      "date": "2026-10-02",
+      "period": 4,
       "className": "1TFH",
       "groupName": "",
       "sourceTeacher": "Nm",
@@ -2229,6 +2243,20 @@
     {
       "date": "2026-10-02",
       "period": 5,
+      "className": "5TH",
+      "groupName": "DZ",
+      "sourceTeacher": "DK",
+      "sourceGroups": [
+        "dz"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Zastępstwo",
+      "room": "sg2"
+    },
+    {
+      "date": "2026-10-02",
+      "period": 5,
       "className": "2FC",
       "groupName": "",
       "sourceTeacher": "FA",
@@ -2267,6 +2295,20 @@
       "subject": "Geografia",
       "message": "Zastępstwo",
       "room": "31"
+    },
+    {
+      "date": "2026-10-02",
+      "period": 6,
+      "className": "5TH",
+      "groupName": "DZ",
+      "sourceTeacher": "DK",
+      "sourceGroups": [
+        "dz"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Zastępstwo",
+      "room": "sg2"
     },
     {
       "date": "2026-10-02",
@@ -2801,6 +2843,23 @@
       "teacher": "Leńczowska Iwona",
       "fromRoom": "2",
       "toRoom": "2"
+    },
+    {
+      "date": "2026-10-01",
+      "period": 10,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-10-01",
+      "toPeriod": 6,
+      "subject": "Zajęcia z wychowawcą",
+      "teacher": "Czukiewska Bożena",
+      "fromRoom": "41",
+      "toRoom": "41"
     }
   ],
   "validFrom": "2026-09-28",
