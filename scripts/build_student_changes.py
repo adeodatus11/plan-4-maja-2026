@@ -202,6 +202,10 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
         if is_individual(class_name, group_name):
             continue
         raw_substitute = clean(row.get("Zastępca"))
+        # Zastępca jeszcze nieprzypisany („Zastępstwo” bez nazwiska albo pusto) —
+        # nie publikujemy, dopóki dziennik nie poda, kto przejmie lekcję.
+        if not raw_substitute or raw_substitute.casefold() == "zastępstwo":
+            continue
         is_message = raw_substitute.casefold().startswith("uczniowie ") or "złączenie grup" in raw_substitute.casefold()
         date, period = iso_date(row.get("Dzień")), period_number(row.get("Lekcja"))
         slot_groups = source_groups(row, date, period, class_name)

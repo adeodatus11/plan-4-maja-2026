@@ -77,8 +77,10 @@ for name in ['InformacjeOZastepstwach','InformacjeOPrzeniesieniach']:
 EOF
 ```
 
-Zachowaj znaczenie wpisów: `-`, `Zastępstwo` bez nazwiska, `Uczniowie zwolnieni
-do domu`, `Okienko dla uczniów`, `Bez konsekwencji…`. To nie są puste pola.
+Zachowaj znaczenie wpisów: `-`, `Uczniowie zwolnieni do domu`, `Okienko dla
+uczniów`, `Bez konsekwencji…`. To nie są puste pola. Wyjątek: `Zastępstwo` bez
+nazwiska (albo pusty zastępca) to zastępstwo jeszcze nieprzypisane — oba
+generatory je pomijają, dopóki dziennik nie poda zastępcy.
 
 ### Nauczanie indywidualne (`IND`) — nie publikujemy
 
@@ -307,8 +309,9 @@ wynikiem workflow i powiedz wprost, że wizualnej kontroli na żywo nie wykonał
   eksport podaje salę źródłową `sg6`, a plan bazowy ma dla nauczyciela `MP`
   salę `sg8`, więc dopasowanie po sali odrzuca komórkę. Rozbieżność jest w
   źródle — nie „poprawiaj" jej w danych.
-- Pojedyncze wpisy `Zastępstwo` bez nazwiska zastępcy są poprawne i mają tak
-  zostać wyświetlone.
+- Wpisy `Zastępstwo` bez nazwiska zastępcy są pomijane (decyzja użytkownika
+  z 04.10.2026) — różnica między liczbą wierszy arkusza a liczbą zastępstw
+  w danych bierze się m.in. stąd.
 
 ## 8. Raport końcowy
 
