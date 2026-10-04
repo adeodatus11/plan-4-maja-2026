@@ -199,20 +199,6 @@
     {
       "date": "2026-10-05",
       "period": 7,
-      "className": "1WA",
-      "groupName": "gr2",
-      "sourceTeacher": "PM",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "substitution",
-      "subject": "Informatyka",
-      "message": "Zastępstwo",
-      "room": "38"
-    },
-    {
-      "date": "2026-10-05",
-      "period": 7,
       "className": "2FC",
       "groupName": "",
       "sourceTeacher": "Nm",
@@ -223,20 +209,6 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
-    },
-    {
-      "date": "2026-10-05",
-      "period": 8,
-      "className": "1WA",
-      "groupName": "",
-      "sourceTeacher": "PM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Edukacja dla bezpieczeństwa",
-      "message": "Zastępstwo",
-      "room": "40"
     },
     {
       "date": "2026-10-05",
@@ -279,20 +251,6 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
-    },
-    {
-      "date": "2026-10-05",
-      "period": 9,
-      "className": "1WA",
-      "groupName": "",
-      "sourceTeacher": "PM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Zastępstwo",
-      "room": "40"
     },
     {
       "date": "2026-10-05",
