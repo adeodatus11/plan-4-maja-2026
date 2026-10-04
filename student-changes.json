@@ -3,6 +3,20 @@
     {
       "date": "2026-10-05",
       "period": 1,
+      "className": "4TFB",
+      "groupName": "",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-05",
+      "period": 1,
       "className": "3K",
       "groupName": "kucharz",
       "sourceTeacher": "Mr",
@@ -41,6 +55,34 @@
       "subject": "Wychowanie fizyczne",
       "message": "Nestoruk Lidia",
       "room": "sg1"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 2,
+      "className": "2K",
+      "groupName": "gr2",
+      "sourceTeacher": "MG",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Karczmarz Aleksandra",
+      "room": "2"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 2,
+      "className": "4TFB",
+      "groupName": "",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
     },
     {
       "date": "2026-10-05",
@@ -87,6 +129,48 @@
     {
       "date": "2026-10-05",
       "period": 3,
+      "className": "1FB",
+      "groupName": "gr1",
+      "sourceTeacher": "Gt",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Biezmienow Małgorzata",
+      "room": "17"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 3,
+      "className": "3TFA",
+      "groupName": "",
+      "sourceTeacher": "MG",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Fizyka",
+      "message": "Biczysko Wojciech",
+      "room": "2"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 3,
+      "className": "4TFB",
+      "groupName": "",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-05",
+      "period": 3,
       "className": "3K",
       "groupName": "",
       "sourceTeacher": "Nm",
@@ -111,6 +195,48 @@
       "subject": "Wychowanie fizyczne",
       "message": "Nestoruk Lidia",
       "room": "sg1"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 4,
+      "className": "1TFB",
+      "groupName": "gr1",
+      "sourceTeacher": "Gt",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-05",
+      "period": 4,
+      "className": "1TFB",
+      "groupName": "gr2",
+      "sourceTeacher": "MG",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-05",
+      "period": 4,
+      "className": "2TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Leńczowska Iwona",
+      "room": "prf2"
     },
     {
       "date": "2026-10-05",
@@ -185,6 +311,34 @@
     {
       "date": "2026-10-05",
       "period": 5,
+      "className": "1TFA",
+      "groupName": "gr2",
+      "sourceTeacher": "Gt",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 5,
+      "className": "2TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Leńczowska Iwona",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 5,
       "className": "2K",
       "groupName": "",
       "sourceTeacher": "Mr",
@@ -241,6 +395,20 @@
     {
       "date": "2026-10-05",
       "period": 6,
+      "className": "2TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Leńczowska Iwona",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 6,
       "className": "1WA",
       "groupName": "",
       "sourceTeacher": "SE",
@@ -248,9 +416,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Galert Anna",
-      "room": "23"
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
       "date": "2026-10-05",
@@ -269,6 +437,20 @@
     {
       "date": "2026-10-05",
       "period": 7,
+      "className": "2TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Leńczowska Iwona",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 7,
       "className": "2FC",
       "groupName": "",
       "sourceTeacher": "Nm",
@@ -279,6 +461,34 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-10-05",
+      "period": 8,
+      "className": "1CA",
+      "groupName": "gr1",
+      "sourceTeacher": "Gt",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Wojciechowski Łukasz",
+      "room": "44"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 8,
+      "className": "2TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Leńczowska Iwona",
+      "room": "prf2"
     },
     {
       "date": "2026-10-05",
@@ -325,6 +535,34 @@
     {
       "date": "2026-10-05",
       "period": 9,
+      "className": "3TFB",
+      "groupName": "gr1",
+      "sourceTeacher": "Gt",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Język niemiecki",
+      "message": "Fiodorów Małgorzata",
+      "room": "23"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 9,
+      "className": "2TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Leńczowska Iwona",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 9,
       "className": "3TFA",
       "groupName": "",
       "sourceTeacher": "Nm",
@@ -349,6 +587,34 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-10-05",
+      "period": 10,
+      "className": "4TFA",
+      "groupName": "",
+      "sourceTeacher": "Gt",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-05",
+      "period": 10,
+      "className": "2TFA",
+      "groupName": "gr1",
+      "sourceTeacher": "JA",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Leńczowska Iwona",
+      "room": "prf2"
     },
     {
       "date": "2026-10-05",
