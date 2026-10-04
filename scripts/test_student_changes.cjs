@@ -44,16 +44,27 @@ async function create(data=payload) {
  // przeniesienie dobierane z bieżącej paczki, żeby test nie starzał się z datami.
  const isWeekday=iso=>![0,6].includes(new Date(iso+'T12:00:00Z').getUTCDay());
  const addDay=iso=>{const d=new Date(iso+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+1);return d.toISOString().slice(0,10);};
- const probe=payload.transfers.find(c=>c.type==='transfer'&&c.toDate>=payload.validFrom&&c.toDate<=payload.validTo&&isWeekday(c.toDate)&&doc.getElementById(c.className));
- assert.ok(probe,'Paczka nie ma przeniesienia w oknie — brak danych do sprawdzenia nawigacji');
- const mark=`Przeniesienie na lekcję ${probe.toPeriod}`, next=addDay(probe.toDate);
- const sameMarkNextDay=payload.transfers.some(c=>c.className===probe.className&&c.type==='transfer'&&c.toDate===next&&c.toPeriod===probe.toPeriod);
- choose(probe.toDate);
- assert.ok(doc.getElementById(probe.className).textContent.includes(mark),`Brak znacznika ${mark} w ${probe.className} ${probe.toDate}`);
- doc.getElementById('plan-next').click();
- assert.equal(doc.getElementById('plan-date').value,next);
- if(!sameMarkNextDay) assert.ok(!doc.getElementById(probe.className).textContent.includes(mark),`Znacznik z ${probe.toDate} został po przejściu na ${next}`);
- assert.ok(dom.window.location.search.includes(next));
+ // Najpierw przeniesienie w oknie paczki, potem dowolne w okresie planu (cel poza
+ // oknem też jest pokazywany). Paczka bez przeniesień (np. jeden dzień) też jest
+ // poprawna — wtedy sprawdzamy samą nawigację.
+ const inPlan=c=>c.type==='transfer'&&isWeekday(c.toDate)&&c.toDate>=doc.getElementById('plan-date').min&&c.toDate<doc.getElementById('plan-date').max&&doc.getElementById(c.className);
+ const probe=payload.transfers.find(c=>inPlan(c)&&c.toDate>=payload.validFrom&&c.toDate<=payload.validTo)||payload.transfers.find(inPlan);
+ if(probe){
+  const mark=`Przeniesienie na lekcję ${probe.toPeriod}`, next=addDay(probe.toDate);
+  const sameMarkNextDay=payload.transfers.some(c=>c.className===probe.className&&c.type==='transfer'&&c.toDate===next&&c.toPeriod===probe.toPeriod);
+  choose(probe.toDate);
+  assert.ok(doc.getElementById(probe.className).textContent.includes(mark),`Brak znacznika ${mark} w ${probe.className} ${probe.toDate}`);
+  doc.getElementById('plan-next').click();
+  assert.equal(doc.getElementById('plan-date').value,next);
+  if(!sameMarkNextDay) assert.ok(!doc.getElementById(probe.className).textContent.includes(mark),`Znacznik z ${probe.toDate} został po przejściu na ${next}`);
+  assert.ok(dom.window.location.search.includes(next));
+ } else {
+  choose(payload.validFrom);
+  const next=addDay(payload.validFrom);
+  doc.getElementById('plan-next').click();
+  assert.equal(doc.getElementById('plan-date').value,next);
+  assert.ok(dom.window.location.search.includes(next));
+ }
  // Sobota w oknie paczki: brak tabeli, niezależnie od danych.
  let saturday=payload.validFrom; while(new Date(saturday+'T12:00:00Z').getUTCDay()!==6) saturday=addDay(saturday);
  choose(saturday);assert.equal(doc.querySelector('.table-shell').hidden,true,saturday);

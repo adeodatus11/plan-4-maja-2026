@@ -119,6 +119,7 @@ wyrównują — **nie poprawiaj tego w arkuszach**:
 
 | Rozjazd | Przykład | Gdzie obsłużony |
 |---|---|---|
+| literówka, jeden człon podwójnego nazwiska | plan `Eleonora Smirnow-Zechman`, eksport `Smirnow Eleonora` | gdy dokładny klucz nie istnieje: `guessPerson` w `schedule-changes.js` i `checks.mjs`, `guess_code` w `build_student_changes.py` — człon nazwiska musi się zgadzać (dopuszczalna literówka), inne imię blokuje |
 | tytuł przy nazwisku | plan `ks. Paweł Stypa`, eksport `Stypa Paweł` | `normalizePersonKey` w `schedule-changes.js` i `person_key` w `build_student_changes.py` pomijają `ks`, `dr`, `mgr`, `inż`, `prof`, `hab` |
 | nazwa grupy | plan `tech.fryz.`, eksport `t.usfryz` | `align_group` w `build_student_changes.py` — tylko gdy oddział, dzień, lekcja i nauczyciel wskazują **dokładnie jedną** grupę |
 | skrót oddziału | plan `3KS`, eksport `3K` | dopasowanie po nazwie i skrócie klasy |

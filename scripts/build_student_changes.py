@@ -71,6 +71,13 @@ def descriptor(value: object) -> dict[str, object]:
 def sheet_rows(path: Path, sheet_name: str) -> list[dict[str, object]]:
     workbook = load_workbook(path, read_only=True, data_only=True)
     if sheet_name not in workbook.sheetnames:
+        # Pusty eksport z dziennika: zamiast arkusza zmian tylko „Opis parametrów”
+        # z tekstem „Brak informacji o przeniesieniach” (albo „…o zastępstwach”).
+        description = " ".join(
+            str(v) for row in workbook["Opis parametrów"].iter_rows(values_only=True) for v in row if v
+        ) if "Opis parametrów" in workbook.sheetnames else ""
+        if "Brak informacji o" in description:
+            return []
         raise ValueError(f"Brak arkusza '{sheet_name}' w {path.name}")
     values = workbook[sheet_name].iter_rows(values_only=True)
     headers = [clean(value) for value in next(values)]
@@ -87,8 +94,58 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
 
     plan = ET.parse(plan_xml or ROOT.parent / "zastepstwa-main" / "dyzury-2026-09-07-korekta.xml")
     teacher_codes = {person_key(t.get("name")): t.get("short") for t in plan.findall("./teachers/teacher")}
+
+    # Dopasowanie przybliżone, gdy dokładny klucz nie istnieje — ta sama reguła co
+    # guessPerson w zastepstwa/schedule-changes.js: podwójne nazwisko (wystarczy
+    # jeden człon) albo literówka; plan podaje „Imię Nazwisko”, samo imię nie wystarcza.
+    def person_tokens(value):
+        text = unicodedata.normalize("NFKD", re.sub(r"\[[^\]]*\]", "", clean(value))).casefold().replace("ł", "l")
+        text = "".join(c for c in text if not unicodedata.combining(c))
+        return [t for t in re.findall(r"[a-z0-9]+", text) if t not in person_titles]
+
+    def edit_distance(a, b):
+        row = list(range(len(b) + 1))
+        for i in range(1, len(a) + 1):
+            previous, row[0] = row[0], i
+            for j in range(1, len(b) + 1):
+                current = row[j]
+                row[j] = min(row[j] + 1, row[j - 1] + 1, previous + (a[i - 1] != b[j - 1]))
+                previous = current
+        return row[len(b)]
+
+    def close(a, b):
+        shorter, distance = min(len(a), len(b)), edit_distance(a, b)
+        return a == b or (shorter >= 4 and distance <= 1) or (shorter >= 7 and distance <= 2)
+
+    plan_people = [(person_tokens(t.get("name")), t.get("short")) for t in plan.findall("./teachers/teacher")]
+    def guess_code(raw):
+        if not clean(raw) or re.match(r"(uczniowie|zastępstwo|okienko|bez |zajęcia|-)", clean(raw), re.I):
+            return None
+        query, best, best_score = person_tokens(raw), None, 0.0
+        for tokens, short in plan_people:
+            if not tokens:
+                continue
+            first, rest = tokens[0], tokens[1:]
+            last = rest or [first]
+            score = 0.0
+            for token in query:
+                if token in last:
+                    score += 1
+                elif any(close(token, part) for part in last):
+                    score += 0.7
+                elif rest and close(token, first):
+                    score += 0.5
+                else:
+                    score -= 0.5
+            if score >= 1 and score > best_score:
+                best, best_score = short, score
+        return best
+
+    def teacher_code(raw):
+        return teacher_codes.get(person_key(raw)) or guess_code(raw)
+
     def source_teacher(row):
-        code = teacher_codes.get(person_key(row.get("Nauczyciel/wakat")))
+        code = teacher_code(row.get("Nauczyciel/wakat"))
         if not code:
             print(f"Brak prowadzącego w planie, wpis wymaga weryfikacji: {row.get('Nauczyciel/wakat')}")
         return code or ""
@@ -100,7 +157,7 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
     lessons = {n.get("id"): n for n in plan.findall("./lessons/lesson")}
     def source_groups(row, date, period, class_name):
         result = set()
-        code = teacher_codes.get(person_key(row.get("Nauczyciel/wakat")))
+        code = teacher_code(row.get("Nauczyciel/wakat"))
         day = datetime.strptime(date, "%Y-%m-%d").weekday()
         for card in plan.findall("./cards/card"):
             lesson = lessons[card.get("lessonid")]
