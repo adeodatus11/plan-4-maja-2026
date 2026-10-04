@@ -16,6 +16,20 @@
     },
     {
       "date": "2026-10-05",
+      "period": 1,
+      "className": "1TFA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-05",
       "period": 2,
       "className": "2TFB",
       "groupName": "DZ",
@@ -44,6 +58,20 @@
     },
     {
       "date": "2026-10-05",
+      "period": 2,
+      "className": "1FB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
+    },
+    {
+      "date": "2026-10-05",
       "period": 3,
       "className": "2TFB",
       "groupName": "DZ",
@@ -66,9 +94,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Smirnow-Zechman Eleonora",
-      "room": "23"
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
       "date": "2026-10-05",
@@ -128,6 +156,20 @@
     },
     {
       "date": "2026-10-05",
+      "period": 4,
+      "className": "1CA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Technika w produkcji cukierniczej",
+      "message": "Kończyńska Małgorzata",
+      "room": "23"
+    },
+    {
+      "date": "2026-10-05",
       "period": 5,
       "className": "4TFB",
       "groupName": "DZ",
@@ -170,6 +212,20 @@
     },
     {
       "date": "2026-10-05",
+      "period": 5,
+      "className": "1TH",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-05",
       "period": 6,
       "className": "4TFB",
       "groupName": "DZ",
@@ -181,6 +237,20 @@
       "subject": "Wychowanie fizyczne",
       "message": "Nestoruk Lidia",
       "room": "sg1"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 6,
+      "className": "1WA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Galert Anna",
+      "room": "23"
     },
     {
       "date": "2026-10-05",
@@ -335,9 +405,79 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-10-09",
+      "period": 5,
+      "className": "3TFA",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Okienko dla uczniów",
+      "room": "18"
+    },
+    {
+      "date": "2026-10-09",
+      "period": 6,
+      "className": "3TFA",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Okienko dla uczniów",
+      "room": "18"
+    },
+    {
+      "date": "2026-10-09",
+      "period": 7,
+      "className": "3FB",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Okienko dla uczniów",
+      "room": "18"
+    },
+    {
+      "date": "2026-10-09",
+      "period": 8,
+      "className": "3FB",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Okienko dla uczniów",
+      "room": "18"
+    },
+    {
+      "date": "2026-10-09",
+      "period": 9,
+      "className": "4TFA",
+      "groupName": "",
+      "sourceTeacher": "Bp",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     }
   ],
   "transfers": [],
   "validFrom": "2026-10-05",
-  "validTo": "2026-10-05"
+  "validTo": "2026-10-11"
 }
