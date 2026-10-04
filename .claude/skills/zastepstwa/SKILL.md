@@ -199,10 +199,23 @@ odrzuca `reduceOverview` w `zastepstwa/src/lib/update/checks.mjs` od razu po
 odczycie. Pracując ręcznie, rób tak samo: czytaj tylko te kolumny, nie
 wypisuj powodów w odpowiedziach, a plik usuń z sesji po użyciu.
 
-Reguła: zastępca, którego oddział jest w tym czasie nieobecny, nie łączy grup
-— jest wolny. Jeśli takie zastępstwo jest `Dodatkowo płatne`, zostaje **uwaga
-„Oddział nieobecny” do sprawdzenia** (decyzja użytkownika z 27.09.2026: na razie
-alert, później zbadamy, czy płatność jest właściwa). Dopasowanie lekcji z planu:
+Jedyny wyjątek od kasowania powodów: `reduceOverview` porównuje je w pamięci
+i zostawia arkusz `Różne powody nieobecności` z samą datą i nazwiskiem
+nauczyciela, który jednego dnia ma nieobecności z różnymi powodami. Powody
+nie są przy tym nigdzie zapisywane ani pokazywane.
+
+Reguły płatności (decyzje użytkownika z 04.10.2026, wszystkie jako uwagi):
+
+- zastępca, którego oddział jest w tym czasie nieobecny (wycieczka), nie łączy
+  grup — jest wolny, a zastępstwo ma być **`Godzina do zliczenia`**; każda inna
+  forma to uwaga „Oddział nieobecny”;
+- zastępca z własną lekcją w tym czasie — zastępstwo tylko jako złączenie,
+  `Bezpłatne`;
+- zastępca bez własnej lekcji z kilkoma grupami naraz — dokładnie jedna płatna,
+  reszta `Bezpłatne` (obie płatne albo obie bezpłatne to uwaga);
+- Barbara Wrzeszcz i Ewa Zając — zawsze zajęcia biblioteczne, zawsze `Bezpłatne`.
+
+Dopasowanie lekcji z planu:
 ten sam dzień i lekcja, oddział po nazwie lub skrócie, a przedmiot równy
 `Nazwa zajęć` albo nieobecny cały oddział — nazwy grup w eksporcie
 (`t.usfryz`) i planie (`tech.fryz.`) się różnią.
