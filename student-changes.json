@@ -276,9 +276,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Filipiak Wiesław",
-      "room": "34"
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
       "date": "2026-10-05",
@@ -290,7 +290,7 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Technika w produkcji cukierniczej",
+      "subject": "Technologie produkcji cukierniczej",
       "message": "Kończyńska Małgorzata",
       "room": "23"
     },
@@ -360,7 +360,7 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Technika w produkcji cukierniczej",
+      "subject": "Technologie produkcji cukierniczej",
       "message": "Kończyńska Małgorzata",
       "room": "34"
     },
@@ -743,7 +743,144 @@
       "room": ""
     }
   ],
-  "transfers": [],
+  "transfers": [
+    {
+      "date": "2026-10-05",
+      "period": 1,
+      "className": "2FC",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-05",
+      "toPeriod": 1,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 2,
+      "className": "2K",
+      "groupName": "gr1",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "room",
+      "toDate": "2026-10-05",
+      "toPeriod": 2,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 3,
+      "className": "1FB",
+      "groupName": "gr2",
+      "sourceTeacher": "MB",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "room",
+      "toDate": "2026-10-05",
+      "toPeriod": 3,
+      "subject": "Język angielski",
+      "teacher": "Biezmienow Małgorzata",
+      "fromRoom": "32",
+      "toRoom": "17"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 3,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-05",
+      "toPeriod": 3,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 4,
+      "className": "2CA",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-05",
+      "toPeriod": 4,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 5,
+      "className": "2S",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-05",
+      "toPeriod": 5,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 6,
+      "className": "1TFH",
+      "groupName": "gr1",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "room",
+      "toDate": "2026-10-05",
+      "toPeriod": 6,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "4"
+    },
+    {
+      "date": "2026-10-05",
+      "period": 8,
+      "className": "1CA",
+      "groupName": "gr2",
+      "sourceTeacher": "ŁW",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "room",
+      "toDate": "2026-10-05",
+      "toPeriod": 8,
+      "subject": "Język angielski",
+      "teacher": "Wojciechowski Łukasz",
+      "fromRoom": "43",
+      "toRoom": "44"
+    }
+  ],
   "validFrom": "2026-10-05",
   "validTo": "2026-10-11"
 }
