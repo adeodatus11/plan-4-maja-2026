@@ -1001,10 +1001,10 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "substitution",
-      "subject": "Język niemiecki",
-      "message": "Fiodorów Małgorzata",
-      "room": "18"
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
     },
     {
       "date": "2026-10-07",
@@ -1058,9 +1058,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Chemia",
-      "message": "Hudziec Agnieszka",
-      "room": "3"
+      "subject": "Język angielski",
+      "message": "Staliś Donata",
+      "room": "43"
     },
     {
       "date": "2026-10-07",
@@ -1075,6 +1075,20 @@
       "subject": "Język angielski",
       "message": "Wojciechowski Łukasz",
       "room": "40"
+    },
+    {
+      "date": "2026-10-07",
+      "period": 4,
+      "className": "1FA",
+      "groupName": "",
+      "sourceTeacher": "AH",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
       "date": "2026-10-07",
@@ -2231,6 +2245,23 @@
       "teacher": "Zaleska Magdalena",
       "fromRoom": "19",
       "toRoom": "19"
+    },
+    {
+      "date": "2026-10-07",
+      "period": 9,
+      "className": "2CA",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-10-07",
+      "toPeriod": 5,
+      "subject": "Język polski",
+      "teacher": "Filipek Anna",
+      "fromRoom": "30",
+      "toRoom": "30"
     },
     {
       "date": "2026-10-07",
