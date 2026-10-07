@@ -10,9 +10,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TEACHER_REPO = ROOT.parent / "zastepstwa-main"
-CLASS_ID_RENAMES = {
-    "2B": "3B",
-}
+# Dawniej plan nazywał 2B klasę, którą dziennik zna jako 3B; od 07.10.2026
+# plan też mówi 3B, więc nic nie trzeba przemianowywać.
+CLASS_ID_RENAMES: dict[str, str] = {}
 
 
 def between(text: str, start: str, end: str) -> str:
