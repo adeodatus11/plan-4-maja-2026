@@ -1174,7 +1174,7 @@
       "type": "substitution",
       "subject": "Techniki fryzjerskie",
       "message": "Kruk Marcin",
-      "room": "23"
+      "room": "27"
     },
     {
       "date": "2026-10-07",
@@ -1430,6 +1430,34 @@
     },
     {
       "date": "2026-10-08",
+      "period": 1,
+      "className": "1S",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-08",
+      "period": 2,
+      "className": "1FA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Historia",
+      "message": "Zaleska Magdalena",
+      "room": "19"
+    },
+    {
+      "date": "2026-10-08",
       "period": 3,
       "className": "1FC",
       "groupName": "gr2",
@@ -1455,6 +1483,20 @@
       "subject": "Wychowanie fizyczne",
       "message": "Pietrycha Małgorzata",
       "room": "05"
+    },
+    {
+      "date": "2026-10-08",
+      "period": 3,
+      "className": "1WA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Karczmarz Aleksandra",
+      "room": "23"
     },
     {
       "date": "2026-10-08",
@@ -1497,6 +1539,20 @@
       "subject": "Wychowanie fizyczne",
       "message": "Antoszewska Joanna",
       "room": "sg5"
+    },
+    {
+      "date": "2026-10-08",
+      "period": 5,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Chemia",
+      "message": "Hudziec Agnieszka",
+      "room": "26"
     },
     {
       "date": "2026-10-08",
@@ -1570,6 +1626,20 @@
     },
     {
       "date": "2026-10-08",
+      "period": 7,
+      "className": "1WB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-08",
       "period": 8,
       "className": "4TFA",
       "groupName": "",
@@ -1591,10 +1661,10 @@
       "sourceGroups": [
         "gr2"
       ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Wrzeszcz Barbara",
-      "room": "bib"
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     },
     {
       "date": "2026-10-08",
@@ -1808,6 +1878,20 @@
     },
     {
       "date": "2026-10-09",
+      "period": 5,
+      "className": "1FC",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
+    },
+    {
+      "date": "2026-10-09",
       "period": 6,
       "className": "5TH",
       "groupName": "DZ",
@@ -1850,6 +1934,20 @@
     },
     {
       "date": "2026-10-09",
+      "period": 6,
+      "className": "1FB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Karczmarz Aleksandra",
+      "room": "23"
+    },
+    {
+      "date": "2026-10-09",
       "period": 7,
       "className": "1CB",
       "groupName": "gr1",
@@ -1889,6 +1987,20 @@
       "subject": "Biologia",
       "message": "Sałdyka Karolina",
       "room": "3"
+    },
+    {
+      "date": "2026-10-09",
+      "period": 7,
+      "className": "1CA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Technika w produkcji cukierniczej",
+      "message": "Kończyńska Małgorzata",
+      "room": "27"
     },
     {
       "date": "2026-10-09",
@@ -1948,6 +2060,20 @@
     },
     {
       "date": "2026-10-09",
+      "period": 8,
+      "className": "1TFH",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Historia",
+      "message": "Kopij Marcin",
+      "room": "4"
+    },
+    {
+      "date": "2026-10-09",
       "period": 9,
       "className": "1FC",
       "groupName": "gr1",
@@ -2001,6 +2127,20 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-10-09",
+      "period": 9,
+      "className": "1CB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Technika w produkcji cukierniczej",
+      "message": "Kończyńska Małgorzata",
+      "room": "27"
     },
     {
       "date": "2026-10-09",
@@ -2320,6 +2460,23 @@
     },
     {
       "date": "2026-10-08",
+      "period": 3,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-10-08",
+      "toPeriod": 4,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "32",
+      "toRoom": "32"
+    },
+    {
+      "date": "2026-10-08",
       "period": 2,
       "className": "1FC",
       "groupName": "gr1",
@@ -2334,6 +2491,23 @@
       "teacher": "Nestoruk Lidia",
       "fromRoom": "sg3",
       "toRoom": "sg3"
+    },
+    {
+      "date": "2026-10-08",
+      "period": 8,
+      "className": "1WB",
+      "groupName": "",
+      "sourceTeacher": "WB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-10-08",
+      "toPeriod": 6,
+      "subject": "Fizyka",
+      "teacher": "Biczysko Wojciech",
+      "fromRoom": "22",
+      "toRoom": "22"
     },
     {
       "date": "2026-10-08",
