@@ -944,7 +944,9 @@
       "className": "3B",
       "groupName": "",
       "sourceTeacher": "MG",
-      "sourceGroups": [],
+      "sourceGroups": [
+        "Cała klasa"
+      ],
       "type": "message",
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
@@ -2203,7 +2205,9 @@
       "className": "3B",
       "groupName": "",
       "sourceTeacher": "PM",
-      "sourceGroups": [],
+      "sourceGroups": [
+        "Cała klasa"
+      ],
       "type": "transfer",
       "toDate": "2026-10-06",
       "toPeriod": 9,
