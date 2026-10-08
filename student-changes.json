@@ -1543,6 +1543,20 @@
     {
       "date": "2026-10-08",
       "period": 5,
+      "className": "2WA",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Edukacja zdrowotna",
+      "message": "Wójcik Kamil",
+      "room": "28"
+    },
+    {
+      "date": "2026-10-08",
+      "period": 5,
       "className": "1K",
       "groupName": "",
       "sourceTeacher": "SE",
@@ -1567,6 +1581,20 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-10-08",
+      "period": 6,
+      "className": "1FA",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
       "date": "2026-10-08",
@@ -1682,6 +1710,20 @@
     },
     {
       "date": "2026-10-08",
+      "period": 8,
+      "className": "1CB",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-08",
       "period": 9,
       "className": "4TFB",
       "groupName": "",
@@ -1693,6 +1735,20 @@
       "subject": "Doradztwo zawodowe",
       "message": "Krzemińska Beata",
       "room": "5"
+    },
+    {
+      "date": "2026-10-08",
+      "period": 9,
+      "className": "1CB",
+      "groupName": "",
+      "sourceTeacher": "MU",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     },
     {
       "date": "2026-10-08",
@@ -2075,6 +2131,20 @@
     {
       "date": "2026-10-09",
       "period": 9,
+      "className": "3B",
+      "groupName": "",
+      "sourceTeacher": "KE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Brak",
+      "room": "33"
+    },
+    {
+      "date": "2026-10-09",
+      "period": 9,
       "className": "1FC",
       "groupName": "gr1",
       "sourceTeacher": "Gt",
@@ -2145,6 +2215,20 @@
     {
       "date": "2026-10-09",
       "period": 10,
+      "className": "3B",
+      "groupName": "",
+      "sourceTeacher": "KE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Brak",
+      "room": "33"
+    },
+    {
+      "date": "2026-10-09",
+      "period": 10,
       "className": "1FB",
       "groupName": "gr1",
       "sourceTeacher": "Gt",
@@ -2183,6 +2267,20 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-10-09",
+      "period": 11,
+      "className": "3B",
+      "groupName": "",
+      "sourceTeacher": "KE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Brak",
+      "room": "33"
     }
   ],
   "transfers": [
@@ -2525,6 +2623,23 @@
       "teacher": "Filusz Marzena",
       "fromRoom": "17",
       "toRoom": "17"
+    },
+    {
+      "date": "2026-10-08",
+      "period": 8,
+      "className": "1TFB",
+      "groupName": "",
+      "sourceTeacher": "So",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-10-08",
+      "toPeriod": 7,
+      "subject": "Techniki fryzjerskie",
+      "teacher": "Sobczak Anna",
+      "fromRoom": "prF3",
+      "toRoom": "prF3"
     },
     {
       "date": "2026-10-09",
