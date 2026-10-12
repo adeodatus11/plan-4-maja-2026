@@ -16,6 +16,20 @@
     },
     {
       "date": "2026-10-12",
+      "period": 1,
+      "className": "1FB",
+      "groupName": "",
+      "sourceTeacher": "EO",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Stępień Krystyna",
+      "room": "3"
+    },
+    {
+      "date": "2026-10-12",
       "period": 2,
       "className": "2K",
       "groupName": "gr2",
@@ -34,6 +48,20 @@
       "className": "4TFB",
       "groupName": "",
       "sourceTeacher": "JA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-12",
+      "period": 2,
+      "className": "1WA",
+      "groupName": "",
+      "sourceTeacher": "EO",
       "sourceGroups": [
         "Cała klasa"
       ],
@@ -97,6 +125,20 @@
       "subject": "Towar jako przedmiot handlu",
       "message": "Smirnow-Zechman Eleonora",
       "room": "23"
+    },
+    {
+      "date": "2026-10-12",
+      "period": 3,
+      "className": "1CA",
+      "groupName": "",
+      "sourceTeacher": "EO",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
     },
     {
       "date": "2026-10-12",
@@ -435,6 +477,20 @@
       "room": "6"
     },
     {
+      "date": "2026-10-12",
+      "period": 10,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "EO",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
       "date": "2026-10-13",
       "period": 1,
       "className": "3CB",
@@ -717,6 +773,20 @@
     {
       "date": "2026-10-13",
       "period": 7,
+      "className": "2FB",
+      "groupName": "",
+      "sourceTeacher": "EO",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Biologia",
+      "message": "Sałdyka-Rusek Karolina",
+      "room": "27"
+    },
+    {
+      "date": "2026-10-13",
+      "period": 7,
       "className": "3K",
       "groupName": "",
       "sourceTeacher": "MZ",
@@ -779,10 +849,10 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Ostrowska Ewa",
-      "room": "29"
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     },
     {
       "date": "2026-10-13",
@@ -814,6 +884,20 @@
     },
     {
       "date": "2026-10-13",
+      "period": 9,
+      "className": "2CB",
+      "groupName": "",
+      "sourceTeacher": "EO",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-13",
       "period": 10,
       "className": "3B",
       "groupName": "",
@@ -825,6 +909,34 @@
       "subject": "Język polski",
       "message": "Filipek Anna",
       "room": "30"
+    },
+    {
+      "date": "2026-10-13",
+      "period": 10,
+      "className": "1CA",
+      "groupName": "",
+      "sourceTeacher": "EO",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-13",
+      "period": 11,
+      "className": "1FB",
+      "groupName": "",
+      "sourceTeacher": "EO",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     }
   ],
   "transfers": [
