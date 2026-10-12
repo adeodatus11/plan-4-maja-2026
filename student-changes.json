@@ -143,6 +143,20 @@
     {
       "date": "2026-10-12",
       "period": 4,
+      "className": "2TFB",
+      "groupName": "DZ",
+      "sourceTeacher": "DK",
+      "sourceGroups": [
+        "dz"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Pietrycha Małgorzata",
+      "room": "8"
+    },
+    {
+      "date": "2026-10-12",
+      "period": 4,
       "className": "1TFB",
       "groupName": "gr1",
       "sourceTeacher": "Gt",
@@ -213,6 +227,20 @@
     {
       "date": "2026-10-12",
       "period": 5,
+      "className": "4TFB",
+      "groupName": "DZ",
+      "sourceTeacher": "DK",
+      "sourceGroups": [
+        "dz"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Nestoruk Lidia",
+      "room": "sg1"
+    },
+    {
+      "date": "2026-10-12",
+      "period": 5,
       "className": "1TFA",
       "groupName": "gr2",
       "sourceTeacher": "Gt",
@@ -269,6 +297,20 @@
     {
       "date": "2026-10-12",
       "period": 6,
+      "className": "4TFB",
+      "groupName": "DZ",
+      "sourceTeacher": "DK",
+      "sourceGroups": [
+        "dz"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Nestoruk Lidia",
+      "room": "sg1"
+    },
+    {
+      "date": "2026-10-12",
+      "period": 6,
       "className": "2K",
       "groupName": "",
       "sourceTeacher": "AH",
@@ -311,6 +353,20 @@
     {
       "date": "2026-10-12",
       "period": 7,
+      "className": "4TFB",
+      "groupName": "DZ",
+      "sourceTeacher": "DK",
+      "sourceGroups": [
+        "dz"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Nestoruk Lidia",
+      "room": "sg1"
+    },
+    {
+      "date": "2026-10-12",
+      "period": 7,
       "className": "2TFB",
       "groupName": "",
       "sourceTeacher": "AH",
@@ -346,9 +402,9 @@
         "gr1"
       ],
       "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Dalach Krystyna",
-      "room": "22"
+      "subject": "Język angielski",
+      "message": "Wojciechowski Łukasz",
+      "room": "43"
     },
     {
       "date": "2026-10-12",
@@ -388,9 +444,23 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Filipiak Wiesław",
+      "subject": "Chemia",
+      "message": "Kończyńska Małgorzata",
       "room": "42"
+    },
+    {
+      "date": "2026-10-12",
+      "period": 9,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "DK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     },
     {
       "date": "2026-10-12",
@@ -444,9 +514,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Biologia",
-      "message": "Sałdyka-Rusek Karolina",
-      "room": "31"
+      "subject": "Doradztwo zawodowe",
+      "message": "Krzemińska Beata",
+      "room": "5"
     },
     {
       "date": "2026-10-12",
@@ -1027,6 +1097,23 @@
     },
     {
       "date": "2026-10-12",
+      "period": 4,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "Mr",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-12",
+      "toPeriod": 4,
+      "subject": "Rozwój kompetencji zawodowych - Zasady zdrowego żywienia",
+      "teacher": "Mocarski Arkadiusz",
+      "fromRoom": "40",
+      "toRoom": "26"
+    },
+    {
+      "date": "2026-10-12",
       "period": 5,
       "className": "2S",
       "groupName": "",
@@ -1041,6 +1128,23 @@
       "teacher": "Karczmarz Aleksandra",
       "fromRoom": "05",
       "toRoom": "4"
+    },
+    {
+      "date": "2026-10-12",
+      "period": 5,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "Mr",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-12",
+      "toPeriod": 5,
+      "subject": "Rozwój kompetencji zawodowych - Zasady zdrowego żywienia",
+      "teacher": "Mocarski Arkadiusz",
+      "fromRoom": "40",
+      "toRoom": "26"
     },
     {
       "date": "2026-10-12",
