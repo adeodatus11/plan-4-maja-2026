@@ -57,6 +57,32 @@
         return candidates.length === 1 ? candidates[0] : null;
     }
 
+    // Jednorazowe zmiany organizacji dnia z komunikatów dyrekcji. Nie w
+    // student-changes.json, bo ten plik nadpisuje workflow serwisu nauczyciela.
+    const SPECIAL_DAYS = {
+        "2026-10-13": {
+            title: "Skrócone lekcje od 8. godziny — akademia z okazji Dnia Edukacji Narodowej",
+            note: "Od 8. godziny lekcyjnej zajęcia odbywają się według skróconego harmonogramu. Pozostałe godziny lekcyjne — zgodnie ze standardowym rozkładem zajęć.",
+            times: {8: "14:05 - 14:35", 9: "14:40 - 15:10", 10: "15:15 - 15:45", 11: "15:50 - 16:20"},
+        },
+        "2026-10-14": {
+            dayOff: true,
+            title: "Dzień Edukacji Narodowej — dzień wolny od zajęć lekcyjnych",
+            note: "W szkole nie odbywają się zajęcia dydaktyczne. Uczniowie Branżowej Szkoły I stopnia będący pracownikami młodocianymi pozostają w tym dniu do dyspozycji swoich pracodawców, zgodnie z obowiązującym ich rozkładem czasu pracy oraz umowami o pracę w celu przygotowania zawodowego. Dzień wolny od zajęć lekcyjnych w szkole nie oznacza automatycznie dnia wolnego od pracy u pracodawcy.",
+        },
+    };
+
+    function applyLessonTimes(table, times) {
+        buildGrid(table).forEach((row) => {
+            const time = times[Number(String(row[0]?.textContent || "").trim())];
+            const cell = row[1];
+            if (!time || !cell?.classList.contains("lesson-time") || cell.classList.contains("time-changed")) return;
+            cell.setAttribute("aria-label", `Zmienione godziny: ${time}, zamiast ${cell.textContent.trim()}`);
+            cell.textContent = time;
+            cell.classList.add("time-changed");
+        });
+    }
+
     function appendChange(cell, className, label, detail) {
         if (!cell) return;
         const note = document.createElement("div");
@@ -142,7 +168,7 @@
     const controls = document.createElement("section");
     controls.className = "plan-date-controls";
     controls.setAttribute("aria-label", "Wybór daty planu");
-    controls.innerHTML = `<div class="date-actions"><button id="plan-prev" type="button" aria-label="Poprzedni dzień">←</button><label for="plan-date">Data planu<input id="plan-date" type="date" min="2026-09-07" max="2026-12-11"></label><button id="plan-next" type="button" aria-label="Następny dzień">→</button><button id="plan-today" type="button">Dzisiaj</button></div><h2 id="selected-plan-date" aria-live="polite">Wczytywanie daty planu…</h2><p id="plan-data-status" role="status">Wczytywanie zastępstw…</p><div id="plan-week-days" class="date-actions" aria-label="Dni wybranego tygodnia"></div>`;
+    controls.innerHTML = `<div class="date-actions"><button id="plan-prev" type="button" aria-label="Poprzedni dzień">←</button><label for="plan-date">Data planu<input id="plan-date" type="date" min="2026-09-07" max="2026-12-11"></label><button id="plan-next" type="button" aria-label="Następny dzień">→</button><button id="plan-today" type="button">Dzisiaj</button></div><h2 id="selected-plan-date" aria-live="polite">Wczytywanie daty planu…</h2><p id="plan-data-status" role="status">Wczytywanie zastępstw…</p><div id="plan-special-day" class="special-day" hidden><strong></strong><p></p></div><div id="plan-week-days" class="date-actions" aria-label="Dni wybranego tygodnia"></div>`;
     document.querySelector(".topbar").after(controls);
     const input = document.getElementById("plan-date");
     const status = document.getElementById("plan-data-status");
@@ -191,6 +217,18 @@
         else {
             applyChanges({substitutions:payload.substitutions.filter(c=>c.date===date), transfers:payload.transfers.filter(c=>c.date===date || c.toDate===date)});
             status.textContent = `Plan z uwzględnieniem zastępstw i przeniesień na ${formatDate(date)}. Paczka: ${payload.validFrom.split("-").reverse().join(".")}–${payload.validTo.split("-").reverse().join(".")}.`;
+        }
+        const special = !weekend && !outside ? SPECIAL_DAYS[date] : null;
+        const notice = document.getElementById("plan-special-day");
+        notice.hidden = !special;
+        if (special) {
+            notice.querySelector("strong").textContent = special.title;
+            notice.querySelector("p").textContent = special.note;
+            if (special.times) tables.forEach(t => applyLessonTimes(t, special.times));
+            if (special.dayOff) {
+                document.querySelector(".table-shell").hidden = true;
+                status.textContent = "Dzień wolny od zajęć lekcyjnych.";
+            }
         }
         if (weekend) status.textContent="Dzień wolny od regularnych lekcji.";
         if (outside) status.textContent="Data poza okresem obowiązywania tego planu (07.09–11.12.2026).";

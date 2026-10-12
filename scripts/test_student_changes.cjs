@@ -113,6 +113,26 @@ async function create(data=payload) {
   const target=[...table.querySelectorAll('.student-change')].find(e=>e.textContent.includes(`Przeniesienie na lekcję ${t.toPeriod}`));
   if(target) assert.ok(target.textContent.includes(`z lekcji ${t.period}`),`Cel ${t.className} ${t.toDate} powinien mieć krótką formę: ${target.textContent}`);
  }
+ // Jednorazowe zmiany dnia: 13.10 skrócone lekcje 8–11, 14.10 dzień wolny (DEN).
+ const notice=doc.getElementById('plan-special-day');
+ const timeOf=(table,period)=>[...table.tBodies[0].rows].find(r=>r.cells[0]?.textContent.trim()===String(period))?.cells[1].textContent.trim();
+ choose('2026-10-13');
+ assert.equal(doc.querySelector('.table-shell').hidden,false,'13.10 musi pokazywać plan');
+ assert.equal(notice.hidden,false,'Brak komunikatu o skróconych lekcjach 13.10');
+ for(const t of doc.querySelectorAll('table.plan')){
+  for(const [n,expected] of [[7,'13:15 - 14:00'],[8,'14:05 - 14:35'],[9,'14:40 - 15:10'],[10,'15:15 - 15:45'],[11,'15:50 - 16:20'],[12,'17:25 - 18:10']]){
+   const got=timeOf(t,n); if(got!==undefined) assert.equal(got,expected,`${t.id} lekcja ${n} 13.10`);
+  }
+ }
+ const before13=doc.querySelector('.table-shell').innerHTML;choose('2026-10-13');assert.equal(doc.querySelector('.table-shell').innerHTML,before13,'Godziny 13.10 nie mogą się dublować');
+ choose('2026-10-14');
+ assert.equal(doc.querySelector('.table-shell').hidden,true,'14.10 to dzień wolny od zajęć');
+ assert.equal(notice.hidden,false);assert.ok(notice.textContent.includes('Dzień Edukacji Narodowej'));
+ assert.ok(doc.getElementById('plan-data-status').textContent.includes('Dzień wolny od zajęć lekcyjnych'));
+ choose('2026-10-20');
+ assert.equal(notice.hidden,true,'Komunikat nie może zostać na innym dniu');assert.equal(doc.querySelector('.table-shell').hidden,false);
+ for(const t of doc.querySelectorAll('table.plan')){ const got=timeOf(t,8); if(got!==undefined) assert.equal(got,'14:05 - 14:50',`${t.id} lekcja 8 po 13.10`); }
+ assert.equal(doc.querySelectorAll('.time-changed').length,0);
  choose('2027-01-01');assert.equal(doc.querySelector('.table-shell').hidden,true);
- console.log('PASS: all dates, all substitutions, transfer source/target, reset, navigation, weekend and publication bounds');
+ console.log('PASS: all dates, all substitutions, transfer source/target, reset, navigation, weekend, one-off days and publication bounds');
 })().catch(e=>{console.error(e);process.exit(1)});
