@@ -62,8 +62,8 @@
     const SPECIAL_DAYS = {
         "2026-10-13": {
             title: "Skrócone lekcje od 8. godziny — akademia z okazji Dnia Edukacji Narodowej",
-            note: "Od 8. godziny lekcyjnej zajęcia odbywają się według skróconego harmonogramu. Pozostałe godziny lekcyjne — zgodnie ze standardowym rozkładem zajęć.",
-            times: {8: "14:05 - 14:35", 9: "14:40 - 15:10", 10: "15:15 - 15:45", 11: "15:50 - 16:20"},
+            note: "Od 8. godziny lekcyjnej zajęcia trwają 30 minut, przerwy 5 minut (godziny wyróżnione w planie). Lekcje 1–7 — zgodnie ze standardowym rozkładem zajęć.",
+            times: {8: "14:05 - 14:35", 9: "14:40 - 15:10", 10: "15:15 - 15:45", 11: "15:50 - 16:20", 12: "16:25 - 16:55", 13: "17:00 - 17:30", 14: "17:35 - 18:05"},
         },
         "2026-10-14": {
             dayOff: true,

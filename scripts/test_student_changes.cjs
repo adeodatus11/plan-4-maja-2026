@@ -113,14 +113,14 @@ async function create(data=payload) {
   const target=[...table.querySelectorAll('.student-change')].find(e=>e.textContent.includes(`Przeniesienie na lekcję ${t.toPeriod}`));
   if(target) assert.ok(target.textContent.includes(`z lekcji ${t.period}`),`Cel ${t.className} ${t.toDate} powinien mieć krótką formę: ${target.textContent}`);
  }
- // Jednorazowe zmiany dnia: 13.10 skrócone lekcje 8–11, 14.10 dzień wolny (DEN).
+ // Jednorazowe zmiany dnia: 13.10 skrócone lekcje od 8., 14.10 dzień wolny (DEN).
  const notice=doc.getElementById('plan-special-day');
  const timeOf=(table,period)=>[...table.tBodies[0].rows].find(r=>r.cells[0]?.textContent.trim()===String(period))?.cells[1].textContent.trim();
  choose('2026-10-13');
  assert.equal(doc.querySelector('.table-shell').hidden,false,'13.10 musi pokazywać plan');
  assert.equal(notice.hidden,false,'Brak komunikatu o skróconych lekcjach 13.10');
  for(const t of doc.querySelectorAll('table.plan')){
-  for(const [n,expected] of [[7,'13:15 - 14:00'],[8,'14:05 - 14:35'],[9,'14:40 - 15:10'],[10,'15:15 - 15:45'],[11,'15:50 - 16:20'],[12,'17:25 - 18:10']]){
+  for(const [n,expected] of [[7,'13:15 - 14:00'],[8,'14:05 - 14:35'],[9,'14:40 - 15:10'],[10,'15:15 - 15:45'],[11,'15:50 - 16:20'],[12,'16:25 - 16:55'],[13,'17:00 - 17:30'],[14,'17:35 - 18:05']]){
    const got=timeOf(t,n); if(got!==undefined) assert.equal(got,expected,`${t.id} lekcja ${n} 13.10`);
   }
  }
