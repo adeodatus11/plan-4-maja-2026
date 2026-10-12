@@ -446,7 +446,7 @@
       "type": "substitution",
       "subject": "Chemia",
       "message": "Kończyńska Małgorzata",
-      "room": "42"
+      "room": "26"
     },
     {
       "date": "2026-10-12",
@@ -661,6 +661,20 @@
     {
       "date": "2026-10-13",
       "period": 4,
+      "className": "1TH",
+      "groupName": "gr1",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Pracownia sprzedaży",
+      "message": "Kosin Anna",
+      "room": "41"
+    },
+    {
+      "date": "2026-10-13",
+      "period": 4,
       "className": "1TFA",
       "groupName": "",
       "sourceTeacher": "MZ",
@@ -713,6 +727,20 @@
       "subject": "",
       "message": "Uczniowie przychodzą później",
       "room": ""
+    },
+    {
+      "date": "2026-10-13",
+      "period": 5,
+      "className": "1TH",
+      "groupName": "gr1",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Pracownia sprzedaży",
+      "message": "Kosin Anna",
+      "room": "41"
     },
     {
       "date": "2026-10-13",
@@ -850,9 +878,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Biologia",
-      "message": "Sałdyka-Rusek Karolina",
-      "room": "27"
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Płatek Krzysztof",
+      "room": "40"
     },
     {
       "date": "2026-10-13",
