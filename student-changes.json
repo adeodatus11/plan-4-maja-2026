@@ -1038,6 +1038,90 @@
     },
     {
       "date": "2026-10-15",
+      "period": 1,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 1,
+      "className": "4TH",
+      "groupName": "gr2",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 1,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "EO",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 2,
+      "className": "4TH",
+      "groupName": "gr2",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 3,
+      "className": "1TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Filipiak Wiesław",
+      "room": "29"
+    },
+    {
+      "date": "2026-10-15",
+      "period": 3,
+      "className": "4TH",
+      "groupName": "gr2",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
       "period": 3,
       "className": "1FA",
       "groupName": "gr2",
@@ -1049,6 +1133,20 @@
       "subject": "Podstawy fryzjerstwa",
       "message": "Mikołajczak Sylwia",
       "room": "2"
+    },
+    {
+      "date": "2026-10-15",
+      "period": 3,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "IL",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Pietrycha Małgorzata",
+      "room": "05"
     },
     {
       "date": "2026-10-15",
@@ -1095,6 +1193,34 @@
     {
       "date": "2026-10-15",
       "period": 4,
+      "className": "2WA",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Rozwój zainteresowań i kreatywności - obsługa klienta",
+      "message": "Kaczorowski Waldemar",
+      "room": "29"
+    },
+    {
+      "date": "2026-10-15",
+      "period": 4,
+      "className": "4TH",
+      "groupName": "gr2",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 4,
       "className": "1K",
       "groupName": "gr1",
       "sourceTeacher": "Gt",
@@ -1105,6 +1231,20 @@
       "subject": "",
       "message": "Uczniowie przychodzą później",
       "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 4,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "IL",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Dalach Sławomir",
+      "room": "5"
     },
     {
       "date": "2026-10-15",
@@ -1133,6 +1273,34 @@
       "subject": "Wychowanie fizyczne",
       "message": "Cieśla Marcin",
       "room": "19"
+    },
+    {
+      "date": "2026-10-15",
+      "period": 5,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Cieśla Marcin",
+      "room": "19"
+    },
+    {
+      "date": "2026-10-15",
+      "period": 5,
+      "className": "4TH",
+      "groupName": "gr2",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
     },
     {
       "date": "2026-10-15",
@@ -1175,6 +1343,20 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 6,
+      "className": "4TH",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Filipek Anna",
+      "room": "33"
     },
     {
       "date": "2026-10-15",
@@ -1252,6 +1434,20 @@
       "className": "5TFB",
       "groupName": "",
       "sourceTeacher": "MZ",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 7,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BC",
       "sourceGroups": [
         "Cała klasa"
       ],
@@ -1375,6 +1571,20 @@
     {
       "date": "2026-10-15",
       "period": 8,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 8,
       "className": "4TFA",
       "groupName": "",
       "sourceTeacher": "DK",
@@ -1487,6 +1697,20 @@
     {
       "date": "2026-10-15",
       "period": 9,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 9,
       "className": "4TFA",
       "groupName": "",
       "sourceTeacher": "FL",
@@ -1557,6 +1781,20 @@
     {
       "date": "2026-10-15",
       "period": 10,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "BC",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 10,
       "className": "1B",
       "groupName": "gr1",
       "sourceTeacher": "MG",
@@ -1612,6 +1850,20 @@
     },
     {
       "date": "2026-10-15",
+      "period": 10,
+      "className": "2CB",
+      "groupName": "",
+      "sourceTeacher": "EO",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
       "period": 11,
       "className": "3B",
       "groupName": "",
@@ -1630,6 +1882,20 @@
       "className": "3TFA",
       "groupName": "",
       "sourceTeacher": "IL",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 11,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "EO",
       "sourceGroups": [
         "Cała klasa"
       ],
