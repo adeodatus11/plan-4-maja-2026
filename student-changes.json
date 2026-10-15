@@ -1662,9 +1662,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Biologia",
-      "message": "Mucha Anna",
-      "room": "28"
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Jaworska Edyta",
+      "room": "prf2"
     },
     {
       "date": "2026-10-15",
@@ -1686,6 +1686,20 @@
       "className": "1TFB",
       "groupName": "",
       "sourceTeacher": "So",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-15",
+      "period": 9,
+      "className": "2CB",
+      "groupName": "",
+      "sourceTeacher": "AJ",
       "sourceGroups": [
         "Cała klasa"
       ],
@@ -1759,10 +1773,10 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Jaworska Edyta",
+      "room": "prf2"
     },
     {
       "date": "2026-10-15",
@@ -1843,10 +1857,10 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Jaworska Edyta",
+      "room": "prf2"
     },
     {
       "date": "2026-10-15",
@@ -1885,10 +1899,10 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Jaworska Edyta",
+      "room": "prf2"
     },
     {
       "date": "2026-10-15",
