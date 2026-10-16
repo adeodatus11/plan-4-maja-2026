@@ -2088,6 +2088,20 @@
     },
     {
       "date": "2026-10-16",
+      "period": 2,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-16",
       "period": 3,
       "className": "4TFA",
       "groupName": "",
@@ -2432,9 +2446,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Historia",
-      "message": "Kopij Marcin",
-      "room": "4"
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
       "date": "2026-10-16",
@@ -2545,7 +2559,7 @@
       ],
       "type": "substitution",
       "subject": "Rozwój kompetencji zawodowych - Zasady zdrowego żywienia",
-      "message": "Kończyńska Małgorzata",
+      "message": "Najwer Maciej",
       "room": "40"
     },
     {
@@ -2987,21 +3001,21 @@
       "toRoom": "sg1"
     },
     {
-      "date": "2026-10-16",
-      "period": 6,
-      "className": "2K",
+      "date": "2026-10-19",
+      "period": 2,
+      "className": "1TFA",
       "groupName": "",
-      "sourceTeacher": "Kj",
+      "sourceTeacher": "EK",
       "sourceGroups": [
         "Cała klasa"
       ],
       "type": "transfer",
       "toDate": "2026-10-16",
-      "toPeriod": 2,
-      "subject": "Edukacja obywatelska",
-      "teacher": "Kopij Marcin",
-      "fromRoom": "4",
-      "toRoom": "4"
+      "toPeriod": 5,
+      "subject": "Język polski",
+      "teacher": "Krycia Ewelina",
+      "fromRoom": "33",
+      "toRoom": "33"
     }
   ],
   "validFrom": "2026-10-12",
