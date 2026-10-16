@@ -2013,8 +2013,8 @@
       ],
       "type": "substitution",
       "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
-      "message": "Leńczowska Iwona",
-      "room": "prf2"
+      "message": "Danielewski Paweł",
+      "room": "6"
     },
     {
       "date": "2026-10-16",
@@ -2029,6 +2029,20 @@
       "subject": "Projektowanie fryzur",
       "message": "Krzemińska Beata",
       "room": "5"
+    },
+    {
+      "date": "2026-10-16",
+      "period": 1,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
     },
     {
       "date": "2026-10-16",
@@ -2055,8 +2069,8 @@
       ],
       "type": "substitution",
       "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
-      "message": "Leńczowska Iwona",
-      "room": "prf2"
+      "message": "Danielewski Paweł",
+      "room": "6"
     },
     {
       "date": "2026-10-16",
@@ -2111,8 +2125,22 @@
       ],
       "type": "substitution",
       "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
-      "message": "Leńczowska Iwona",
-      "room": "prf2"
+      "message": "Danielewski Paweł",
+      "room": "6"
+    },
+    {
+      "date": "2026-10-16",
+      "period": 3,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Mikołajczak Sylwia",
+      "room": "2"
     },
     {
       "date": "2026-10-16",
@@ -2153,8 +2181,22 @@
       ],
       "type": "substitution",
       "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
-      "message": "Leńczowska Iwona",
-      "room": "prf2"
+      "message": "Danielewski Paweł",
+      "room": "6"
+    },
+    {
+      "date": "2026-10-16",
+      "period": 4,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Piątek-Pawłowska Bożena",
+      "room": "18"
     },
     {
       "date": "2026-10-16",
@@ -2209,8 +2251,8 @@
       ],
       "type": "substitution",
       "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
-      "message": "Leńczowska Iwona",
-      "room": "prf2"
+      "message": "Danielewski Paweł",
+      "room": "6"
     },
     {
       "date": "2026-10-16",
@@ -2271,6 +2313,20 @@
     {
       "date": "2026-10-16",
       "period": 5,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Piątek-Pawłowska Bożena",
+      "room": "18"
+    },
+    {
+      "date": "2026-10-16",
+      "period": 5,
       "className": "1WA",
       "groupName": "gr1",
       "sourceTeacher": "MY",
@@ -2307,8 +2363,8 @@
       ],
       "type": "substitution",
       "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
-      "message": "Leńczowska Iwona",
-      "room": "prf2"
+      "message": "Danielewski Paweł",
+      "room": "6"
     },
     {
       "date": "2026-10-16",
@@ -2369,6 +2425,20 @@
     {
       "date": "2026-10-16",
       "period": 6,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Historia",
+      "message": "Kopij Marcin",
+      "room": "4"
+    },
+    {
+      "date": "2026-10-16",
+      "period": 6,
       "className": "1TH",
       "groupName": "gr2",
       "sourceTeacher": "MY",
@@ -2419,8 +2489,8 @@
       ],
       "type": "substitution",
       "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
-      "message": "Leńczowska Iwona",
-      "room": "prf2"
+      "message": "Danielewski Paweł",
+      "room": "6"
     },
     {
       "date": "2026-10-16",
@@ -2463,6 +2533,20 @@
       "subject": "Zajęcia z wychowawcą",
       "message": "Granatowska Mariola",
       "room": "23"
+    },
+    {
+      "date": "2026-10-16",
+      "period": 7,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "KK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Rozwój kompetencji zawodowych - Zasady zdrowego żywienia",
+      "message": "Kończyńska Małgorzata",
+      "room": "40"
     },
     {
       "date": "2026-10-16",
@@ -2901,6 +2985,23 @@
       "teacher": "Rejno Julita",
       "fromRoom": "sg1",
       "toRoom": "sg1"
+    },
+    {
+      "date": "2026-10-16",
+      "period": 6,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "Kj",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-10-16",
+      "toPeriod": 2,
+      "subject": "Edukacja obywatelska",
+      "teacher": "Kopij Marcin",
+      "fromRoom": "4",
+      "toRoom": "4"
     }
   ],
   "validFrom": "2026-10-12",
