@@ -207,6 +207,20 @@
     {
       "date": "2026-10-19",
       "period": 4,
+      "className": "3TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Biezmienow Małgorzata",
+      "room": "29"
+    },
+    {
+      "date": "2026-10-19",
+      "period": 4,
       "className": "2TFA",
       "groupName": "gr1",
       "sourceTeacher": "JA",
@@ -319,6 +333,20 @@
     {
       "date": "2026-10-19",
       "period": 5,
+      "className": "3TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
+    },
+    {
+      "date": "2026-10-19",
+      "period": 5,
       "className": "2TFA",
       "groupName": "gr1",
       "sourceTeacher": "JA",
@@ -411,8 +439,8 @@
       ],
       "type": "substitution",
       "subject": "Matematyka",
-      "message": "Bujanowska Iwona",
-      "room": "29"
+      "message": "Nowak Magdalena",
+      "room": "34"
     },
     {
       "date": "2026-10-19",
@@ -501,6 +529,20 @@
     {
       "date": "2026-10-19",
       "period": 7,
+      "className": "3FA",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Filipek Anna",
+      "room": "30"
+    },
+    {
+      "date": "2026-10-19",
+      "period": 7,
       "className": "2TFA",
       "groupName": "gr1",
       "sourceTeacher": "JA",
@@ -557,6 +599,20 @@
     {
       "date": "2026-10-19",
       "period": 8,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-19",
+      "period": 8,
       "className": "1CA",
       "groupName": "gr2",
       "sourceTeacher": "ŁW",
@@ -604,6 +660,20 @@
       "sourceTeacher": "RJ",
       "sourceGroups": [
         "dz"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-10-19",
+      "period": 11,
+      "className": "1TFB",
+      "groupName": "",
+      "sourceTeacher": "BI",
+      "sourceGroups": [
+        "Cała klasa"
       ],
       "type": "message",
       "subject": "",
