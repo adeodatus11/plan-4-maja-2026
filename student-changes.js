@@ -35,7 +35,17 @@
         return grid;
     }
 
+    // Kratka bez lekcji w planie bazowym (pomija dopisane już znaczniki zmian).
+    const isFree = cell => !!cell && Array.from(cell.childNodes).every(node => node.classList?.contains("student-change") || !String(node.textContent || "").trim());
+
     function matchingCell(table, change, roomColumn) {
+        // Lekcja w godzinie, w której oddział nie ma zajęć w planie bazowym.
+        if (change.freeSlot) {
+            const day = dayIndex(change.date);
+            if (day < 1 || day > 5) return null;
+            const cell = buildGrid(table).find(row => Number(String(row[0]?.textContent || "").trim()) === change.period)?.[2 + (day - 1) * 3];
+            return isFree(cell) ? cell : null;
+        }
         if (change.groupName && !(change.sourceGroups || []).some(group => normalize(group) === normalize(change.groupName) || normalize(group) === "cała klasa")) return null;
         const grid = buildGrid(table);
         const day = dayIndex(change.date);

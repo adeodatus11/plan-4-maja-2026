@@ -144,31 +144,55 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
     def teacher_code(raw):
         return teacher_codes.get(person_key(raw)) or guess_code(raw)
 
-    def source_teacher(row):
-        code = teacher_code(row.get("Nauczyciel/wakat"))
-        if not code:
-            print(f"Brak prowadzącego w planie, wpis wymaga weryfikacji: {row.get('Nauczyciel/wakat')}")
-        return code or ""
-
     # Arkusz podaje oddział raz nazwą, raz skrótem (3K wobec 3KS w planie).
     classes = {n.get("id"): {n.get("name"), n.get("short")} for n in plan.findall("./classes/class")}
     groups = {n.get("id"): n.get("name") for n in plan.findall("./groups/group")}
     teachers = {n.get("id"): n.get("short") for n in plan.findall("./teachers/teacher")}
     lessons = {n.get("id"): n for n in plan.findall("./lessons/lesson")}
-    def source_groups(row, date, period, class_name):
-        result = set()
-        code = teacher_code(row.get("Nauczyciel/wakat"))
+    def slot_lessons(date, period, class_name):
+        """Lekcje oddziału w planie bazowym w danym dniu i na danej lekcji."""
         day = datetime.strptime(date, "%Y-%m-%d").weekday()
+        found = []
         for card in plan.findall("./cards/card"):
             lesson = lessons[card.get("lessonid")]
             if int(card.get("period")) != period or card.get("days", "00000")[day:day+1] != "1":
                 continue
             if not any(class_name in classes.get(i, ()) for i in lesson.get("classids", "").split(",")):
                 continue
-            if not code or code not in [teachers.get(i) for i in lesson.get("teacherids", "").split(",")]:
-                continue
-            result.update(groups[i] for i in lesson.get("groupids", "").split(",") if i in groups)
-        return sorted(result)
+            found.append((
+                [teachers.get(i) for i in lesson.get("teacherids", "").split(",") if teachers.get(i)],
+                [groups[i] for i in lesson.get("groupids", "").split(",") if i in groups],
+            ))
+        return found
+
+    def locate(row, date, period, class_name, group_name, by_group=False):
+        """(skrót nauczyciela, grupy z planu, wolna godzina) dla wpisu z arkusza.
+
+        Zwykle lekcję wskazuje nauczyciel z arkusza. Przy przeniesieniu (by_group)
+        prowadzi ją czasem ktoś spoza planu — zastępca przenosi lekcję, którą
+        przejął; jeśli oddział ma o tej porze dokładnie jedną lekcję tej grupy,
+        bierzemy ją z planu. Gdy oddział
+        nie ma wtedy żadnej lekcji, kratka jest pusta i tam trafia wpis.
+        """
+        code = teacher_code(row.get("Nauczyciel/wakat"))
+        at_slot = slot_lessons(date, period, class_name)
+        mine = sorted({g for shorts, names in at_slot if code and code in shorts for g in names})
+        if mine:
+            return code or "", mine, False
+        if not at_slot:
+            return code or "", [], True
+        wanted = group_name.casefold()
+        fitting = [
+            (shorts, names) for shorts, names in at_slot
+            if not wanted or any(n.casefold() in (wanted, "cała klasa") for n in names)
+        ]
+        if by_group and len(fitting) == 1 and fitting[0][0]:
+            shorts, names = fitting[0]
+            print(f"Lekcja wskazana przez grupę, nie nauczyciela: {class_name}|{group_name} ({date}, lekcja {period}) -> {shorts[0]}")
+            return shorts[0], sorted(names), False
+        if not code:
+            print(f"Brak prowadzącego w planie, wpis wymaga weryfikacji: {row.get('Nauczyciel/wakat')}")
+        return code or "", [], False
 
     def align_group(group_name, groups_at_slot, row, date, period, class_name):
         """Nazwa grupy z arkusza bywa inna niż w planie (t.usfryz wobec tech.fryz.).
@@ -208,14 +232,15 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
             continue
         is_message = raw_substitute.casefold().startswith("uczniowie ") or "złączenie grup" in raw_substitute.casefold()
         date, period = iso_date(row.get("Dzień")), period_number(row.get("Lekcja"))
-        slot_groups = source_groups(row, date, period, class_name)
+        teacher, slot_groups, free = locate(row, date, period, class_name, group_name)
         substitutions.append({
             "date": date,
             "period": period,
             "className": class_name,
             "groupName": align_group(group_name, slot_groups, row, date, period, class_name),
-            "sourceTeacher": source_teacher(row),
+            "sourceTeacher": teacher,
             "sourceGroups": slot_groups,
+            **({"freeSlot": True} if free else {}),
             "type": "message" if is_message else "substitution",
             "subject": clean(row.get("Przedmiot")) if not is_message else "",
             "message": with_merge_note(raw_substitute, row),
@@ -229,14 +254,15 @@ def build_changes(substitutions_path: Path, transfers_path: Path, plan_xml: Path
         class_name, group_name = split_branch(row.get("Oddział"))
         if is_individual(class_name, group_name):
             continue
-        slot_groups = source_groups(row, source["date"], source["period"], class_name)
+        teacher, slot_groups, free = locate(row, source["date"], source["period"], class_name, group_name, by_group=True)
         transfers.append({
             "date": source["date"],
             "period": source["period"],
             "className": class_name,
             "groupName": align_group(group_name, slot_groups, row, source["date"], source["period"], class_name),
-            "sourceTeacher": source_teacher(row),
+            "sourceTeacher": teacher,
             "sourceGroups": slot_groups,
+            **({"freeSlot": True} if free else {}),
             "type": "room" if source["date"] == target["date"] and source["period"] == target["period"] else "transfer",
             "toDate": target["date"],
             "toPeriod": target["period"],

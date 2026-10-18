@@ -38,6 +38,11 @@ async function create(data=payload) {
    assert.equal([...t.tHead.rows[0].cells].filter(c=>!c.hidden).length,3);
    assert.equal(t.tHead.rows[0].cells[day+1].hidden,false);
   }
+  // Zajęcia w godzinie bez lekcji w planie bazowym idą do pustej kratki, nie pod nagłówek.
+  for(const c of payload.substitutions.filter(c=>c.freeSlot&&c.date===date)){
+   const cap=doc.getElementById(c.className).caption.textContent;
+   assert.ok(!cap.includes(`Zmiana ${c.date}, lekcja ${c.period}${c.groupName?' · '+c.groupName:''}`),`Wolna godzina pod nagłówkiem: ${c.className} ${c.date} l.${c.period} ${c.groupName}`);
+  }
   const before=doc.querySelector('.table-shell').innerHTML;choose(date);assert.equal(doc.querySelector('.table-shell').innerHTML,before,'No duplicate changes');
  }
  // Znacznik przeniesienia na jego dzień i sprzątanie po przejściu dalej —
@@ -110,8 +115,9 @@ async function create(data=payload) {
   if([0,6].includes(new Date(t.toDate+'T12:00:00Z').getUTCDay())) continue;
   choose(t.toDate);
   const table=doc.getElementById(t.className); if(!table) continue;
-  const target=[...table.querySelectorAll('.student-change')].find(e=>e.textContent.includes(`Przeniesienie na lekcję ${t.toPeriod}`));
-  if(target) assert.ok(target.textContent.includes(`z lekcji ${t.period}`),`Cel ${t.className} ${t.toDate} powinien mieć krótką formę: ${target.textContent}`);
+  // Kilka przeniesień może trafić na tę samą lekcję (np. gr1 i gr2) — szukamy swojego.
+  const marks=[...table.querySelectorAll('.student-change')].filter(e=>e.textContent.includes(`Przeniesienie na lekcję ${t.toPeriod}`));
+  if(marks.length) assert.ok(marks.some(e=>e.textContent.includes(`(z lekcji ${t.period})`)),`Cel ${t.className} ${t.toDate} powinien mieć krótką formę: ${marks.map(e=>e.textContent).join(' | ')}`);
  }
  // Jednorazowe zmiany dnia: 13.10 skrócone lekcje od 8., 14.10 dzień wolny (DEN).
  const notice=doc.getElementById('plan-special-day');
