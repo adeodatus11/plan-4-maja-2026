@@ -30,6 +30,20 @@
     {
       "date": "2026-10-19",
       "period": 1,
+      "className": "3FA",
+      "groupName": "",
+      "sourceTeacher": "IL",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-10-19",
+      "period": 1,
       "className": "2TFA",
       "groupName": "gr2",
       "sourceTeacher": "IL",
@@ -66,6 +80,20 @@
       "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
       "message": "Sobczak Anna",
       "room": "6"
+    },
+    {
+      "date": "2026-10-19",
+      "period": 2,
+      "className": "2FC",
+      "groupName": "",
+      "sourceTeacher": "IL",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Ulanowska Magdalena",
+      "room": "22"
     },
     {
       "date": "2026-10-19",
@@ -134,6 +162,20 @@
       "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
       "message": "Sobczak Anna",
       "room": "6"
+    },
+    {
+      "date": "2026-10-19",
+      "period": 3,
+      "className": "2FC",
+      "groupName": "",
+      "sourceTeacher": "IL",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Ulanowska Magdalena",
+      "room": "22"
     },
     {
       "date": "2026-10-19",
@@ -382,8 +424,8 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Rozwój kompetencji zawodowych - Zasady zdrowego żywienia",
-      "message": "Kończyńska Małgorzata",
+      "subject": "Język angielski",
+      "message": "Granatowska Mariola",
       "room": "40"
     },
     {
@@ -1191,6 +1233,23 @@
     },
     {
       "date": "2026-10-19",
+      "period": 1,
+      "className": "2FC",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-19",
+      "toPeriod": 1,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-10-19",
       "period": 10,
       "className": "2TFA",
       "groupName": "gr1",
@@ -1222,6 +1281,23 @@
       "teacher": "Jaworska Edyta",
       "fromRoom": "prf2",
       "toRoom": "prf2"
+    },
+    {
+      "date": "2026-10-19",
+      "period": 2,
+      "className": "2K",
+      "groupName": "gr1",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "room",
+      "toDate": "2026-10-19",
+      "toPeriod": 2,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
     },
     {
       "date": "2026-10-16",
@@ -1273,6 +1349,23 @@
       "teacher": "Jaworska Edyta",
       "fromRoom": "prf2",
       "toRoom": "prf2"
+    },
+    {
+      "date": "2026-10-19",
+      "period": 3,
+      "className": "2FA",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-19",
+      "toPeriod": 3,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
     },
     {
       "date": "2026-10-23",
@@ -1327,6 +1420,23 @@
     },
     {
       "date": "2026-10-19",
+      "period": 4,
+      "className": "2CA",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-19",
+      "toPeriod": 4,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-10-19",
       "period": 8,
       "className": "2TFA",
       "groupName": "gr2",
@@ -1344,6 +1454,23 @@
     },
     {
       "date": "2026-10-19",
+      "period": 5,
+      "className": "2S",
+      "groupName": "",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "room",
+      "toDate": "2026-10-19",
+      "toPeriod": 5,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-10-19",
       "period": 9,
       "className": "2TFA",
       "groupName": "gr2",
@@ -1358,6 +1485,23 @@
       "teacher": "Jaworska Edyta",
       "fromRoom": "prf2",
       "toRoom": "prf2"
+    },
+    {
+      "date": "2026-10-19",
+      "period": 6,
+      "className": "1TFH",
+      "groupName": "gr1",
+      "sourceTeacher": "AK",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "room",
+      "toDate": "2026-10-19",
+      "toPeriod": 6,
+      "subject": "Język angielski",
+      "teacher": "Karczmarz Aleksandra",
+      "fromRoom": "05",
+      "toRoom": "2"
     },
     {
       "date": "2026-10-19",
