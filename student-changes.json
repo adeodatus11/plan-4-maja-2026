@@ -1768,9 +1768,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Technika w produkcji cukierniczej",
-      "message": "Kończyńska Małgorzata",
-      "room": "33"
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
       "date": "2026-10-21",
@@ -1936,8 +1936,8 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Ulanowska Magdalena",
+      "subject": "Biologia",
+      "message": "Sałdyka-Rusek Karolina",
       "room": "22"
     },
     {
@@ -1964,8 +1964,8 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Edukacja zdrowotna",
-      "message": "Sałdyka-Rusek Karolina",
+      "subject": "Edukacja obywatelska",
+      "message": "Przeniesiona",
       "room": "4"
     },
     {
@@ -2783,20 +2783,6 @@
     {
       "date": "2026-10-22",
       "period": 10,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Projektowanie fryzur",
-      "message": "Jastrzębska-Majtyka Agnieszka",
-      "room": "3"
-    },
-    {
-      "date": "2026-10-22",
-      "period": 10,
       "className": "2CA",
       "groupName": "DZ",
       "sourceTeacher": "RJ",
@@ -2821,62 +2807,6 @@
       "subject": "Wychowanie fizyczne",
       "message": "Pietrycha Małgorzata",
       "room": "sg6"
-    },
-    {
-      "date": "2026-10-22",
-      "period": 11,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Projektowanie fryzur",
-      "message": "Jastrzębska-Majtyka Agnieszka",
-      "room": "3"
-    },
-    {
-      "date": "2026-10-22",
-      "period": 12,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-10-22",
-      "period": 13,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-10-22",
-      "period": 14,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
     },
     {
       "date": "2026-10-23",
@@ -3603,6 +3533,23 @@
       "teacher": "Smereka Alicja",
       "fromRoom": "31",
       "toRoom": "31"
+    },
+    {
+      "date": "2026-10-22",
+      "period": 2,
+      "className": "2WA",
+      "groupName": "",
+      "sourceTeacher": "UM",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-10-21",
+      "toPeriod": 5,
+      "subject": "Język polski",
+      "teacher": "Ulanowska Magdalena",
+      "fromRoom": "22",
+      "toRoom": "18"
     },
     {
       "date": "2026-10-21",
