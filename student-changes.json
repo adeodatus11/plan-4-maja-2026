@@ -231,9 +231,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Wrzeszcz Barbara",
-      "room": "bib"
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Bokuniewicz Sylwia",
+      "room": "kin"
     },
     {
       "date": "2026-10-26",
@@ -245,9 +245,9 @@
         "gr1"
       ],
       "type": "substitution",
-      "subject": "Informatyka",
-      "message": "Najwer Maciej",
-      "room": "40"
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Bokuniewicz Sylwia",
+      "room": "kin"
     },
     {
       "date": "2026-10-26",
@@ -286,10 +286,10 @@
       "sourceGroups": [
         "gr2"
       ],
-      "type": "substitution",
-      "subject": "Informatyka",
-      "message": "Najwer Maciej",
-      "room": "37"
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     },
     {
       "date": "2026-10-27",
@@ -331,7 +331,7 @@
       "type": "substitution",
       "subject": "Wychowanie fizyczne",
       "message": "Dalach Krystyna",
-      "room": "17"
+      "room": "05"
     },
     {
       "date": "2026-10-27",
@@ -414,7 +414,7 @@
       ],
       "type": "substitution",
       "subject": "Zajęcia z wychowawcą",
-      "message": "Pietrycha Małgorzata",
+      "message": "Rejno Julita",
       "room": "4"
     },
     {
@@ -441,9 +441,9 @@
         "gr2"
       ],
       "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Galert Anna",
-      "room": "17"
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
       "date": "2026-10-27",
@@ -909,6 +909,48 @@
     },
     {
       "date": "2026-10-29",
+      "period": 1,
+      "className": "3TFB",
+      "groupName": "tech.fryz.",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "tech.fryz."
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Bez konsekwencji (nieobecny oddział nauczyciela)",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-10-29",
+      "period": 2,
+      "className": "3TFB",
+      "groupName": "tech.fryz.",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "tech.fryz."
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Bez konsekwencji (nieobecny oddział nauczyciela)",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-10-29",
+      "period": 3,
+      "className": "3TFB",
+      "groupName": "tech.fryz.",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "tech.fryz."
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Bez konsekwencji (nieobecny oddział nauczyciela)",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-10-29",
       "period": 3,
       "className": "2FA",
       "groupName": "",
@@ -920,6 +962,20 @@
       "subject": "Wychowanie fizyczne",
       "message": "Pietrycha Małgorzata",
       "room": "09"
+    },
+    {
+      "date": "2026-10-29",
+      "period": 4,
+      "className": "3TFB",
+      "groupName": "tech.fryz.",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "tech.fryz."
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Bez konsekwencji (nieobecny oddział nauczyciela)",
+      "room": "prf2"
     },
     {
       "date": "2026-10-29",
@@ -938,6 +994,20 @@
     {
       "date": "2026-10-29",
       "period": 5,
+      "className": "3TFB",
+      "groupName": "tech.fryz.",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "tech.fryz."
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Bez konsekwencji (nieobecny oddział nauczyciela)",
+      "room": "prf2"
+    },
+    {
+      "date": "2026-10-29",
+      "period": 5,
       "className": "1FA",
       "groupName": "",
       "sourceTeacher": "IL",
@@ -948,6 +1018,20 @@
       "subject": "Chemia",
       "message": "Hudziec Agnieszka",
       "room": "26"
+    },
+    {
+      "date": "2026-10-29",
+      "period": 6,
+      "className": "3TFB",
+      "groupName": "tech.fryz.",
+      "sourceTeacher": "EM",
+      "sourceGroups": [
+        "tech.fryz."
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia praktyczne - wykonywanie usług fryzjerskich",
+      "message": "Bez konsekwencji (nieobecny oddział nauczyciela)",
+      "room": "prf2"
     },
     {
       "date": "2026-10-29",
@@ -1180,6 +1264,23 @@
       "toRoom": "42"
     },
     {
+      "date": "2026-10-27",
+      "period": 8,
+      "className": "3CB",
+      "groupName": "",
+      "sourceTeacher": "MK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-10-29",
+      "toPeriod": 9,
+      "subject": "Technika w produkcji cukierniczej",
+      "teacher": "Kończyńska Małgorzata",
+      "fromRoom": "34",
+      "toRoom": "34"
+    },
+    {
       "date": "2026-10-30",
       "period": 3,
       "className": "3TFA",
@@ -1198,5 +1299,5 @@
     }
   ],
   "validFrom": "2026-10-26",
-  "validTo": "2026-10-31"
+  "validTo": "2026-11-01"
 }
