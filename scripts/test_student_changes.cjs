@@ -135,6 +135,7 @@ async function create(data=payload) {
  assert.equal(doc.querySelector('.table-shell').hidden,true,'14.10 to dzień wolny od zajęć');
  assert.equal(notice.hidden,false);assert.ok(notice.textContent.includes('Dzień Edukacji Narodowej'));
  assert.ok(doc.getElementById('plan-data-status').textContent.includes('Dzień wolny od zajęć lekcyjnych'));
+ choose('2026-11-11');assert.equal(doc.querySelector('.table-shell').hidden,true,'11.11 to dzień wolny');assert.ok(notice.textContent.includes('Święto Niepodległości'));
  choose('2026-10-20');
  assert.equal(notice.hidden,true,'Komunikat nie może zostać na innym dniu');assert.equal(doc.querySelector('.table-shell').hidden,false);
  for(const t of doc.querySelectorAll('table.plan')){ const got=timeOf(t,8); if(got!==undefined) assert.equal(got,'14:05 - 14:50',`${t.id} lekcja 8 po 13.10`); }

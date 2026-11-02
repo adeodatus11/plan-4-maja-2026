@@ -80,6 +80,11 @@
             title: "Dzień Edukacji Narodowej — dzień wolny od zajęć lekcyjnych",
             note: "W szkole nie odbywają się zajęcia dydaktyczne. Uczniowie Branżowej Szkoły I stopnia będący pracownikami młodocianymi pozostają w tym dniu do dyspozycji swoich pracodawców, zgodnie z obowiązującym ich rozkładem czasu pracy oraz umowami o pracę w celu przygotowania zawodowego. Dzień wolny od zajęć lekcyjnych w szkole nie oznacza automatycznie dnia wolnego od pracy u pracodawcy.",
         },
+        "2026-11-11": {
+            dayOff: true,
+            title: "Narodowe Święto Niepodległości — dzień wolny",
+            note: "Dzień ustawowo wolny od pracy. W szkole nie odbywają się zajęcia.",
+        },
     };
 
     function applyLessonTimes(table, times) {
