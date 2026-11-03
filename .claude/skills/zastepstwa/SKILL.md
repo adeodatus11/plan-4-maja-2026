@@ -109,7 +109,10 @@ for x in d['substitutions'] + d['transfers']:
 EOF
 ```
 
-Obie listy i wpisy IND mają być **puste**. Każdy wpis „grupa nie pokryta"
+Obie listy i wpisy IND mają być **puste** — dla dni od dziś. Eksport bywa
+szerszy (np. od 01.09), a plan bazowy od tamtej pory się zmieniał (stałe zmiany
+planu), więc minione dni mogą już nie pasować; `zastepstwa/scripts/plan_uczniowski.sh`
+zgłasza je jako `::notice::` i nie blokuje publikacji. IND blokuje zawsze. Każdy wpis „grupa nie pokryta"
 ląduje przy nagłówku tabeli zamiast w kratce.
 
 ## 5. Nazwiska i grupy z eksportu dopasowujemy do planu, nie odwrotnie
