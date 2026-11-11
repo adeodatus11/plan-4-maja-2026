@@ -1345,6 +1345,20 @@
     },
     {
       "date": "2026-11-12",
+      "period": 1,
+      "className": "5TH",
+      "groupName": "",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie przychodzą później",
+      "room": ""
+    },
+    {
+      "date": "2026-11-12",
       "period": 2,
       "className": "1WB",
       "groupName": "gr2",
@@ -1500,6 +1514,20 @@
     {
       "date": "2026-11-12",
       "period": 3,
+      "className": "1TFH",
+      "groupName": "tech.hand.",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "tech.hand."
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Zając Ewa",
+      "room": "bib"
+    },
+    {
+      "date": "2026-11-12",
+      "period": 3,
       "className": "5TH",
       "groupName": "",
       "sourceTeacher": "MZ",
@@ -1598,6 +1626,20 @@
     {
       "date": "2026-11-12",
       "period": 4,
+      "className": "1TFH",
+      "groupName": "tech.hand.",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "tech.hand."
+      ],
+      "type": "substitution",
+      "subject": "Organizacja sprzedaży",
+      "message": "Kosin Anna",
+      "room": "42"
+    },
+    {
+      "date": "2026-11-12",
+      "period": 4,
       "className": "5TH",
       "groupName": "",
       "sourceTeacher": "MZ",
@@ -1605,9 +1647,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Marketing w działalności handlowej",
-      "message": "Kosin Anna",
-      "room": "42"
+      "subject": "Zajęcia biblioteczne",
+      "message": "Zając Ewa",
+      "room": "bib"
     },
     {
       "date": "2026-11-12",
@@ -1646,10 +1688,10 @@
       "sourceGroups": [
         "gr2"
       ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Staliś Donata",
+      "room": "32"
     },
     {
       "date": "2026-11-12",
@@ -1706,6 +1748,20 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-11-12",
+      "period": 5,
+      "className": "1TH",
+      "groupName": "",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Zając Ewa",
+      "room": "bib"
     },
     {
       "date": "2026-11-12",
@@ -1836,6 +1892,20 @@
     {
       "date": "2026-11-12",
       "period": 6,
+      "className": "1TH",
+      "groupName": "",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Organizacja sprzedaży",
+      "message": "Kosin Anna",
+      "room": "42"
+    },
+    {
+      "date": "2026-11-12",
+      "period": 6,
       "className": "5TFB",
       "groupName": "",
       "sourceTeacher": "MZ",
@@ -1962,6 +2032,20 @@
     {
       "date": "2026-11-12",
       "period": 7,
+      "className": "4TH",
+      "groupName": "gr1",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Język niemiecki",
+      "message": "Misiąg Anna",
+      "room": "44"
+    },
+    {
+      "date": "2026-11-12",
+      "period": 7,
       "className": "3TFB",
       "groupName": "",
       "sourceTeacher": "MZ",
@@ -2059,6 +2143,20 @@
     },
     {
       "date": "2026-11-12",
+      "period": 8,
+      "className": "4TH",
+      "groupName": "gr1",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-11-12",
       "period": 9,
       "className": "2TH",
       "groupName": "",
@@ -2107,6 +2205,20 @@
       "sourceTeacher": "MU",
       "sourceGroups": [
         "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-11-12",
+      "period": 9,
+      "className": "4TH",
+      "groupName": "gr1",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "gr1"
       ],
       "type": "message",
       "subject": "",
@@ -2171,6 +2283,20 @@
     },
     {
       "date": "2026-11-12",
+      "period": 10,
+      "className": "4TH",
+      "groupName": "gr1",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-11-12",
       "period": 11,
       "className": "3B",
       "groupName": "",
@@ -2191,6 +2317,20 @@
       "sourceTeacher": "SM",
       "sourceGroups": [
         "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-11-12",
+      "period": 11,
+      "className": "4TH",
+      "groupName": "gr1",
+      "sourceTeacher": "Sa",
+      "sourceGroups": [
+        "gr1"
       ],
       "type": "message",
       "subject": "",
@@ -2764,7 +2904,7 @@
       "subject": "Fizyka",
       "teacher": "Biczysko Wojciech",
       "fromRoom": "23",
-      "toRoom": "23"
+      "toRoom": "26"
     }
   ],
   "validFrom": "2026-11-09",
