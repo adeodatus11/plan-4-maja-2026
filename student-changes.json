@@ -1109,6 +1109,19 @@
     {
       "date": "2026-11-10",
       "period": 9,
+      "className": "1B",
+      "groupName": "",
+      "sourceTeacher": "KR",
+      "sourceGroups": [],
+      "freeSlot": true,
+      "type": "substitution",
+      "subject": "Wykonywanie fryzur na podstawie projektów - zajęcia praktyczne",
+      "message": "Krzemińska Beata",
+      "room": "5"
+    },
+    {
+      "date": "2026-11-10",
+      "period": 9,
       "className": "2FB",
       "groupName": "",
       "sourceTeacher": "KR",
@@ -1119,19 +1132,6 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 9,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [],
-      "freeSlot": true,
-      "type": "substitution",
-      "subject": "Wykonywanie fryzur na podstawie projektów - zajęcia praktyczne",
-      "message": "Krzemińska Beata",
-      "room": "5"
     },
     {
       "date": "2026-11-10",
@@ -1359,6 +1359,20 @@
     },
     {
       "date": "2026-11-12",
+      "period": 1,
+      "className": "1S",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Zając Ewa",
+      "room": "bib"
+    },
+    {
+      "date": "2026-11-12",
       "period": 2,
       "className": "1WB",
       "groupName": "gr2",
@@ -1426,6 +1440,20 @@
       "subject": "",
       "message": "Uczniowie przychodzą później",
       "room": ""
+    },
+    {
+      "date": "2026-11-12",
+      "period": 2,
+      "className": "1FA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Zając Ewa",
+      "room": "bib"
     },
     {
       "date": "2026-11-12",
@@ -1524,6 +1552,20 @@
       "subject": "Zajęcia biblioteczne",
       "message": "Zając Ewa",
       "room": "bib"
+    },
+    {
+      "date": "2026-11-12",
+      "period": 3,
+      "className": "1WA",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Rozwój zainteresowań i kreatywności - obsługa klienta",
+      "message": "Jastrzębska-Majtyka Agnieszka",
+      "room": "23"
     },
     {
       "date": "2026-11-12",
@@ -1636,6 +1678,20 @@
       "subject": "Organizacja sprzedaży",
       "message": "Kosin Anna",
       "room": "42"
+    },
+    {
+      "date": "2026-11-12",
+      "period": 4,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Zając Ewa",
+      "room": "bib"
     },
     {
       "date": "2026-11-12",
@@ -1766,6 +1822,20 @@
     {
       "date": "2026-11-12",
       "period": 5,
+      "className": "1K",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Nestoruk Lidia",
+      "room": "23"
+    },
+    {
+      "date": "2026-11-12",
+      "period": 5,
       "className": "5TFB",
       "groupName": "",
       "sourceTeacher": "MZ",
@@ -1773,9 +1843,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Wychowanie fizyczne",
-      "message": "Nestoruk Lidia",
-      "room": "2"
+      "subject": "Zajęcia biblioteczne",
+      "message": "Zając Ewa",
+      "room": "bib"
     },
     {
       "date": "2026-11-12",
@@ -2042,6 +2112,20 @@
       "subject": "Język niemiecki",
       "message": "Misiąg Anna",
       "room": "44"
+    },
+    {
+      "date": "2026-11-12",
+      "period": 7,
+      "className": "1WB",
+      "groupName": "",
+      "sourceTeacher": "SE",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     },
     {
       "date": "2026-11-12",
@@ -2871,6 +2955,23 @@
       "teacher": "Jastrzębska-Majtyka Agnieszka",
       "fromRoom": "3",
       "toRoom": "3"
+    },
+    {
+      "date": "2026-11-12",
+      "period": 8,
+      "className": "1WB",
+      "groupName": "",
+      "sourceTeacher": "WB",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-11-12",
+      "toPeriod": 6,
+      "subject": "Fizyka",
+      "teacher": "Biczysko Wojciech",
+      "fromRoom": "22",
+      "toRoom": "22"
     },
     {
       "date": "2026-11-12",
