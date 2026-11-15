@@ -1,55 +1,41 @@
 {
   "substitutions": [
     {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "period": 2,
-      "className": "2TH",
-      "groupName": "DZ",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "dz"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-09",
-      "period": 3,
-      "className": "2TH",
-      "groupName": "DZ",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "dz"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-09",
-      "period": 4,
-      "className": "2FC",
+      "className": "1TFA",
       "groupName": "",
-      "sourceTeacher": "MU",
+      "sourceTeacher": "EK",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
+    },
+    {
+      "date": "2026-11-16",
+      "period": 3,
+      "className": "2CA",
+      "groupName": "",
+      "sourceTeacher": "AH",
       "sourceGroups": [
         "Cała klasa"
       ],
       "type": "substitution",
       "subject": "Język angielski",
-      "message": "Biezmienow Małgorzata",
-      "room": "28"
+      "message": "Granatowska Mariola",
+      "room": "44"
     },
     {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "period": 4,
-      "className": "2TH",
-      "groupName": "DZ",
-      "sourceTeacher": "MP",
+      "className": "4TFA",
+      "groupName": "",
+      "sourceTeacher": "AH",
       "sourceGroups": [
-        "dz"
+        "Cała klasa"
       ],
       "type": "message",
       "subject": "",
@@ -57,11 +43,11 @@
       "room": ""
     },
     {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "period": 5,
-      "className": "1TFB",
+      "className": "1FB",
       "groupName": "",
-      "sourceTeacher": "MU",
+      "sourceTeacher": "EK",
       "sourceGroups": [
         "Cała klasa"
       ],
@@ -71,41 +57,27 @@
       "room": "18"
     },
     {
-      "date": "2026-11-09",
-      "period": 5,
-      "className": "4TH",
-      "groupName": "DZ",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "dz"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Granatowska Mariola",
-      "room": "43"
-    },
-    {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "period": 6,
-      "className": "2FC",
+      "className": "2TFB",
       "groupName": "",
-      "sourceTeacher": "MU",
+      "sourceTeacher": "EK",
       "sourceGroups": [
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Chemia",
-      "message": "Przeniesiona",
-      "room": "28"
+      "subject": "Podstawy fryzjerstwa",
+      "message": "Danielewski Paweł",
+      "room": "3"
     },
     {
-      "date": "2026-11-09",
-      "period": 6,
-      "className": "4TH",
-      "groupName": "DZ",
-      "sourceTeacher": "MP",
+      "date": "2026-11-16",
+      "period": 7,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "AH",
       "sourceGroups": [
-        "dz"
+        "Cała klasa"
       ],
       "type": "substitution",
       "subject": "Język angielski",
@@ -113,21 +85,21 @@
       "room": "05"
     },
     {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "period": 7,
-      "className": "3B",
+      "className": "1CA",
       "groupName": "",
-      "sourceTeacher": "KR",
+      "sourceTeacher": "EK",
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
+      "type": "substitution",
+      "subject": "Biologia",
+      "message": "Małecka Barbara",
+      "room": "27"
     },
     {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "period": 7,
       "className": "2FA",
       "groupName": "",
@@ -136,68 +108,12 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Galert Anna",
-      "room": "05"
+      "subject": "Podstawy fryzjerstwa",
+      "message": "Danielewski Paweł",
+      "room": "2"
     },
     {
-      "date": "2026-11-09",
-      "period": 7,
-      "className": "3CA",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-09",
-      "period": 7,
-      "className": "4TH",
-      "groupName": "DZ",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "dz"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-09",
-      "period": 8,
-      "className": "4TFB",
-      "groupName": "",
-      "sourceTeacher": "FL",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-09",
-      "period": 8,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "period": 8,
       "className": "2FA",
       "groupName": "",
@@ -211,63 +127,21 @@
       "room": "2"
     },
     {
-      "date": "2026-11-09",
-      "period": 8,
-      "className": "4TH",
+      "date": "2026-11-16",
+      "period": 9,
+      "className": "1TFB",
       "groupName": "",
-      "sourceTeacher": "MU",
+      "sourceTeacher": "AH",
       "sourceGroups": [
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
+      "subject": "Język angielski",
+      "message": "Galert Anna",
+      "room": "05"
     },
     {
-      "date": "2026-11-09",
-      "period": 9,
-      "className": "1CA",
-      "groupName": "CH",
-      "sourceTeacher": "SD",
-      "sourceGroups": [
-        "ch"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-09",
-      "period": 9,
-      "className": "4TFA",
-      "groupName": "",
-      "sourceTeacher": "FL",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-09",
-      "period": 9,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia praktyczne - projektowanie i wykonywanie fryzur",
-      "message": "Krzemińska Beata",
-      "room": "5"
-    },
-    {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "period": 9,
       "className": "3FA",
       "groupName": "",
@@ -281,49 +155,7 @@
       "room": "2"
     },
     {
-      "date": "2026-11-09",
-      "period": 9,
-      "className": "3CA",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski zawodowy",
-      "message": "Wojciechowski Łukasz",
-      "room": "43"
-    },
-    {
-      "date": "2026-11-09",
-      "period": 10,
-      "className": "1CA",
-      "groupName": "CH",
-      "sourceTeacher": "SD",
-      "sourceGroups": [
-        "ch"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-09",
-      "period": 10,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia praktyczne - projektowanie i wykonywanie fryzur",
-      "message": "Krzemińska Beata",
-      "room": "5"
-    },
-    {
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "period": 10,
       "className": "1TFH",
       "groupName": "tech.fryz.",
@@ -333,95 +165,11 @@
       ],
       "type": "substitution",
       "subject": "Podstawy fryzjerstwa",
-      "message": "Sobczak Anna",
+      "message": "Danielewski Paweł",
       "room": "2"
     },
     {
-      "date": "2026-11-09",
-      "period": 11,
-      "className": "1CA",
-      "groupName": "CH",
-      "sourceTeacher": "SD",
-      "sourceGroups": [
-        "ch"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-09",
-      "period": 11,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia praktyczne - projektowanie i wykonywanie fryzur",
-      "message": "Krzemińska Beata",
-      "room": "5"
-    },
-    {
-      "date": "2026-11-09",
-      "period": 12,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia praktyczne - projektowanie i wykonywanie fryzur",
-      "message": "Krzemińska Beata",
-      "room": "5"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 1,
-      "className": "3CB",
-      "groupName": "",
-      "sourceTeacher": "Kj",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Doradztwo zawodowe",
-      "message": "Krzemińska Beata",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 1,
-      "className": "3WA",
-      "groupName": "ch2",
-      "sourceTeacher": "LN",
-      "sourceGroups": [
-        "ch2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 1,
-      "className": "2WA",
-      "groupName": "",
-      "sourceTeacher": "UM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 2,
       "className": "1TFA",
       "groupName": "",
@@ -430,54 +178,25 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Nowak Magdalena",
-      "room": "34"
+      "subject": "Biologia",
+      "message": "Małecka Barbara",
+      "room": "28"
     },
     {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 2,
-      "className": "3FA",
+      "className": "2FB",
       "groupName": "",
-      "sourceTeacher": "Kj",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
+      "sourceTeacher": "SM",
+      "sourceGroups": [],
+      "freeSlot": true,
       "type": "substitution",
-      "subject": "Edukacja obywatelska",
-      "message": "Przeniesiona",
-      "room": "4"
+      "subject": "Podstawy fryzjerstwa",
+      "message": "Leńczowska Iwona",
+      "room": "2"
     },
     {
-      "date": "2026-11-10",
-      "period": 2,
-      "className": "3WA",
-      "groupName": "ch2",
-      "sourceTeacher": "LN",
-      "sourceGroups": [
-        "ch2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 2,
-      "className": "1TFH",
-      "groupName": "",
-      "sourceTeacher": "UM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 3,
       "className": "3CB",
       "groupName": "",
@@ -491,77 +210,20 @@
       "room": "32"
     },
     {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 3,
-      "className": "3CA",
+      "className": "2FB",
       "groupName": "",
-      "sourceTeacher": "Kj",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 3,
-      "className": "1TFA",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
+      "sourceTeacher": "SM",
+      "sourceGroups": [],
+      "freeSlot": true,
       "type": "substitution",
-      "subject": "Techniki fryzjerskie",
+      "subject": "Podstawy fryzjerstwa",
       "message": "Leńczowska Iwona",
       "room": "2"
     },
     {
-      "date": "2026-11-10",
-      "period": 3,
-      "className": "2TH",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 3,
-      "className": "3WA",
-      "groupName": "ch2",
-      "sourceTeacher": "LN",
-      "sourceGroups": [
-        "ch2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 3,
-      "className": "3TFB",
-      "groupName": "",
-      "sourceTeacher": "UM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 4,
       "className": "3K",
       "groupName": "",
@@ -570,82 +232,12 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język angielski",
+      "subject": "Język angielski zawodowy",
       "message": "Wojciechowski Łukasz",
       "room": "29"
     },
     {
-      "date": "2026-11-10",
-      "period": 4,
-      "className": "3FC",
-      "groupName": "",
-      "sourceTeacher": "Kj",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 4,
-      "className": "2TFB",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Fizyka",
-      "message": "Biczysko Wojciech",
-      "room": "22"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 4,
-      "className": "3FB",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 4,
-      "className": "1TFH",
-      "groupName": "gr2",
-      "sourceTeacher": "LN",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "substitution",
-      "subject": "Wychowanie fizyczne",
-      "message": "Wójcik Kamil",
-      "room": "sg2"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 4,
-      "className": "2FB",
-      "groupName": "",
-      "sourceTeacher": "UM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 5,
       "className": "2TH",
       "groupName": "",
@@ -654,110 +246,12 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Leńczowska Iwona",
-      "room": "kin"
+      "subject": "Historia",
+      "message": "Zaleska Magdalena",
+      "room": "19"
     },
     {
-      "date": "2026-11-10",
-      "period": 5,
-      "className": "3WA",
-      "groupName": "",
-      "sourceTeacher": "Kj",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 5,
-      "className": "2TFB",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Filipiak Wiesław",
-      "room": "33"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 5,
-      "className": "1FB",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 5,
-      "className": "1TFH",
-      "groupName": "gr2",
-      "sourceTeacher": "LN",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "substitution",
-      "subject": "Wychowanie fizyczne",
-      "message": "Antoszewska Joanna",
-      "room": "sg2"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 5,
-      "className": "3FC",
-      "groupName": "",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Leńczowska Iwona",
-      "room": "kin"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 6,
-      "className": "2CB",
-      "groupName": "",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Galert Anna",
-      "room": "05"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 6,
-      "className": "3FA",
-      "groupName": "",
-      "sourceTeacher": "AH",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Techniki fryzjerskie",
-      "message": "Leńczowska Iwona",
-      "room": "2"
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 6,
       "className": "3CB",
       "groupName": "",
@@ -771,77 +265,7 @@
       "room": "27"
     },
     {
-      "date": "2026-11-10",
-      "period": 6,
-      "className": "3WA",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język niemiecki",
-      "message": "Fiodorów Małgorzata",
-      "room": "17"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 6,
-      "className": "1FB",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 6,
-      "className": "1TFH",
-      "groupName": "gr2",
-      "sourceTeacher": "LN",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "substitution",
-      "subject": "Wychowanie fizyczne",
-      "message": "Dalach Krystyna",
-      "room": "sg2"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 6,
-      "className": "3FC",
-      "groupName": "",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Karczmarz Aleksandra",
-      "room": "32"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 7,
-      "className": "2CB",
-      "groupName": "",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Wojciechowski Łukasz",
-      "room": "32"
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 7,
       "className": "4TH",
       "groupName": "",
@@ -850,40 +274,12 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Płatek Krzysztof",
-      "room": "40"
+      "subject": "Fizyka",
+      "message": "Biczysko Wojciech",
+      "room": "23"
     },
     {
-      "date": "2026-11-10",
-      "period": 7,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język polski",
-      "message": "Derezińska Katarzyna",
-      "room": "33"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 7,
-      "className": "1CA",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Historia",
-      "message": "Kaczorowski Waldemar",
-      "room": "18"
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 7,
       "className": "3FB",
       "groupName": "",
@@ -891,83 +287,13 @@
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 7,
-      "className": "3FA",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
       "type": "substitution",
-      "subject": "Techniki fryzjerskie",
+      "subject": "Podstawy fryzjerstwa",
       "message": "Leńczowska Iwona",
       "room": "2"
     },
     {
-      "date": "2026-11-10",
-      "period": 7,
-      "className": "1TFA",
-      "groupName": "gr1",
-      "sourceTeacher": "LN",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 7,
-      "className": "3FC",
-      "groupName": "",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Edukacja obywatelska",
-      "message": "Kopij Marcin",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 8,
-      "className": "3FB",
-      "groupName": "CH",
-      "sourceTeacher": "SD",
-      "sourceGroups": [
-        "ch"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 8,
-      "className": "4TH",
-      "groupName": "gr2",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Wojciechowski Łukasz",
-      "room": "32"
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 8,
       "className": "2CB",
       "groupName": "",
@@ -976,12 +302,12 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Płatek Krzysztof",
-      "room": "40"
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 8,
       "className": "3CB",
       "groupName": "",
@@ -995,105 +321,7 @@
       "room": ""
     },
     {
-      "date": "2026-11-10",
-      "period": 8,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język polski",
-      "message": "Derezińska Katarzyna",
-      "room": "33"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 8,
-      "className": "3TFB",
-      "groupName": "tech.fryz.",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "tech.fryz."
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Wrzeszcz Barbara",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 8,
-      "className": "1TFH",
-      "groupName": "tech.fryz.",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "tech.fryz."
-      ],
-      "type": "substitution",
-      "subject": "Podstawy fryzjerstwa",
-      "message": "Leńczowska Iwona",
-      "room": "2"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 8,
-      "className": "1TFA",
-      "groupName": "gr1",
-      "sourceTeacher": "LN",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 8,
-      "className": "3FB",
-      "groupName": "DZ",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "dz"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 9,
-      "className": "3FB",
-      "groupName": "CH",
-      "sourceTeacher": "SD",
-      "sourceGroups": [
-        "ch"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 9,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język polski",
-      "message": "Derezińska Katarzyna",
-      "room": "33"
-    },
-    {
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "period": 9,
       "className": "3CA",
       "groupName": "",
@@ -1102,211 +330,16 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Wrzeszcz Barbara",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 9,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [],
-      "freeSlot": true,
-      "type": "substitution",
-      "subject": "Wykonywanie fryzur na podstawie projektów - zajęcia praktyczne",
+      "subject": "Doradztwo zawodowe",
       "message": "Krzemińska Beata",
       "room": "5"
     },
     {
-      "date": "2026-11-10",
-      "period": 9,
-      "className": "2FB",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 9,
-      "className": "3TFA",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 9,
-      "className": "1TFA",
-      "groupName": "gr1",
-      "sourceTeacher": "LN",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 9,
-      "className": "3FB",
-      "groupName": "DZ",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "dz"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 10,
-      "className": "3FB",
-      "groupName": "CH",
-      "sourceTeacher": "SD",
-      "sourceGroups": [
-        "ch"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 10,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 10,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Wykonywanie fryzur na podstawie projektów - zajęcia praktyczne",
-      "message": "Krzemińska Beata",
-      "room": "5"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 10,
-      "className": "2FB",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 10,
-      "className": "3FB",
-      "groupName": "DZ",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "dz"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 11,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Wykonywanie fryzur na podstawie projektów - zajęcia praktyczne",
-      "message": "Krzemińska Beata",
-      "room": "5"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 11,
-      "className": "2FB",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 13,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-10",
-      "period": 14,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
+      "date": "2026-11-18",
       "period": 1,
-      "className": "1WB",
+      "className": "1TFH",
       "groupName": "gr2",
-      "sourceTeacher": "MC",
+      "sourceTeacher": "MN",
       "sourceGroups": [
         "gr2"
       ],
@@ -1316,625 +349,65 @@
       "room": ""
     },
     {
-      "date": "2026-11-12",
-      "period": 1,
-      "className": "4TH",
-      "groupName": "gr2",
-      "sourceTeacher": "BC",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 1,
-      "className": "3FC",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 1,
-      "className": "5TH",
-      "groupName": "",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 1,
-      "className": "1S",
-      "groupName": "",
-      "sourceTeacher": "SE",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 2,
-      "className": "1WB",
-      "groupName": "gr2",
-      "sourceTeacher": "MC",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 2,
-      "className": "4TH",
-      "groupName": "gr2",
-      "sourceTeacher": "BC",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 2,
-      "className": "5TFB",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 2,
-      "className": "1TFB",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Podstawy fryzjerstwa",
-      "message": "Leńczowska Iwona",
-      "room": "2"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 2,
-      "className": "3FC",
-      "groupName": "",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 2,
+      "date": "2026-11-18",
+      "period": 4,
       "className": "1FA",
       "groupName": "",
-      "sourceTeacher": "SE",
+      "sourceTeacher": "AH",
       "sourceGroups": [
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
+      "subject": "Biologia",
+      "message": "Mucha Anna",
+      "room": "26"
     },
     {
-      "date": "2026-11-12",
-      "period": 2,
-      "className": "2WA",
+      "date": "2026-11-18",
+      "period": 5,
+      "className": "2CA",
       "groupName": "",
-      "sourceTeacher": "UM",
+      "sourceTeacher": "AH",
       "sourceGroups": [
         "Cała klasa"
       ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
+      "type": "substitution",
+      "subject": "Zajęcia z wychowawcą",
+      "message": "Małecka Barbara",
+      "room": "28"
     },
     {
-      "date": "2026-11-12",
-      "period": 3,
-      "className": "1WB",
-      "groupName": "gr2",
-      "sourceTeacher": "MC",
+      "date": "2026-11-18",
+      "period": 5,
+      "className": "2TFA",
+      "groupName": "",
+      "sourceTeacher": "MN",
       "sourceGroups": [
-        "gr2"
+        "Cała klasa"
       ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
+      "type": "substitution",
+      "subject": "Język polski",
+      "message": "Ulanowska Magdalena",
+      "room": "37"
     },
     {
-      "date": "2026-11-12",
-      "period": 3,
-      "className": "4TH",
-      "groupName": "gr2",
-      "sourceTeacher": "BC",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 3,
+      "date": "2026-11-18",
+      "period": 6,
       "className": "1CB",
       "groupName": "cukiernik",
       "sourceTeacher": "MK",
       "sourceGroups": [
         "cukiernik"
       ],
-      "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Nowak Magdalena",
-      "room": "34"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 3,
-      "className": "5TFB",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 3,
-      "className": "1CB",
-      "groupName": "fryzjer",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "fryzjer"
-      ],
-      "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Nowak Magdalena",
-      "room": "34"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 3,
-      "className": "1TFH",
-      "groupName": "tech.hand.",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "tech.hand."
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 3,
-      "className": "1WA",
-      "groupName": "",
-      "sourceTeacher": "SE",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Rozwój zainteresowań i kreatywności - obsługa klienta",
-      "message": "Jastrzębska-Majtyka Agnieszka",
-      "room": "23"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 3,
-      "className": "5TH",
-      "groupName": "",
-      "sourceTeacher": "MZ",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Filusz Marzena",
-      "room": "19"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 4,
-      "className": "1K",
-      "groupName": "gr2",
-      "sourceTeacher": "MB",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 4,
-      "className": "1S",
-      "groupName": "CH",
-      "sourceTeacher": "MC",
-      "sourceGroups": [
-        "ch"
-      ],
-      "type": "substitution",
-      "subject": "Wychowanie fizyczne",
-      "message": "Antoszewska Joanna",
-      "room": "sg6"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 4,
-      "className": "4TH",
-      "groupName": "gr2",
-      "sourceTeacher": "BC",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 4,
-      "className": "1CB",
-      "groupName": "gr2",
-      "sourceTeacher": "SD",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "substitution",
-      "subject": "Informatyka",
-      "message": "Taszycka Magdalena",
-      "room": "38"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 4,
-      "className": "1FA",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Historia",
-      "message": "Kaczorowski Waldemar",
-      "room": "33"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 4,
-      "className": "1TFA",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Karczmarz Aleksandra",
-      "room": "28"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 4,
-      "className": "1TFH",
-      "groupName": "tech.hand.",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "tech.hand."
-      ],
-      "type": "substitution",
-      "subject": "Organizacja sprzedaży",
-      "message": "Kosin Anna",
-      "room": "42"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 4,
-      "className": "2TH",
-      "groupName": "",
-      "sourceTeacher": "SE",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 4,
-      "className": "5TH",
-      "groupName": "",
-      "sourceTeacher": "MZ",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Filusz Marzena",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "1TFA",
-      "groupName": "gr1",
-      "sourceTeacher": "MB",
-      "sourceGroups": [
-        "gr1"
-      ],
       "type": "message",
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
     },
     {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "1S",
-      "groupName": "CH",
-      "sourceTeacher": "MC",
-      "sourceGroups": [
-        "ch"
-      ],
-      "type": "substitution",
-      "subject": "Wychowanie fizyczne",
-      "message": "Antoszewska Joanna",
-      "room": "sg6"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "4TH",
-      "groupName": "gr2",
-      "sourceTeacher": "BC",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Staliś Donata",
-      "room": "32"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "1CB",
-      "groupName": "gr2",
-      "sourceTeacher": "SD",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "2TFB",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Podstawy fryzjerstwa",
-      "message": "Jastrzębska-Majtyka Agnieszka",
-      "room": "3"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "2WA",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Wójcik Kamil",
-      "room": "28"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "1CB",
-      "groupName": "gr1",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "1TH",
-      "groupName": "",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "1K",
-      "groupName": "",
-      "sourceTeacher": "SE",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Wychowanie fizyczne",
-      "message": "Nestoruk Lidia",
-      "room": "23"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 5,
-      "className": "5TFB",
-      "groupName": "",
-      "sourceTeacher": "MZ",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Filusz Marzena",
-      "room": "19"
-    },
-    {
-      "date": "2026-11-12",
+      "date": "2026-11-18",
       "period": 6,
-      "className": "4TFB",
-      "groupName": "",
-      "sourceTeacher": "MB",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Wrzeszcz Barbara",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 6,
-      "className": "1S",
-      "groupName": "CH",
-      "sourceTeacher": "MC",
-      "sourceGroups": [
-        "ch"
-      ],
-      "type": "substitution",
-      "subject": "Wychowanie fizyczne",
-      "message": "Antoszewska Joanna",
-      "room": "sg6"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 6,
-      "className": "1CB",
-      "groupName": "gr2",
-      "sourceTeacher": "SD",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 6,
-      "className": "3FC",
-      "groupName": "",
-      "sourceTeacher": "AH",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 6,
-      "className": "2TFB",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język polski",
-      "message": "Filipek Anna",
-      "room": "33"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 6,
-      "className": "1FA",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Techniki fryzjerskie",
-      "message": "Jastrzębska-Majtyka Agnieszka",
-      "room": "3"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 6,
-      "className": "1TFA",
+      "className": "1TFB",
       "groupName": "gr1",
       "sourceTeacher": "MN",
       "sourceGroups": [
@@ -1946,55 +419,13 @@
       "room": ""
     },
     {
-      "date": "2026-11-12",
-      "period": 6,
-      "className": "1CB",
-      "groupName": "gr1",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 6,
-      "className": "1TH",
-      "groupName": "",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Organizacja sprzedaży",
-      "message": "Kosin Anna",
-      "room": "42"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 6,
-      "className": "5TFB",
-      "groupName": "",
-      "sourceTeacher": "MZ",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Karczmarz Aleksandra",
-      "room": "32"
-    },
-    {
-      "date": "2026-11-12",
+      "date": "2026-11-18",
       "period": 7,
       "className": "1CB",
-      "groupName": "gr2",
-      "sourceTeacher": "MB",
+      "groupName": "cukiernik",
+      "sourceTeacher": "MK",
       "sourceGroups": [
-        "gr2"
+        "cukiernik"
       ],
       "type": "message",
       "subject": "",
@@ -2002,223 +433,13 @@
       "room": ""
     },
     {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "2TH",
-      "groupName": "",
-      "sourceTeacher": "BC",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "1TH",
-      "groupName": "gr2",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "1FC",
-      "groupName": "",
-      "sourceTeacher": "AH",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Projektowanie fryzur",
-      "message": "Danielewski Paweł",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "3FC",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "1TFB",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Biologia",
-      "message": "Przeniesiona",
-      "room": "28"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "1CB",
-      "groupName": "gr1",
-      "sourceTeacher": "MP",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "4TH",
-      "groupName": "gr1",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "substitution",
-      "subject": "Język niemiecki",
-      "message": "Misiąg Anna",
-      "room": "44"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "1WB",
-      "groupName": "",
-      "sourceTeacher": "SE",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 7,
-      "className": "3TFB",
-      "groupName": "",
-      "sourceTeacher": "MZ",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Wrzeszcz Barbara",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 8,
-      "className": "2TH",
-      "groupName": "",
-      "sourceTeacher": "BC",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 8,
-      "className": "3TFB",
-      "groupName": "gr2",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 8,
-      "className": "2TFA",
-      "groupName": "",
-      "sourceTeacher": "AH",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Podstawy fryzjerstwa",
-      "message": "Krzemińska Beata",
-      "room": "5"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 8,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Projektowanie fryzur",
-      "message": "Danielewski Paweł",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 8,
-      "className": "3FC",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
+      "date": "2026-11-18",
       "period": 8,
       "className": "1CB",
-      "groupName": "",
-      "sourceTeacher": "MU",
+      "groupName": "cukiernik",
+      "sourceTeacher": "MK",
       "sourceGroups": [
-        "Cała klasa"
+        "cukiernik"
       ],
       "type": "message",
       "subject": "",
@@ -2226,69 +447,13 @@
       "room": ""
     },
     {
-      "date": "2026-11-12",
-      "period": 8,
-      "className": "4TH",
-      "groupName": "gr1",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 9,
-      "className": "2TH",
-      "groupName": "",
-      "sourceTeacher": "BC",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 9,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Projektowanie fryzur",
-      "message": "Krzemińska Beata",
-      "room": "2"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 9,
-      "className": "1FA",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
+      "date": "2026-11-18",
       "period": 9,
       "className": "1CB",
-      "groupName": "",
-      "sourceTeacher": "MU",
+      "groupName": "cukiernik",
+      "sourceTeacher": "MK",
       "sourceGroups": [
-        "Cała klasa"
+        "cukiernik"
       ],
       "type": "message",
       "subject": "",
@@ -2296,741 +461,27 @@
       "room": ""
     },
     {
-      "date": "2026-11-12",
-      "period": 9,
-      "className": "4TH",
-      "groupName": "gr1",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 10,
-      "className": "2TH",
-      "groupName": "",
-      "sourceTeacher": "BC",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 10,
-      "className": "1B",
-      "groupName": "gr1",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 10,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Projektowanie fryzur",
-      "message": "Danielewski Paweł",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 10,
-      "className": "2TFA",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 10,
-      "className": "4TH",
-      "groupName": "gr1",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 11,
-      "className": "3B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Projektowanie fryzur",
-      "message": "Danielewski Paweł",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 11,
-      "className": "2TFA",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 11,
-      "className": "4TH",
-      "groupName": "gr1",
-      "sourceTeacher": "Sa",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-12",
-      "period": 12,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Projektowanie fryzur",
-      "message": "Danielewski Paweł",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 13,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Projektowanie fryzur",
-      "message": "Danielewski Paweł",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 14,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Bezpieczeństwo i higiena pracy",
-      "message": "Danielewski Paweł",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 1,
-      "className": "2FC",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Podstawy fryzjerstwa",
-      "message": "Leńczowska Iwona",
-      "room": "2"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 1,
-      "className": "4TFB",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 2,
-      "className": "1S",
-      "groupName": "",
-      "sourceTeacher": "AH",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 2,
-      "className": "4TFB",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 2,
-      "className": "2FC",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Podstawy fryzjerstwa",
-      "message": "Leńczowska Iwona",
-      "room": "2"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 2,
-      "className": "1TFH",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
+      "date": "2026-11-19",
       "period": 3,
-      "className": "1K",
-      "groupName": "",
-      "sourceTeacher": "AH",
+      "className": "1CB",
+      "groupName": "cukiernik",
+      "sourceTeacher": "MK",
       "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 3,
-      "className": "1S",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 3,
-      "className": "1FB",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
+        "cukiernik"
       ],
       "type": "substitution",
-      "subject": "Podstawy fryzjerstwa",
-      "message": "Leńczowska Iwona",
-      "room": "2"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 3,
-      "className": "3TFA",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 4,
-      "className": "1FB",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Podstawy fryzjerstwa",
-      "message": "Jastrzębska-Majtyka Agnieszka",
+      "subject": "Wychowanie fizyczne",
+      "message": "Pietrycha Małgorzata",
       "room": "3"
     },
     {
-      "date": "2026-11-13",
-      "period": 4,
-      "className": "1FC",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Podstawy fryzjerstwa",
-      "message": "Leńczowska Iwona",
-      "room": "2"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 4,
-      "className": "3TFB",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Fizyka",
-      "message": "Biczysko Wojciech",
-      "room": "22"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 5,
-      "className": "1TFB",
-      "groupName": "gr2",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 5,
-      "className": "1TH",
-      "groupName": "",
-      "sourceTeacher": "AH",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 5,
+      "date": "2026-11-19",
+      "period": 6,
       "className": "1TFA",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie przychodzą później",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 5,
-      "className": "1FA",
-      "groupName": "",
-      "sourceTeacher": "SM",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia z wychowawcą",
-      "message": "Leńczowska Iwona",
-      "room": "2"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 5,
-      "className": "1CB",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Biologia",
-      "message": "Sałdyka-Rusek Karolina",
-      "room": "33"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 5,
-      "className": "2TH",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 5,
-      "className": "1FC",
-      "groupName": "",
-      "sourceTeacher": "SE",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Nowak Magdalena",
-      "room": "34"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 6,
-      "className": "3TFB",
-      "groupName": "gr2",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 6,
-      "className": "3FB",
-      "groupName": "",
-      "sourceTeacher": "AH",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 6,
-      "className": "1CB",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Biologia",
-      "message": "Małecka Barbara",
-      "room": "28"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 6,
-      "className": "1TFB",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Filipiak Wiesław",
-      "room": "31"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 6,
-      "className": "1FB",
-      "groupName": "",
-      "sourceTeacher": "SE",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Biznes i zarządzanie",
-      "message": "Mocarski Arkadiusz",
-      "room": "23"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 7,
-      "className": "1TFH",
-      "groupName": "",
-      "sourceTeacher": "AH",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 7,
-      "className": "1FA",
-      "groupName": "",
-      "sourceTeacher": "EK",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Biologia",
-      "message": "Sałdyka-Rusek Karolina",
-      "room": "33"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 7,
-      "className": "2FC",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 7,
-      "className": "1TH",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Towar jako przedmiot handlu",
-      "message": "Kosin Anna",
-      "room": "41"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 8,
-      "className": "1TH",
-      "groupName": "gr2",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "gr2"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Biezmienow Małgorzata",
-      "room": "43"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 8,
-      "className": "1CA",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Doradztwo zawodowe",
-      "message": "Krzemińska Beata",
-      "room": "4"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 8,
-      "className": "1TFA",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Matematyka",
-      "message": "Filipiak Wiesław",
-      "room": "31"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 8,
-      "className": "1TFH",
-      "groupName": "",
-      "sourceTeacher": "SE",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Historia",
-      "message": "Kopij Marcin",
-      "room": "23"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 9,
-      "className": "1B",
       "groupName": "gr1",
-      "sourceTeacher": "MG",
+      "sourceTeacher": "MN",
       "sourceGroups": [
         "gr1"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Staliś Donata",
-      "room": "44"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 9,
-      "className": "2S",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 9,
-      "className": "1TFH",
-      "groupName": "tech.hand.",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "tech.hand."
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 9,
-      "className": "1CB",
-      "groupName": "",
-      "sourceTeacher": "SE",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Doradztwo zawodowe",
-      "message": "Krzemińska Beata",
-      "room": "23"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 10,
-      "className": "1B",
-      "groupName": "gr1",
-      "sourceTeacher": "MG",
-      "sourceGroups": [
-        "gr1"
-      ],
-      "type": "substitution",
-      "subject": "Język angielski",
-      "message": "Staliś Donata",
-      "room": "44"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 10,
-      "className": "1CA",
-      "groupName": "",
-      "sourceTeacher": "MU",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 10,
-      "className": "1WA",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "message",
-      "subject": "",
-      "message": "Uczniowie zwolnieni do domu",
-      "room": ""
-    },
-    {
-      "date": "2026-11-13",
-      "period": 11,
-      "className": "2TFA",
-      "groupName": "",
-      "sourceTeacher": "AS",
-      "sourceGroups": [
-        "Cała klasa"
       ],
       "type": "message",
       "subject": "",
@@ -3040,24 +491,92 @@
   ],
   "transfers": [
     {
-      "date": "2026-11-09",
-      "period": 7,
-      "className": "2FC",
+      "date": "2026-11-16",
+      "period": 1,
+      "className": "1TFA",
       "groupName": "",
-      "sourceTeacher": "Nm",
+      "sourceTeacher": "SE",
       "sourceGroups": [
         "Cała klasa"
       ],
       "type": "transfer",
-      "toDate": "2026-11-09",
-      "toPeriod": 6,
-      "subject": "Matematyka",
-      "teacher": "Nowak Magdalena",
-      "fromRoom": "34",
-      "toRoom": "34"
+      "toDate": "2026-11-16",
+      "toPeriod": 3,
+      "subject": "Biznes i zarządzanie",
+      "teacher": "Smirnow-Zechman Eleonora",
+      "fromRoom": "23",
+      "toRoom": "23"
     },
     {
-      "date": "2026-11-10",
+      "date": "2026-11-16",
+      "period": 7,
+      "className": "3WA",
+      "groupName": "",
+      "sourceTeacher": "ML",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-11-16",
+      "toPeriod": 4,
+      "subject": "Edukacja zdrowotna",
+      "teacher": "Małecka Barbara",
+      "fromRoom": "27",
+      "toRoom": "27"
+    },
+    {
+      "date": "2026-11-16",
+      "period": 1,
+      "className": "2K",
+      "groupName": "",
+      "sourceTeacher": "UM",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-11-16",
+      "toPeriod": 6,
+      "subject": "Język polski",
+      "teacher": "Ulanowska Magdalena",
+      "fromRoom": "22",
+      "toRoom": "22"
+    },
+    {
+      "date": "2026-11-17",
+      "period": 11,
+      "className": "2FB",
+      "groupName": "",
+      "sourceTeacher": "SM",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-11-17",
+      "toPeriod": 2,
+      "subject": "Podstawy fryzjerstwa",
+      "teacher": "Leńczowska Iwona",
+      "fromRoom": "2",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-11-17",
+      "period": 10,
+      "className": "2FB",
+      "groupName": "",
+      "sourceTeacher": "SM",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-11-17",
+      "toPeriod": 3,
+      "subject": "Podstawy fryzjerstwa",
+      "teacher": "Leńczowska Iwona",
+      "fromRoom": "2",
+      "toRoom": "2"
+    },
+    {
+      "date": "2026-11-17",
       "period": 1,
       "className": "3FA",
       "groupName": "",
@@ -3066,133 +585,14 @@
         "Cała klasa"
       ],
       "type": "transfer",
-      "toDate": "2026-11-10",
-      "toPeriod": 2,
+      "toDate": "2026-11-17",
+      "toPeriod": 6,
       "subject": "Techniki fryzjerskie",
       "teacher": "Leńczowska Iwona",
       "fromRoom": "2",
       "toRoom": "2"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 5,
-      "className": "3K",
-      "groupName": "kucharz",
-      "sourceTeacher": "Mr",
-      "sourceGroups": [
-        "kucharz"
-      ],
-      "type": "room",
-      "toDate": "2026-11-10",
-      "toPeriod": 5,
-      "subject": "Technika w produkcji gastronomicznej",
-      "teacher": "Mocarski Arkadiusz",
-      "fromRoom": "30",
-      "toRoom": "26"
-    },
-    {
-      "date": "2026-11-10",
-      "period": 12,
-      "className": "1B",
-      "groupName": "",
-      "sourceTeacher": "KR",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "transfer",
-      "toDate": "2026-11-10",
-      "toPeriod": 9,
-      "subject": "Wykonywanie fryzur na podstawie projektów - zajęcia praktyczne",
-      "teacher": "Krzemińska Beata",
-      "fromRoom": "4",
-      "toRoom": "5"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 10,
-      "className": "4TFB",
-      "groupName": "",
-      "sourceTeacher": "JA",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "transfer",
-      "toDate": "2026-11-12",
-      "toPeriod": 4,
-      "subject": "Projektowanie fryzur",
-      "teacher": "Jastrzębska-Majtyka Agnieszka",
-      "fromRoom": "3",
-      "toRoom": "3"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 8,
-      "className": "1WB",
-      "groupName": "",
-      "sourceTeacher": "WB",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "transfer",
-      "toDate": "2026-11-12",
-      "toPeriod": 6,
-      "subject": "Fizyka",
-      "teacher": "Biczysko Wojciech",
-      "fromRoom": "22",
-      "toRoom": "22"
-    },
-    {
-      "date": "2026-11-12",
-      "period": 8,
-      "className": "1TFB",
-      "groupName": "",
-      "sourceTeacher": "So",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "transfer",
-      "toDate": "2026-11-12",
-      "toPeriod": 7,
-      "subject": "Techniki fryzjerskie",
-      "teacher": "Sobczak Anna",
-      "fromRoom": "prF3",
-      "toRoom": "prF3"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 10,
-      "className": "1TFH",
-      "groupName": "",
-      "sourceTeacher": "WB",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "transfer",
-      "toDate": "2026-11-13",
-      "toPeriod": 6,
-      "subject": "Fizyka",
-      "teacher": "Biczysko Wojciech",
-      "fromRoom": "23",
-      "toRoom": "26"
-    },
-    {
-      "date": "2026-11-13",
-      "period": 1,
-      "className": "1CA",
-      "groupName": "",
-      "sourceTeacher": "KS",
-      "sourceGroups": [
-        "Cała klasa"
-      ],
-      "type": "transfer",
-      "toDate": "2026-11-13",
-      "toPeriod": 7,
-      "subject": "Rozwój kompetencji zawodowych - dekoracje w cukiernictwie",
-      "teacher": "Stępień Krystyna",
-      "fromRoom": "prs",
-      "toRoom": "prs"
     }
   ],
-  "validFrom": "2026-11-09",
-  "validTo": "2026-11-15"
+  "validFrom": "2026-11-16",
+  "validTo": "2026-11-22"
 }
