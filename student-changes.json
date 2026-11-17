@@ -820,9 +820,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Język polski",
-      "message": "Krycia Ewelina",
-      "room": "19"
+      "subject": "Biznes i zarządzanie",
+      "message": "Smirnow-Zechman Eleonora",
+      "room": "23"
     },
     {
       "date": "2026-11-18",
@@ -876,9 +876,23 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Obsługa klientów",
-      "message": "Socha Dariusz",
-      "room": "44"
+      "subject": "Język polski",
+      "message": "Ulanowska Magdalena",
+      "room": "22"
+    },
+    {
+      "date": "2026-11-18",
+      "period": 8,
+      "className": "2CB",
+      "groupName": "",
+      "sourceTeacher": "FA",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
     },
     {
       "date": "2026-11-18",
@@ -900,6 +914,20 @@
       "className": "2TFB",
       "groupName": "",
       "sourceTeacher": "MZ",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-11-18",
+      "period": 9,
+      "className": "2CA",
+      "groupName": "",
+      "sourceTeacher": "FA",
       "sourceGroups": [
         "Cała klasa"
       ],
@@ -1169,6 +1197,23 @@
       "teacher": "Filusz Marzena",
       "fromRoom": "17",
       "toRoom": "17"
+    },
+    {
+      "date": "2026-11-18",
+      "period": 1,
+      "className": "2FC",
+      "groupName": "",
+      "sourceTeacher": "IL",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-11-18",
+      "toPeriod": 6,
+      "subject": "Techniki fryzjerskie",
+      "teacher": "Leńczowska Iwona",
+      "fromRoom": "2",
+      "toRoom": "2"
     }
   ],
   "validFrom": "2026-11-16",
