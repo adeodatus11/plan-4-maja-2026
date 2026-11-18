@@ -1072,9 +1072,9 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
+      "subject": "Podstawy fryzjerstwa",
+      "message": "Jaworska Edyta",
+      "room": "pF1"
     },
     {
       "date": "2026-11-19",
@@ -1144,7 +1144,7 @@
       "type": "substitution",
       "subject": "Fizyka",
       "message": "Biczysko Wojciech",
-      "room": "30"
+      "room": "32"
     },
     {
       "date": "2026-11-19",
@@ -1156,9 +1156,23 @@
         "Cała klasa"
       ],
       "type": "substitution",
-      "subject": "Zajęcia biblioteczne",
-      "message": "Zając Ewa",
-      "room": "bib"
+      "subject": "Podstawy fryzjerstwa",
+      "message": "Jaworska Edyta",
+      "room": "pF1"
+    },
+    {
+      "date": "2026-11-19",
+      "period": 4,
+      "className": "1TH",
+      "groupName": "",
+      "sourceTeacher": "Nm",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Wychowanie fizyczne",
+      "message": "Pietrycha Małgorzata",
+      "room": "34"
     },
     {
       "date": "2026-11-19",
@@ -1201,6 +1215,20 @@
       "subject": "Zajęcia z wychowawcą",
       "message": "Wójcik Kamil",
       "room": "28"
+    },
+    {
+      "date": "2026-11-19",
+      "period": 5,
+      "className": "3CB",
+      "groupName": "",
+      "sourceTeacher": "Nm",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia opiekuńcze",
+      "message": "Jaworska Edyta",
+      "room": "pF1"
     },
     {
       "date": "2026-11-19",
@@ -1271,6 +1299,20 @@
       "subject": "",
       "message": "Uczniowie zwolnieni do domu",
       "room": ""
+    },
+    {
+      "date": "2026-11-19",
+      "period": 6,
+      "className": "2TFA",
+      "groupName": "",
+      "sourceTeacher": "Nm",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Podstawy fryzjerstwa",
+      "message": "Jaworska Edyta",
+      "room": "pF1"
     },
     {
       "date": "2026-11-19",
@@ -2239,6 +2281,23 @@
       "toRoom": "22"
     },
     {
+      "date": "2026-11-19",
+      "period": 9,
+      "className": "2TFA",
+      "groupName": "",
+      "sourceTeacher": "So",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "transfer",
+      "toDate": "2026-11-19",
+      "toPeriod": 7,
+      "subject": "Techniki fryzjerskie",
+      "teacher": "Sobczak Anna",
+      "fromRoom": "prF3",
+      "toRoom": "prF3"
+    },
+    {
       "date": "2026-11-20",
       "period": 10,
       "className": "1TFH",
@@ -2253,7 +2312,7 @@
       "subject": "Fizyka",
       "teacher": "Biczysko Wojciech",
       "fromRoom": "23",
-      "toRoom": "23"
+      "toRoom": "22"
     }
   ],
   "validFrom": "2026-11-16",
