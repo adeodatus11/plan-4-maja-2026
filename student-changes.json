@@ -1022,6 +1022,20 @@
     },
     {
       "date": "2026-11-19",
+      "period": 1,
+      "className": "1FA",
+      "groupName": "gr2",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "lekcja odwołana",
+      "room": "38"
+    },
+    {
+      "date": "2026-11-19",
       "period": 2,
       "className": "2CB",
       "groupName": "",
@@ -1064,6 +1078,20 @@
     },
     {
       "date": "2026-11-19",
+      "period": 2,
+      "className": "2TFB",
+      "groupName": "",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Zając Ewa",
+      "room": "bib"
+    },
+    {
+      "date": "2026-11-19",
       "period": 3,
       "className": "3FC",
       "groupName": "",
@@ -1074,7 +1102,7 @@
       "type": "substitution",
       "subject": "Podstawy fryzjerstwa",
       "message": "Jaworska Edyta",
-      "room": "pF1"
+      "room": "pF2"
     },
     {
       "date": "2026-11-19",
@@ -1120,6 +1148,20 @@
     },
     {
       "date": "2026-11-19",
+      "period": 3,
+      "className": "1FA",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Język angielski",
+      "message": "Galert Anna",
+      "room": "05"
+    },
+    {
+      "date": "2026-11-19",
       "period": 4,
       "className": "1WA",
       "groupName": "",
@@ -1158,7 +1200,7 @@
       "type": "substitution",
       "subject": "Podstawy fryzjerstwa",
       "message": "Jaworska Edyta",
-      "room": "pF1"
+      "room": "pF2"
     },
     {
       "date": "2026-11-19",
@@ -1173,6 +1215,20 @@
       "subject": "Wychowanie fizyczne",
       "message": "Pietrycha Małgorzata",
       "room": "34"
+    },
+    {
+      "date": "2026-11-19",
+      "period": 4,
+      "className": "1CB",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Zając Ewa",
+      "room": "bib"
     },
     {
       "date": "2026-11-19",
@@ -1228,7 +1284,7 @@
       "type": "substitution",
       "subject": "Zajęcia opiekuńcze",
       "message": "Jaworska Edyta",
-      "room": "pF1"
+      "room": "pF2"
     },
     {
       "date": "2026-11-19",
@@ -1243,6 +1299,20 @@
       "subject": "Wychowanie fizyczne",
       "message": "Nestoruk Lidia",
       "room": "23"
+    },
+    {
+      "date": "2026-11-19",
+      "period": 5,
+      "className": "1TFA",
+      "groupName": "gr2",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Zajęcia biblioteczne",
+      "message": "Wrzeszcz Barbara",
+      "room": "bib"
     },
     {
       "date": "2026-11-19",
@@ -1312,7 +1382,21 @@
       "type": "substitution",
       "subject": "Podstawy fryzjerstwa",
       "message": "Jaworska Edyta",
-      "room": "pF1"
+      "room": "pF2"
+    },
+    {
+      "date": "2026-11-19",
+      "period": 6,
+      "className": "1TFB",
+      "groupName": "gr2",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Język niemiecki",
+      "message": "Misiąg Anna",
+      "room": "44"
     },
     {
       "date": "2026-11-19",
@@ -1373,11 +1457,39 @@
     {
       "date": "2026-11-19",
       "period": 7,
+      "className": "2TFA",
+      "groupName": "",
+      "sourceTeacher": "Nm",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Matematyka",
+      "message": "Brak",
+      "room": "34"
+    },
+    {
+      "date": "2026-11-19",
+      "period": 7,
       "className": "1WB",
       "groupName": "",
       "sourceTeacher": "SE",
       "sourceGroups": [
         "Cała klasa"
+      ],
+      "type": "message",
+      "subject": "",
+      "message": "Uczniowie zwolnieni do domu",
+      "room": ""
+    },
+    {
+      "date": "2026-11-19",
+      "period": 7,
+      "className": "1TH",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
       ],
       "type": "message",
       "subject": "",
@@ -1439,6 +1551,20 @@
       "subject": "Zajęcia z wychowawcą",
       "message": "Bokuniewicz Sylwia",
       "room": "5"
+    },
+    {
+      "date": "2026-11-19",
+      "period": 8,
+      "className": "3TFB",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "Brak",
+      "room": "38"
     },
     {
       "date": "2026-11-19",
@@ -1540,6 +1666,20 @@
     },
     {
       "date": "2026-11-20",
+      "period": 1,
+      "className": "2TH",
+      "groupName": "",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "Cała klasa"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
+    },
+    {
+      "date": "2026-11-20",
       "period": 2,
       "className": "1S",
       "groupName": "",
@@ -1565,6 +1705,20 @@
       "subject": "Podstawy fryzjerstwa",
       "message": "Sobczak Anna",
       "room": "2"
+    },
+    {
+      "date": "2026-11-20",
+      "period": 2,
+      "className": "1FB",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
     },
     {
       "date": "2026-11-20",
@@ -1610,6 +1764,20 @@
     },
     {
       "date": "2026-11-20",
+      "period": 3,
+      "className": "1TFH",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
+    },
+    {
+      "date": "2026-11-20",
       "period": 4,
       "className": "3FB",
       "groupName": "",
@@ -1635,6 +1803,20 @@
       "subject": "Podstawy fryzjerstwa",
       "message": "Jastrzębska-Majtyka Agnieszka",
       "room": "2"
+    },
+    {
+      "date": "2026-11-20",
+      "period": 4,
+      "className": "1S",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
     },
     {
       "date": "2026-11-20",
@@ -1708,6 +1890,20 @@
     },
     {
       "date": "2026-11-20",
+      "period": 5,
+      "className": "1WA",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
+    },
+    {
+      "date": "2026-11-20",
       "period": 6,
       "className": "1WA",
       "groupName": "",
@@ -1733,6 +1929,20 @@
       "subject": "Biologia",
       "message": "Małecka Barbara",
       "room": "28"
+    },
+    {
+      "date": "2026-11-20",
+      "period": 6,
+      "className": "1TH",
+      "groupName": "gr2",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
     },
     {
       "date": "2026-11-20",
@@ -1792,6 +2002,20 @@
     },
     {
       "date": "2026-11-20",
+      "period": 7,
+      "className": "1TFA",
+      "groupName": "gr2",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
+    },
+    {
+      "date": "2026-11-20",
       "period": 8,
       "className": "1WB",
       "groupName": "",
@@ -1831,6 +2055,20 @@
       "subject": "Doradztwo zawodowe",
       "message": "Krzemińska Beata",
       "room": "17"
+    },
+    {
+      "date": "2026-11-20",
+      "period": 8,
+      "className": "1FC",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
     },
     {
       "date": "2026-11-20",
@@ -1890,6 +2128,20 @@
     },
     {
       "date": "2026-11-20",
+      "period": 9,
+      "className": "1CA",
+      "groupName": "gr1",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr1"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
+    },
+    {
+      "date": "2026-11-20",
       "period": 10,
       "className": "1TH",
       "groupName": "reln",
@@ -1971,6 +2223,20 @@
       "subject": "Zajęcia biblioteczne",
       "message": "Zając Ewa",
       "room": "bib"
+    },
+    {
+      "date": "2026-11-20",
+      "period": 10,
+      "className": "1FB",
+      "groupName": "gr2",
+      "sourceTeacher": "MY",
+      "sourceGroups": [
+        "gr2"
+      ],
+      "type": "substitution",
+      "subject": "Informatyka",
+      "message": "-",
+      "room": "38"
     }
   ],
   "transfers": [
